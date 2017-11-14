@@ -1,0 +1,13 @@
+{
+  "extends": ["equimper", "prettier"],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/html-has-lang": "off",
+    "react/no-danger": "off",
+    "react/forbid-prop-types": "off",
+    "jsx-a11y/label-has-for": "off"
+  }
+}

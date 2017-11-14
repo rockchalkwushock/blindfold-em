@@ -1,0 +1,93 @@
+version: 2
+jobs:
+  checkout_code:
+    docker:
+      - image: 'circleci/node:latest'
+    working_directory: ~/blindfold-em
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/blindfold-em
+      - restore_cache:
+          keys:
+            - 'yarn-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}'
+            - 'yarn-cache-{{ .Branch }}'
+            - yarn-cache-
+      - run: yarn install
+      - save_cache:
+          key: 'yarn-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}'
+          paths: node_modules
+      - persist_to_workspace:
+          root: .
+          paths: .
+  test_and_report:
+    docker:
+      - image: 'circleci/node:latest'
+    working_directory: ~/blindfold-em
+    steps:
+      - attach_workspace:
+          at: ~/blindfold-em
+      - run: yarn install
+      - run: yarn start validate.withCoverage
+      - run: yarn start reportCoverage
+      - store_artifacts:
+          path: ./coverage/clover.xml
+          prefix: tests
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - store_test_results:
+          path: ./coverage/clover.xml
+  build:
+    docker:
+      - image: 'circleci/node:latest'
+    working_directory: ~/blindfold-em
+    steps:
+      - attach_workspace:
+          at: ~/blindfold-em
+      - run: yarn install
+      - run: yarn build
+      - store_artifacts:
+          path: .next
+          prefix: .next
+  deployment:
+    docker:
+      - image: 'circleci/node:latest'
+    working_directory: ~/blindfold-em
+    steps:
+      - attach_workspace:
+          at: ~/blindfold-em
+      - run: yarn install
+      - run: sudo yarn global add now
+      - deploy:
+          name: Deploy & Alias.
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "development" ]; then
+              now -t ${NOW_TOKEN} -n=blindfold-em
+              now -t ${NOW_TOKEN} alias blindfold-em-beta.now.sh
+            elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+              now -t ${NOW_TOKEN} -n=blindfold-em
+              now -t ${NOW_TOKEN} alias blindfold-em.now.sh
+            else
+              echo "Should not get here ever."
+            fi
+workflows:
+  version: 2
+  test_and_deploy:
+    jobs:
+      - checkout_code
+      - test_and_report:
+          requires:
+            - checkout_code
+      - build:
+          requires:
+            - test_and_report
+      - deployment:
+          requires:
+            - test_and_report
+            - build
+          filters:
+            branches:
+              only:
+                - master
+                - development
