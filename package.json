@@ -10,6 +10,7 @@
     "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
   "bugs": "https://github.com/rockchalkwushock/mashaeltsova-photography/issues",
   "scripts": {
+    "build": "next build",
     "commit": "nps commit",
     "dev": "next",
     "now-start": "next start",
