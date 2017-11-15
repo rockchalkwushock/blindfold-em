@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <FlexContainer /> should render without exploding 1`] = `
+<div
+  class="jsx-1111547334"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+</div>
+`;

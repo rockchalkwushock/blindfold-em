@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Footer /> should render without exploding 1`] = `
+<footer
+  class="jsx-1106431596"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+</footer>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Header /> should render without exploding 1`] = `
+<header
+  class="jsx-2290366526"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+</header>
+`;
