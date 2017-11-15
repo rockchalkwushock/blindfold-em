@@ -33,4 +33,59 @@ describe('Component: <Button />', () => {
       expect(tree).toMatchSnapshot()
     })
   })
+
+  describe('Start:', () => {
+    test('should mount without exploding  in disabled state', () => {
+      const tree = mount(
+        <Button className="start" condition fn={() => {}} text="Start" />
+      )
+      expect(tree).toMatchSnapshot()
+    })
+    test('should mount without exploding  in enabled state', () => {
+      const tree = mount(
+        <Button
+          className="start"
+          condition={false}
+          fn={() => {}}
+          text="Start"
+        />
+      )
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('Pause:', () => {
+    test('should mount without exploding  in disabled state', () => {
+      const tree = mount(
+        <Button className="pause" condition fn={() => {}} text="Pause" />
+      )
+      expect(tree).toMatchSnapshot()
+    })
+    test('should mount without exploding  in enabled state', () => {
+      const tree = mount(
+        <Button
+          className="pause"
+          condition={false}
+          fn={() => {}}
+          text="Pause"
+        />
+      )
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
+  describe('Stop:', () => {
+    test('should mount without exploding  in disabled state', () => {
+      const tree = mount(
+        <Button className="stop" condition fn={() => {}} text="Stop" />
+      )
+      expect(tree).toMatchSnapshot()
+    })
+    test('should mount without exploding  in enabled state', () => {
+      const tree = mount(
+        <Button className="stop" condition={false} fn={() => {}} text="Stop" />
+      )
+      expect(tree).toMatchSnapshot()
+    })
+  })
 })

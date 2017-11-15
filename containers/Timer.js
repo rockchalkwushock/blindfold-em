@@ -37,7 +37,18 @@ class Timer extends Component {
       pomodoroState: t.START
     }))
   }
-  stop = () => console.log('stop')
+  stop = () => {
+    if (this.state.pomodoro) {
+      clearInterval(this.state.pomodoro)
+    }
+
+    this.setState(state => ({
+      ...state,
+      currentTime: moment.duration(this.state.baseTime),
+      pomodoro: null,
+      pomodoroState: t.STOPPED
+    }))
+  }
   render() {
     const { activity } = this.props
     const { baseTime, cooldown, currentTime } = this.state
@@ -58,17 +69,22 @@ class Timer extends Component {
         <h2>{cool}</h2>
         <Button
           className="start"
-          condition={false}
+          condition={this.state.pomodoroState === 1}
           fn={this.start}
           text="Start"
         />
         <Button
           className="pause"
-          condition={false}
+          condition={this.state.pomodoroState === 2}
           fn={this.pause}
           text="Pause"
         />
-        <Button className="stop" condition={false} fn={this.stop} text="Stop" />
+        <Button
+          className="stop"
+          condition={this.state.pomodoroState === 0}
+          fn={this.stop}
+          text="Stop"
+        />
       </div>
     )
   }
