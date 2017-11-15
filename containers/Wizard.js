@@ -1,6 +1,7 @@
 import { Component } from 'react'
 
-import { Button, Frame, Timer } from '../components'
+import { Button, Frame } from '../components'
+import Timer from './Timer'
 
 class Wizard extends Component {
   state = {
@@ -69,8 +70,18 @@ class Wizard extends Component {
     return (
       <div>
         {view}
-        <Button condition={currentFrame === 4} fn={this._next} text="Next" />
-        <Button condition={currentFrame === 1} fn={this._prev} text="Prev" />
+        <Button
+          className="next"
+          condition={currentFrame === 4}
+          fn={this._next}
+          text="Next"
+        />
+        <Button
+          className="prev"
+          condition={currentFrame === 1}
+          fn={this._prev}
+          text="Prev"
+        />
       </div>
     )
   }

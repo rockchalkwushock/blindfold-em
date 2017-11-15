@@ -2,11 +2,13 @@
 
 exports[`Component: <Button /> Next: should mount without exploding in disabled state 1`] = `
 <Button
+  className="next"
   condition={true}
   fn={[Function]}
   text="Next"
 >
   <button
+    className="next"
     disabled={true}
     onClick={[Function]}
   >
@@ -17,11 +19,13 @@ exports[`Component: <Button /> Next: should mount without exploding in disabled 
 
 exports[`Component: <Button /> Next: should mount without exploding in enabled state 1`] = `
 <Button
+  className="next"
   condition={false}
   fn={[Function]}
   text="Next"
 >
   <button
+    className="next"
     disabled={false}
     onClick={[Function]}
   >
@@ -32,11 +36,13 @@ exports[`Component: <Button /> Next: should mount without exploding in enabled s
 
 exports[`Component: <Button /> Prev: should mount without exploding  in disabled state 1`] = `
 <Button
+  className="prev"
   condition={true}
   fn={[Function]}
   text="Prev"
 >
   <button
+    className="prev"
     disabled={true}
     onClick={[Function]}
   >
@@ -47,11 +53,13 @@ exports[`Component: <Button /> Prev: should mount without exploding  in disabled
 
 exports[`Component: <Button /> Prev: should mount without exploding  in enabled state 1`] = `
 <Button
+  className="prev"
   condition={false}
   fn={[Function]}
   text="Prev"
 >
   <button
+    className="prev"
     disabled={false}
     onClick={[Function]}
   >

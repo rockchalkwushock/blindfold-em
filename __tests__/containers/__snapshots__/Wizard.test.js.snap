@@ -34,11 +34,13 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
       </div>
     </Frame>
     <Button
+      className="next"
       condition={false}
       fn={[Function]}
       text="Next"
     >
       <button
+        className="next"
         disabled={false}
         onClick={[Function]}
       >
@@ -46,11 +48,13 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
       </button>
     </Button>
     <Button
+      className="prev"
       condition={true}
       fn={[Function]}
       text="Prev"
     >
       <button
+        className="prev"
         disabled={true}
         onClick={[Function]}
       >
@@ -95,11 +99,13 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
       </div>
     </Frame>
     <Button
+      className="next"
       condition={false}
       fn={[Function]}
       text="Next"
     >
       <button
+        className="next"
         disabled={false}
         onClick={[Function]}
       >
@@ -107,11 +113,13 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
       </button>
     </Button>
     <Button
+      className="prev"
       condition={false}
       fn={[Function]}
       text="Prev"
     >
       <button
+        className="prev"
         disabled={false}
         onClick={[Function]}
       >
@@ -156,11 +164,13 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
       </div>
     </Frame>
     <Button
+      className="next"
       condition={false}
       fn={[Function]}
       text="Next"
     >
       <button
+        className="next"
         disabled={false}
         onClick={[Function]}
       >
@@ -168,11 +178,13 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
       </button>
     </Button>
     <Button
+      className="prev"
       condition={false}
       fn={[Function]}
       text="Prev"
     >
       <button
+        className="prev"
         disabled={false}
         onClick={[Function]}
       >
@@ -192,35 +204,70 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Time
       timer="12"
     >
       <div>
-        <SubTitle
-          text="Your activity: coding"
+        <h1>
+          coding
+        </h1>
+        <h2>
+          Selected Timer: 12:0
+        </h2>
+        <h2>
+          Current Time: 12:0
+        </h2>
+        <h2>
+          Selected Cooldown: 3:0
+        </h2>
+        <Button
+          className="start"
+          condition={false}
+          fn={[Function]}
+          text="Start"
         >
-          <h2>
-            Your activity: coding
-          </h2>
-        </SubTitle>
-        <SubTitle
-          text="Your timer: 12"
+          <button
+            className="start"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Start
+          </button>
+        </Button>
+        <Button
+          className="pause"
+          condition={false}
+          fn={[Function]}
+          text="Pause"
         >
-          <h2>
-            Your timer: 12
-          </h2>
-        </SubTitle>
-        <SubTitle
-          text="Your cooldown: 3"
+          <button
+            className="pause"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Pause
+          </button>
+        </Button>
+        <Button
+          className="stop"
+          condition={false}
+          fn={[Function]}
+          text="Stop"
         >
-          <h2>
-            Your cooldown: 3
-          </h2>
-        </SubTitle>
+          <button
+            className="stop"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Stop
+          </button>
+        </Button>
       </div>
     </Timer>
     <Button
+      className="next"
       condition={true}
       fn={[Function]}
       text="Next"
     >
       <button
+        className="next"
         disabled={true}
         onClick={[Function]}
       >
@@ -228,11 +275,13 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Time
       </button>
     </Button>
     <Button
+      className="prev"
       condition={false}
       fn={[Function]}
       text="Prev"
     >
       <button
+        className="prev"
         disabled={false}
         onClick={[Function]}
       >

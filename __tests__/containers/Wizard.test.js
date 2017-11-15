@@ -23,8 +23,8 @@ describe('Container: <Wizard />', () => {
   beforeEach(() => {
     wrapper = mount(<Wizard />)
     input = wrapper.find('input')
-    next = wrapper.find('button').first()
-    prev = wrapper.find('button').last()
+    next = wrapper.find('button.next')
+    prev = wrapper.find('button.prev')
   })
 
   describe('State Management', () => {
@@ -159,14 +159,14 @@ describe('Container: <Wizard />', () => {
     })
     test('should see both buttons as enabled', () => {
       wrapper.setState({ currentFrame: 2 })
-      next = wrapper.find('button').first()
-      prev = wrapper.find('button').last()
+      next = wrapper.find('button.next')
+      prev = wrapper.find('button.prev')
       expect(next.props().disabled).toEqual(false)
       expect(prev.props().disabled).toEqual(false)
     })
     test('should see "Next" button as disabled', () => {
       wrapper.setState({ currentFrame: 4 })
-      next = wrapper.find('button').first()
+      next = wrapper.find('button.next')
       expect(next.props().disabled).toEqual(true)
     })
   })

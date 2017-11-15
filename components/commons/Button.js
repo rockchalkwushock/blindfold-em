@@ -1,5 +1,5 @@
-const Button = ({ condition, fn, text }) => (
-  <button disabled={condition} onClick={() => fn()}>
+const Button = ({ className, condition, fn, text }) => (
+  <button className={className} disabled={condition} onClick={() => fn()}>
     {text}
   </button>
 )
