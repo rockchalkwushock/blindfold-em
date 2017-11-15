@@ -1,6 +1,6 @@
 import { Component } from 'react'
 
-import { Button, Frame } from '../components'
+import { Button, Frame, Timer } from '../components'
 
 class Wizard extends Component {
   state = {
@@ -56,7 +56,13 @@ class Wizard extends Component {
       )
     }
   }
-  renderTimer = () => <h1>Timer View</h1>
+  renderTimer = () => (
+    <Timer
+      activity={this.state.activity}
+      cooldown={this.state.cooldown}
+      timer={this.state.timer}
+    />
+  )
   render() {
     const { currentFrame } = this.state
     const view = currentFrame !== 4 ? this.renderFrame() : this.renderTimer()

@@ -182,7 +182,14 @@ describe('Container: <Wizard />', () => {
       expect(wrapper.setState({ currentFrame: 3 })).toMatchSnapshot()
     })
     test('should render without exploding on Timer', () => {
-      expect(wrapper.setState({ currentFrame: 4 })).toMatchSnapshot()
+      expect(
+        wrapper.setState({
+          activity: 'coding',
+          cooldown: '3',
+          currentFrame: 4,
+          timer: '12'
+        })
+      ).toMatchSnapshot()
     })
   })
 })

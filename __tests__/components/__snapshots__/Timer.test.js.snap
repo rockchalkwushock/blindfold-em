@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Timer /> should mount without exploding 1`] = `
+<Timer
+  activity="coding"
+  cooldown="3"
+  timer="12"
+>
+  <div>
+    <SubTitle
+      text="Your activity: coding"
+    >
+      <h2>
+        Your activity: coding
+      </h2>
+    </SubTitle>
+    <SubTitle
+      text="Your timer: 12"
+    >
+      <h2>
+        Your timer: 12
+      </h2>
+    </SubTitle>
+    <SubTitle
+      text="Your cooldown: 3"
+    >
+      <h2>
+        Your cooldown: 3
+      </h2>
+    </SubTitle>
+  </div>
+</Timer>
+`;

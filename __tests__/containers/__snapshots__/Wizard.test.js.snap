@@ -186,9 +186,35 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
 exports[`Container: <Wizard /> Snapshots should render without exploding on Timer 1`] = `
 <Wizard>
   <div>
-    <h1>
-      Timer View
-    </h1>
+    <Timer
+      activity="coding"
+      cooldown="3"
+      timer="12"
+    >
+      <div>
+        <SubTitle
+          text="Your activity: coding"
+        >
+          <h2>
+            Your activity: coding
+          </h2>
+        </SubTitle>
+        <SubTitle
+          text="Your timer: 12"
+        >
+          <h2>
+            Your timer: 12
+          </h2>
+        </SubTitle>
+        <SubTitle
+          text="Your cooldown: 3"
+        >
+          <h2>
+            Your cooldown: 3
+          </h2>
+        </SubTitle>
+      </div>
+    </Timer>
     <Button
       condition={true}
       fn={[Function]}
