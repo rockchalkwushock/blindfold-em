@@ -11,8 +11,6 @@ const Test = () => (
   </FlexContainer>
 )
 
-export default Test
-
 describe('Component: <FlexContainer />', () => {
   test('should render without exploding', () => {
     const tree = render(<Test />)

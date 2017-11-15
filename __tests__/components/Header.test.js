@@ -11,8 +11,6 @@ const Test = () => (
   </Header>
 )
 
-export default Test
-
 describe('Component: <Header />', () => {
   test('should render without exploding', () => {
     const tree = render(<Test />)
