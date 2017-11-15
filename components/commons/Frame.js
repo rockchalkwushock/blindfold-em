@@ -1,12 +1,11 @@
-import FlexContainer from './FlexContainer'
 import Input from './Input'
 import SubTitle from './SubTitle'
 
 const Frame = ({ name, fn, text, value }) => (
-  <FlexContainer>
+  <div>
     <SubTitle text={text} />
     <Input name={name} fn={fn} value={value} />
-  </FlexContainer>
+  </div>
 )
 
 export default Frame

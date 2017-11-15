@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container: <Wizard /> Snapshots should render without exploding on Frame 1 1`] = `
+<Wizard>
+  <div>
+    <Frame
+      fn={[Function]}
+      name="activity"
+      text="What activity are you working on?"
+      value=""
+    >
+      <div>
+        <SubTitle
+          text="What activity are you working on?"
+        >
+          <h2>
+            What activity are you working on?
+          </h2>
+        </SubTitle>
+        <Input
+          fn={[Function]}
+          name="activity"
+          value=""
+        >
+          <div>
+            <input
+              name="activity"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </div>
+        </Input>
+      </div>
+    </Frame>
+    <Button
+      condition={false}
+      fn={[Function]}
+      text="Next"
+    >
+      <button
+        disabled={false}
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </Button>
+    <Button
+      condition={true}
+      fn={[Function]}
+      text="Prev"
+    >
+      <button
+        disabled={true}
+        onClick={[Function]}
+      >
+        Prev
+      </button>
+    </Button>
+  </div>
+</Wizard>
+`;
+
+exports[`Container: <Wizard /> Snapshots should render without exploding on Frame 2 1`] = `
+<Wizard>
+  <div>
+    <Frame
+      fn={[Function]}
+      name="timer"
+      text="How long should the timer be?"
+      value=""
+    >
+      <div>
+        <SubTitle
+          text="How long should the timer be?"
+        >
+          <h2>
+            How long should the timer be?
+          </h2>
+        </SubTitle>
+        <Input
+          fn={[Function]}
+          name="timer"
+          value=""
+        >
+          <div>
+            <input
+              name="timer"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </div>
+        </Input>
+      </div>
+    </Frame>
+    <Button
+      condition={false}
+      fn={[Function]}
+      text="Next"
+    >
+      <button
+        disabled={false}
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </Button>
+    <Button
+      condition={false}
+      fn={[Function]}
+      text="Prev"
+    >
+      <button
+        disabled={false}
+        onClick={[Function]}
+      >
+        Prev
+      </button>
+    </Button>
+  </div>
+</Wizard>
+`;
+
+exports[`Container: <Wizard /> Snapshots should render without exploding on Frame 3 1`] = `
+<Wizard>
+  <div>
+    <Frame
+      fn={[Function]}
+      name="cooldown"
+      text="How long should the cooldown be?"
+      value=""
+    >
+      <div>
+        <SubTitle
+          text="How long should the cooldown be?"
+        >
+          <h2>
+            How long should the cooldown be?
+          </h2>
+        </SubTitle>
+        <Input
+          fn={[Function]}
+          name="cooldown"
+          value=""
+        >
+          <div>
+            <input
+              name="cooldown"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </div>
+        </Input>
+      </div>
+    </Frame>
+    <Button
+      condition={false}
+      fn={[Function]}
+      text="Next"
+    >
+      <button
+        disabled={false}
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </Button>
+    <Button
+      condition={false}
+      fn={[Function]}
+      text="Prev"
+    >
+      <button
+        disabled={false}
+        onClick={[Function]}
+      >
+        Prev
+      </button>
+    </Button>
+  </div>
+</Wizard>
+`;
+
+exports[`Container: <Wizard /> Snapshots should render without exploding on Timer 1`] = `
+<Wizard>
+  <div>
+    <h1>
+      Timer View
+    </h1>
+    <Button
+      condition={true}
+      fn={[Function]}
+      text="Next"
+    >
+      <button
+        disabled={true}
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </Button>
+    <Button
+      condition={false}
+      fn={[Function]}
+      text="Prev"
+    >
+      <button
+        disabled={false}
+        onClick={[Function]}
+      >
+        Prev
+      </button>
+    </Button>
+  </div>
+</Wizard>
+`;

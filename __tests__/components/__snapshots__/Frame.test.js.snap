@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component: <Frame /> should render without exploding 1`] = `
-<div
-  class="jsx-1111547334"
->
+<div>
   <h2>
     What activity are you working on?
   </h2>

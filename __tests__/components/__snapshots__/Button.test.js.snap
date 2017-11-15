@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Button /> Next: should mount without exploding in disabled state 1`] = `
+<Button
+  condition={true}
+  fn={[Function]}
+  text="Next"
+>
+  <button
+    disabled={true}
+    onClick={[Function]}
+  >
+    Next
+  </button>
+</Button>
+`;
+
+exports[`Component: <Button /> Next: should mount without exploding in enabled state 1`] = `
+<Button
+  condition={false}
+  fn={[Function]}
+  text="Next"
+>
+  <button
+    disabled={false}
+    onClick={[Function]}
+  >
+    Next
+  </button>
+</Button>
+`;
+
+exports[`Component: <Button /> Prev: should mount without exploding  in disabled state 1`] = `
+<Button
+  condition={true}
+  fn={[Function]}
+  text="Prev"
+>
+  <button
+    disabled={true}
+    onClick={[Function]}
+  >
+    Prev
+  </button>
+</Button>
+`;
+
+exports[`Component: <Button /> Prev: should mount without exploding  in enabled state 1`] = `
+<Button
+  condition={false}
+  fn={[Function]}
+  text="Prev"
+>
+  <button
+    disabled={false}
+    onClick={[Function]}
+  >
+    Prev
+  </button>
+</Button>
+`;
