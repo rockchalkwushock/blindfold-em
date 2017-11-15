@@ -216,6 +216,9 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Time
         <h2>
           Selected Cooldown: 3:0
         </h2>
+        <h2>
+          Current Cooldown: 3:0
+        </h2>
         <Button
           className="start"
           condition={false}
@@ -232,13 +235,13 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Time
         </Button>
         <Button
           className="stop"
-          condition={true}
+          condition={false}
           fn={[Function]}
           text="Stop"
         >
           <button
             className="stop"
-            disabled={true}
+            disabled={false}
             onClick={[Function]}
           >
             Stop
