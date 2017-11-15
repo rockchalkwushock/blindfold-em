@@ -54,26 +54,6 @@ describe('Component: <Button />', () => {
     })
   })
 
-  describe('Pause:', () => {
-    test('should mount without exploding  in disabled state', () => {
-      const tree = mount(
-        <Button className="pause" condition fn={() => {}} text="Pause" />
-      )
-      expect(tree).toMatchSnapshot()
-    })
-    test('should mount without exploding  in enabled state', () => {
-      const tree = mount(
-        <Button
-          className="pause"
-          condition={false}
-          fn={() => {}}
-          text="Pause"
-        />
-      )
-      expect(tree).toMatchSnapshot()
-    })
-  })
-
   describe('Stop:', () => {
     test('should mount without exploding  in disabled state', () => {
       const tree = mount(

@@ -6,8 +6,7 @@ import { Button } from '../components'
 
 export const t = {
   STOPPED: 0,
-  START: 1,
-  PAUSED: 2
+  START: 1
 }
 
 class Timer extends Component {
@@ -23,7 +22,6 @@ class Timer extends Component {
     pomodoro: null,
     pomodoroState: t.STOPPED
   }
-  pause = () => console.log('pause')
   reduceTime = () => {
     const currentTime = moment.duration(this.state.currentTime)
     currentTime.subtract(1, 'second')
@@ -72,12 +70,6 @@ class Timer extends Component {
           condition={this.state.pomodoroState === 1}
           fn={this.start}
           text="Start"
-        />
-        <Button
-          className="pause"
-          condition={this.state.pomodoroState === 2}
-          fn={this.pause}
-          text="Pause"
         />
         <Button
           className="stop"

@@ -34,40 +34,6 @@ exports[`Component: <Button /> Next: should mount without exploding in enabled s
 </Button>
 `;
 
-exports[`Component: <Button /> Pause: should mount without exploding  in disabled state 1`] = `
-<Button
-  className="pause"
-  condition={true}
-  fn={[Function]}
-  text="Pause"
->
-  <button
-    className="pause"
-    disabled={true}
-    onClick={[Function]}
-  >
-    Pause
-  </button>
-</Button>
-`;
-
-exports[`Component: <Button /> Pause: should mount without exploding  in enabled state 1`] = `
-<Button
-  className="pause"
-  condition={false}
-  fn={[Function]}
-  text="Pause"
->
-  <button
-    className="pause"
-    disabled={false}
-    onClick={[Function]}
-  >
-    Pause
-  </button>
-</Button>
-`;
-
 exports[`Component: <Button /> Prev: should mount without exploding  in disabled state 1`] = `
 <Button
   className="prev"

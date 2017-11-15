@@ -53,19 +53,11 @@ describe('Container: <Timer />', () => {
   describe('Button States', () => {
     test('should see "Stop" button as disabled', () => {
       expect(start.props().disabled).toEqual(false)
-      expect(pause.props().disabled).toEqual(false)
       expect(stop.props().disabled).toEqual(true)
     })
     test('should see "Start" button as disabled', () => {
       wrapper.setState({ pomodoroState: t.START })
       expect(wrapper.find('button.start').props().disabled).toEqual(true)
-      expect(wrapper.find('button.pause').props().disabled).toEqual(false)
-      expect(wrapper.find('button.stop').props().disabled).toEqual(false)
-    })
-    test.skip('should see "Pause" button as disabled', () => {
-      wrapper.setState({ pomodoroState: t.PAUSED })
-      expect(wrapper.find('button.start').props().disabled).toEqual(false)
-      expect(wrapper.find('button.pause').props().disabled).toEqual(true)
       expect(wrapper.find('button.stop').props().disabled).toEqual(false)
     })
   })
