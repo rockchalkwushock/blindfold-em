@@ -2,7 +2,8 @@ import { Component } from 'react'
 import moment from 'moment'
 import PropTypes from 'prop-types'
 
-import { Button } from '../components'
+import { Button, Display } from '../components'
+import { format } from '../lib'
 
 /**
  * REVIEW
@@ -95,6 +96,7 @@ class Timer extends Component {
       clearInterval(this.state.timerId)
       this.setState(state => ({
         ...state,
+        currentTime: moment.duration(this.state.baseTime),
         timerId: null,
         timerState: t.STOPPED
       }))
@@ -104,32 +106,22 @@ class Timer extends Component {
       this.setState(state => ({
         ...state,
         cooldownId: null,
-        cooldownState: t.STOPPED
+        cooldownState: t.STOPPED,
+        currentCooldown: moment.duration(this.state.baseCooldown)
       }))
     }
   }
   render() {
-    const { activity } = this.props
-    const { baseCooldown, baseTime, currentCooldown, currentTime } = this.state
-    const baseTimer = `Selected Timer: ${baseTime.get(
-      'minutes'
-    )}:${baseTime.get('seconds')}`
-    const currentTimer = `Current Time: ${currentTime.get(
-      'minutes'
-    )}:${currentTime.get('seconds')}`
-    const baseCool = `Selected Cooldown: ${baseCooldown.get(
-      'minutes'
-    )}:${baseCooldown.get('seconds')}`
-    const currentCool = `Current Cooldown: ${currentCooldown.get(
-      'minutes'
-    )}:${currentCooldown.get('seconds')}`
     return (
       <div>
-        <h1>{activity}</h1>
-        <h2>{baseTimer}</h2>
-        <h2>{currentTimer}</h2>
-        <h2>{baseCool}</h2>
-        <h2>{currentCool}</h2>
+        <Display
+          activity={this.props.activity}
+          baseCool={format(this.state.baseCooldown)}
+          baseTime={format(this.state.baseTime)}
+          condition={this.state.cooldownId}
+          currCool={format(this.state.currentCooldown)}
+          currTime={format(this.state.currentTime)}
+        />
         <Button
           className="start"
           condition={
