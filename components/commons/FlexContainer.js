@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import { styles } from '../../lib'
 
 const FlexContainer = ({ children, className }) => (
@@ -38,5 +40,9 @@ const FlexContainer = ({ children, className }) => (
     `}</style>
   </div>
 )
+
+FlexContainer.propTypes = {
+  className: PropTypes.string
+}
 
 export default FlexContainer

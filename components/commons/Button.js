@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import { styles } from '../../lib'
 
 const Button = ({ className, fn, text }) => (
@@ -21,5 +23,11 @@ const Button = ({ className, fn, text }) => (
     `}</style>
   </button>
 )
+
+Button.propTypes = {
+  className: PropTypes.string,
+  fn: PropTypes.func.isRequired,
+  text: PropTypes.string.isRequired
+}
 
 export default Button

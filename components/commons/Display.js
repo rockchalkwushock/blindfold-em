@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import SubTitle from './SubTitle'
 import FlexContainer from './FlexContainer'
 import Fragment from './Fragment'
@@ -33,5 +35,24 @@ const Display = ({
     )}
   </FlexContainer>
 )
+
+CoolDownDisplay.propTypes = {
+  base: PropTypes.string.isRequired,
+  current: PropTypes.string.isRequired
+}
+
+Display.propTypes = {
+  activity: PropTypes.string.isRequired,
+  baseCool: PropTypes.string.isRequired,
+  baseTime: PropTypes.string.isRequired,
+  condition: PropTypes.number,
+  currCool: PropTypes.string.isRequired,
+  currTime: PropTypes.string.isRequired
+}
+
+TimerDisplay.propTypes = {
+  base: PropTypes.string.isRequired,
+  current: PropTypes.string.isRequired
+}
 
 export default Display

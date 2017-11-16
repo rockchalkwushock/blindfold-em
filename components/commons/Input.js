@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import Fragment from './Fragment'
 import { styles } from '../../lib'
 
@@ -20,5 +22,11 @@ const Input = ({ name, fn, value }) => (
     `}</style>
   </Fragment>
 )
+
+Input.propTypes = {
+  name: PropTypes.string.isRequired,
+  fn: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired
+}
 
 export default Input
