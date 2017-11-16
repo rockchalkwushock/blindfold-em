@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { styles } from '../../lib'
+
 export default () => (
   <div>
     <Head>
@@ -21,6 +23,12 @@ export default () => (
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
         async
       />
+      {/* Google Fonts */}
+      <link
+        href="https://fonts.googleapis.com/css?family=Kalam|Permanent+Marker"
+        rel="stylesheet"
+        async
+      />
     </Head>
     <style jsx global>{`
       * {
@@ -35,10 +43,10 @@ export default () => (
         overflow-x: hidden;
       }
       body {
-        background-color: #444;
-        color: #fff;
-        font-family: monospace;
-        font-size: 1.2em;
+        background-color: ${styles.colors.highLight};
+        color: ${styles.colors.text};
+        font-family: ${styles.fonts.kalam};
+        font-size: 1.3em;
         line-height: 1.5em;
       }
     `}</style>

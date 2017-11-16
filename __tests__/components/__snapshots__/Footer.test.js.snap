@@ -4,7 +4,7 @@ exports[`Component: <Footer /> should mount without exploding 1`] = `
 <Test>
   <Footer>
     <footer
-      className="jsx-1106431596"
+      className="jsx-1161495840"
     >
       <div>
         1
@@ -16,8 +16,8 @@ exports[`Component: <Footer /> should mount without exploding 1`] = `
         3
       </div>
       <JSXStyle
-        css="footer.jsx-1106431596{background-color:lightcoral;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:15vh;padding:1em;}"
-        styleId="1106431596"
+        css="footer.jsx-1161495840{background-color:#3A2A41;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:15vh;padding:1em;}"
+        styleId="1161495840"
       />
     </footer>
   </Footer>

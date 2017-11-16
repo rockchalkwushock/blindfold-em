@@ -1,9 +1,11 @@
+import { styles } from '../../lib'
+
 const Footer = ({ children }) => (
   <footer>
     {children}
     <style jsx>{`
       footer {
-        background-color: lightcoral;
+        background-color: ${styles.colors.lowLight};
         display: flex;
         flex-direction: column;
         height: 15vh;

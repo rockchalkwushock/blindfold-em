@@ -1,4 +1,5 @@
 import SubTitle from './SubTitle'
+import FlexContainer from './FlexContainer'
 import Fragment from './Fragment'
 
 const CoolDownDisplay = ({ base, current }) => (
@@ -22,18 +23,15 @@ const Display = ({
   condition,
   currCool,
   currTime
-}) => {
-  const viewState = !condition ? (
-    <TimerDisplay base={baseTime} current={currTime} />
-  ) : (
-    <CoolDownDisplay base={baseCool} current={currCool} />
-  )
-  return (
-    <div>
-      <SubTitle text={`Your activity is: ${activity}`} />
-      {viewState}
-    </div>
-  )
-}
+}) => (
+  <FlexContainer>
+    <SubTitle text={`Your activity is: ${activity}`} />
+    {!condition ? (
+      <TimerDisplay base={baseTime} current={currTime} />
+    ) : (
+      <CoolDownDisplay base={baseCool} current={currCool} />
+    )}
+  </FlexContainer>
+)
 
 export default Display

@@ -8,9 +8,11 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
   text="What activity are you working on?"
   value=""
 >
-  <FlexContainer>
+  <FlexContainer
+    className="frame"
+  >
     <div
-      className="jsx-2081515553 "
+      className="jsx-797669933 frame"
     >
       <SubTitle
         text="What activity are you working on?"
@@ -26,10 +28,15 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
       >
         <Fragment>
           <input
+            className="jsx-1856926543"
             name="activity"
             onChange={[Function]}
             type="text"
             value=""
+          />
+          <JSXStyle
+            css="input.jsx-1856926543{background-color:transparent;border:none;border-bottom:2px solid #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.25em;margin-top:2em;outline:none;text-align:center;width:80%;}"
+            styleId="1856926543"
           />
         </Fragment>
       </Input>
@@ -39,15 +46,19 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
         text="Next"
       >
         <button
-          className="next"
+          className="jsx-3864743809 next"
           onClick={[Function]}
         >
           Next
+          <JSXStyle
+            css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
+            styleId="3864743809"
+          />
         </button>
       </Button>
       <JSXStyle
-        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
-        styleId="2081515553"
+        css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+        styleId="797669933"
       />
     </div>
   </FlexContainer>
@@ -63,9 +74,11 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
   text="How long should the timer be?"
   value=""
 >
-  <FlexContainer>
+  <FlexContainer
+    className="frame"
+  >
     <div
-      className="jsx-2081515553 "
+      className="jsx-797669933 frame"
     >
       <SubTitle
         text="How long should the timer be?"
@@ -81,42 +94,65 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
       >
         <Fragment>
           <input
+            className="jsx-1856926543"
             name="timer"
             onChange={[Function]}
             type="text"
             value=""
           />
+          <JSXStyle
+            css="input.jsx-1856926543{background-color:transparent;border:none;border-bottom:2px solid #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.25em;margin-top:2em;outline:none;text-align:center;width:80%;}"
+            styleId="1856926543"
+          />
         </Fragment>
       </Input>
-      <Fragment>
-        <Button
-          className="next"
-          fn={[Function]}
-          text="Next"
+      <FlexContainer
+        className="buttons"
+      >
+        <div
+          className="jsx-797669933 buttons"
         >
-          <button
-            className="next"
-            onClick={[Function]}
-          >
-            Next
-          </button>
-        </Button>
-        <Button
-          className="prev"
-          fn={[Function]}
-          text="Prev"
-        >
-          <button
+          <Button
             className="prev"
-            onClick={[Function]}
+            fn={[Function]}
+            text="Prev"
           >
-            Prev
-          </button>
-        </Button>
-      </Fragment>
+            <button
+              className="jsx-3864743809 prev"
+              onClick={[Function]}
+            >
+              Prev
+              <JSXStyle
+                css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
+                styleId="3864743809"
+              />
+            </button>
+          </Button>
+          <Button
+            className="next"
+            fn={[Function]}
+            text="Next"
+          >
+            <button
+              className="jsx-3864743809 next"
+              onClick={[Function]}
+            >
+              Next
+              <JSXStyle
+                css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
+                styleId="3864743809"
+              />
+            </button>
+          </Button>
+          <JSXStyle
+            css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+            styleId="797669933"
+          />
+        </div>
+      </FlexContainer>
       <JSXStyle
-        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
-        styleId="2081515553"
+        css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+        styleId="797669933"
       />
     </div>
   </FlexContainer>
@@ -132,9 +168,11 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
   text="How long should the cooldown be?"
   value=""
 >
-  <FlexContainer>
+  <FlexContainer
+    className="frame"
+  >
     <div
-      className="jsx-2081515553 "
+      className="jsx-797669933 frame"
     >
       <SubTitle
         text="How long should the cooldown be?"
@@ -150,42 +188,65 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
       >
         <Fragment>
           <input
+            className="jsx-1856926543"
             name="cooldown"
             onChange={[Function]}
             type="text"
             value=""
           />
+          <JSXStyle
+            css="input.jsx-1856926543{background-color:transparent;border:none;border-bottom:2px solid #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.25em;margin-top:2em;outline:none;text-align:center;width:80%;}"
+            styleId="1856926543"
+          />
         </Fragment>
       </Input>
-      <Fragment>
-        <Button
-          className="next"
-          fn={[Function]}
-          text="Next"
+      <FlexContainer
+        className="buttons"
+      >
+        <div
+          className="jsx-797669933 buttons"
         >
-          <button
-            className="next"
-            onClick={[Function]}
-          >
-            Next
-          </button>
-        </Button>
-        <Button
-          className="prev"
-          fn={[Function]}
-          text="Prev"
-        >
-          <button
+          <Button
             className="prev"
-            onClick={[Function]}
+            fn={[Function]}
+            text="Prev"
           >
-            Prev
-          </button>
-        </Button>
-      </Fragment>
+            <button
+              className="jsx-3864743809 prev"
+              onClick={[Function]}
+            >
+              Prev
+              <JSXStyle
+                css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
+                styleId="3864743809"
+              />
+            </button>
+          </Button>
+          <Button
+            className="next"
+            fn={[Function]}
+            text="Next"
+          >
+            <button
+              className="jsx-3864743809 next"
+              onClick={[Function]}
+            >
+              Next
+              <JSXStyle
+                css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
+                styleId="3864743809"
+              />
+            </button>
+          </Button>
+          <JSXStyle
+            css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+            styleId="797669933"
+          />
+        </div>
+      </FlexContainer>
       <JSXStyle
-        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
-        styleId="2081515553"
+        css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+        styleId="797669933"
       />
     </div>
   </FlexContainer>

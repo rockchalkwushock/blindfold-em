@@ -111,7 +111,7 @@ class Timer extends Component {
   }
   render() {
     return (
-      <FlexContainer>
+      <FlexContainer className="timer">
         <Display
           activity={this.props.activity}
           baseCool={format(this.state.baseCooldown)}

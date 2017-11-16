@@ -72,7 +72,7 @@ class Wizard extends Component {
   render() {
     const { currentFrame } = this.state
     return (
-      <FlexContainer>
+      <FlexContainer className="wizard">
         {currentFrame !== 4 ? this.renderFrame() : this.renderTimer()}
       </FlexContainer>
     )

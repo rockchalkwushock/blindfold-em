@@ -7,7 +7,7 @@ import { FlexContainer } from '../commons'
 const Layout = ({ children }) => (
   <FlexContainer className="layout">
     <Meta />
-    <Header />
+    <Header>Blindfold'em</Header>
     <FlexContainer className="main">{children}</FlexContainer>
     <Footer />
   </FlexContainer>

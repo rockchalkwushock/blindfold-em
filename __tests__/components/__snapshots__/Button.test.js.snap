@@ -7,10 +7,14 @@ exports[`Component: <Button /> Next: should mount without exploding 1`] = `
   text="Next"
 >
   <button
-    className="next"
+    className="jsx-3864743809 next"
     onClick={[Function]}
   >
     Next
+    <JSXStyle
+      css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
+      styleId="3864743809"
+    />
   </button>
 </Button>
 `;
@@ -22,10 +26,14 @@ exports[`Component: <Button /> Prev: should mount without exploding 1`] = `
   text="Prev"
 >
   <button
-    className="prev"
+    className="jsx-3864743809 prev"
     onClick={[Function]}
   >
     Prev
+    <JSXStyle
+      css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
+      styleId="3864743809"
+    />
   </button>
 </Button>
 `;
@@ -37,10 +45,14 @@ exports[`Component: <Button /> Start: should mount without exploding 1`] = `
   text="Start"
 >
   <button
-    className="start"
+    className="jsx-3864743809 start"
     onClick={[Function]}
   >
     Start
+    <JSXStyle
+      css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
+      styleId="3864743809"
+    />
   </button>
 </Button>
 `;
@@ -52,10 +64,14 @@ exports[`Component: <Button /> Stop: should mount without exploding 1`] = `
   text="Stop"
 >
   <button
-    className="stop"
+    className="jsx-3864743809 stop"
     onClick={[Function]}
   >
     Stop
+    <JSXStyle
+      css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
+      styleId="3864743809"
+    />
   </button>
 </Button>
 `;

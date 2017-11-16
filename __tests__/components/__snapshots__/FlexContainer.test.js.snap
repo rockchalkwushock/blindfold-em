@@ -8,7 +8,7 @@ exports[`Component: <FlexContainer /> Snapshots should mount without exploding u
     className="layout"
   >
     <div
-      className="jsx-2081515553 layout"
+      className="jsx-797669933 layout"
     >
       <div>
         1
@@ -20,8 +20,8 @@ exports[`Component: <FlexContainer /> Snapshots should mount without exploding u
         3
       </div>
       <JSXStyle
-        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
-        styleId="2081515553"
+        css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+        styleId="797669933"
       />
     </div>
   </FlexContainer>
@@ -36,7 +36,7 @@ exports[`Component: <FlexContainer /> Snapshots should mount without exploding u
     className="main"
   >
     <div
-      className="jsx-2081515553 main"
+      className="jsx-797669933 main"
     >
       <div>
         1
@@ -48,8 +48,8 @@ exports[`Component: <FlexContainer /> Snapshots should mount without exploding u
         3
       </div>
       <JSXStyle
-        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
-        styleId="2081515553"
+        css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+        styleId="797669933"
       />
     </div>
   </FlexContainer>
@@ -60,7 +60,7 @@ exports[`Component: <FlexContainer /> Snapshots should mount without exploding u
 <Test>
   <FlexContainer>
     <div
-      className="jsx-2081515553 "
+      className="jsx-797669933 "
     >
       <div>
         1
@@ -72,8 +72,8 @@ exports[`Component: <FlexContainer /> Snapshots should mount without exploding u
         3
       </div>
       <JSXStyle
-        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
-        styleId="2081515553"
+        css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+        styleId="797669933"
       />
     </div>
   </FlexContainer>
