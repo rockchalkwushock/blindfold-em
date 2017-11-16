@@ -7,14 +7,14 @@ exports[`Component: <Input /> should mount without exploding 1`] = `
     name="activity"
     value=""
   >
-    <div>
+    <Fragment>
       <input
         name="activity"
         onChange={[Function]}
         type="text"
         value=""
       />
-    </div>
+    </Fragment>
   </Input>
 </Test>
 `;

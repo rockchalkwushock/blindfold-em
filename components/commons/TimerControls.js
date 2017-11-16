@@ -1,5 +1,5 @@
 import Button from './Button'
-import { Fragment } from '../../lib'
+import Fragment from './Fragment'
 
 const TimerControls = ({ start, stop }) => (
   <Fragment>

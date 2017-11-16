@@ -3,9 +3,11 @@
 exports[`Index Page should mount without exploding 1`] = `
 <Component>
   <Layout>
-    <FlexContainer>
+    <FlexContainer
+      className="layout"
+    >
       <div
-        className="jsx-1111547334"
+        className="jsx-2081515553 layout"
       >
         <Component>
           <div
@@ -30,66 +32,84 @@ exports[`Index Page should mount without exploding 1`] = `
             />
           </header>
         </Header>
-        <Main>
-          <main
-            className="jsx-3083400802"
+        <FlexContainer
+          className="main"
+        >
+          <div
+            className="jsx-2081515553 main"
           >
             <h1>
               Hello Blindfold'em
             </h1>
             <Wizard>
-              <div>
-                <Frame
-                  fn={[Function]}
-                  name="activity"
-                  next={[Function]}
-                  text="What activity are you working on?"
-                  value=""
+              <FlexContainer>
+                <div
+                  className="jsx-2081515553 "
                 >
-                  <div>
-                    <SubTitle
-                      text="What activity are you working on?"
-                    >
-                      <h2>
-                        What activity are you working on?
-                      </h2>
-                    </SubTitle>
-                    <Input
-                      fn={[Function]}
-                      name="activity"
-                      value=""
-                    >
-                      <div>
-                        <input
+                  <Frame
+                    fn={[Function]}
+                    name="activity"
+                    next={[Function]}
+                    text="What activity are you working on?"
+                    value=""
+                  >
+                    <FlexContainer>
+                      <div
+                        className="jsx-2081515553 "
+                      >
+                        <SubTitle
+                          text="What activity are you working on?"
+                        >
+                          <h2>
+                            What activity are you working on?
+                          </h2>
+                        </SubTitle>
+                        <Input
+                          fn={[Function]}
                           name="activity"
-                          onChange={[Function]}
-                          type="text"
                           value=""
+                        >
+                          <Fragment>
+                            <input
+                              name="activity"
+                              onChange={[Function]}
+                              type="text"
+                              value=""
+                            />
+                          </Fragment>
+                        </Input>
+                        <Button
+                          className="next"
+                          fn={[Function]}
+                          text="Next"
+                        >
+                          <button
+                            className="next"
+                            onClick={[Function]}
+                          >
+                            Next
+                          </button>
+                        </Button>
+                        <JSXStyle
+                          css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+                          styleId="2081515553"
                         />
                       </div>
-                    </Input>
-                    <Button
-                      className="next"
-                      fn={[Function]}
-                      text="Next"
-                    >
-                      <button
-                        className="next"
-                        onClick={[Function]}
-                      >
-                        Next
-                      </button>
-                    </Button>
-                  </div>
-                </Frame>
-              </div>
+                    </FlexContainer>
+                  </Frame>
+                  <JSXStyle
+                    css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+                    styleId="2081515553"
+                  />
+                </div>
+              </FlexContainer>
             </Wizard>
             <JSXStyle
-              css="main.jsx-3083400802{background-color:lightblue;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:65vh;padding:2em 3em;}"
-              styleId="3083400802"
+              css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+              styleId="2081515553"
             />
-          </main>
-        </Main>
+          </div>
+        </FlexContainer>
         <Footer>
           <footer
             className="jsx-1106431596"
@@ -101,8 +121,8 @@ exports[`Index Page should mount without exploding 1`] = `
           </footer>
         </Footer>
         <JSXStyle
-          css="div.jsx-1111547334{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin:auto;max-width:50em;min-height:100vh;}"
-          styleId="1111547334"
+          css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+          styleId="2081515553"
         />
       </div>
     </FlexContainer>

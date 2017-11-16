@@ -1,5 +1,5 @@
 import SubTitle from './SubTitle'
-import { Fragment } from '../../lib'
+import Fragment from './Fragment'
 
 const CoolDownDisplay = ({ base, current }) => (
   <Fragment>

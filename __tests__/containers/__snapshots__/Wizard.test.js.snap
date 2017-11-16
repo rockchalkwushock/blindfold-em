@@ -2,265 +2,329 @@
 
 exports[`Container: <Wizard /> Snapshots should render without exploding on Frame 1 1`] = `
 <Wizard>
-  <div>
-    <Frame
-      fn={[Function]}
-      name="activity"
-      next={[Function]}
-      text="What activity are you working on?"
-      value=""
+  <FlexContainer>
+    <div
+      className="jsx-2081515553 "
     >
-      <div>
-        <SubTitle
-          text="What activity are you working on?"
-        >
-          <h2>
-            What activity are you working on?
-          </h2>
-        </SubTitle>
-        <Input
-          fn={[Function]}
-          name="activity"
-          value=""
-        >
-          <div>
-            <input
+      <Frame
+        fn={[Function]}
+        name="activity"
+        next={[Function]}
+        text="What activity are you working on?"
+        value=""
+      >
+        <FlexContainer>
+          <div
+            className="jsx-2081515553 "
+          >
+            <SubTitle
+              text="What activity are you working on?"
+            >
+              <h2>
+                What activity are you working on?
+              </h2>
+            </SubTitle>
+            <Input
+              fn={[Function]}
               name="activity"
-              onChange={[Function]}
-              type="text"
               value=""
+            >
+              <Fragment>
+                <input
+                  name="activity"
+                  onChange={[Function]}
+                  type="text"
+                  value=""
+                />
+              </Fragment>
+            </Input>
+            <Button
+              className="next"
+              fn={[Function]}
+              text="Next"
+            >
+              <button
+                className="next"
+                onClick={[Function]}
+              >
+                Next
+              </button>
+            </Button>
+            <JSXStyle
+              css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+              styleId="2081515553"
             />
           </div>
-        </Input>
-        <Button
-          className="next"
-          fn={[Function]}
-          text="Next"
-        >
-          <button
-            className="next"
-            onClick={[Function]}
-          >
-            Next
-          </button>
-        </Button>
-      </div>
-    </Frame>
-  </div>
+        </FlexContainer>
+      </Frame>
+      <JSXStyle
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
+      />
+    </div>
+  </FlexContainer>
 </Wizard>
 `;
 
 exports[`Container: <Wizard /> Snapshots should render without exploding on Frame 2 1`] = `
 <Wizard>
-  <div>
-    <Frame
-      fn={[Function]}
-      name="timer"
-      next={[Function]}
-      prev={[Function]}
-      text="How long should the timer be?"
-      value=""
+  <FlexContainer>
+    <div
+      className="jsx-2081515553 "
     >
-      <div>
-        <SubTitle
-          text="How long should the timer be?"
-        >
-          <h2>
-            How long should the timer be?
-          </h2>
-        </SubTitle>
-        <Input
-          fn={[Function]}
-          name="timer"
-          value=""
-        >
-          <div>
-            <input
+      <Frame
+        fn={[Function]}
+        name="timer"
+        next={[Function]}
+        prev={[Function]}
+        text="How long should the timer be?"
+        value=""
+      >
+        <FlexContainer>
+          <div
+            className="jsx-2081515553 "
+          >
+            <SubTitle
+              text="How long should the timer be?"
+            >
+              <h2>
+                How long should the timer be?
+              </h2>
+            </SubTitle>
+            <Input
+              fn={[Function]}
               name="timer"
-              onChange={[Function]}
-              type="text"
               value=""
+            >
+              <Fragment>
+                <input
+                  name="timer"
+                  onChange={[Function]}
+                  type="text"
+                  value=""
+                />
+              </Fragment>
+            </Input>
+            <Fragment>
+              <Button
+                className="next"
+                fn={[Function]}
+                text="Next"
+              >
+                <button
+                  className="next"
+                  onClick={[Function]}
+                >
+                  Next
+                </button>
+              </Button>
+              <Button
+                className="prev"
+                fn={[Function]}
+                text="Prev"
+              >
+                <button
+                  className="prev"
+                  onClick={[Function]}
+                >
+                  Prev
+                </button>
+              </Button>
+            </Fragment>
+            <JSXStyle
+              css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+              styleId="2081515553"
             />
           </div>
-        </Input>
-        <Fragment>
-          <Button
-            className="next"
-            fn={[Function]}
-            text="Next"
-          >
-            <button
-              className="next"
-              onClick={[Function]}
-            >
-              Next
-            </button>
-          </Button>
-          <Button
-            className="prev"
-            fn={[Function]}
-            text="Prev"
-          >
-            <button
-              className="prev"
-              onClick={[Function]}
-            >
-              Prev
-            </button>
-          </Button>
-        </Fragment>
-      </div>
-    </Frame>
-  </div>
+        </FlexContainer>
+      </Frame>
+      <JSXStyle
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
+      />
+    </div>
+  </FlexContainer>
 </Wizard>
 `;
 
 exports[`Container: <Wizard /> Snapshots should render without exploding on Frame 3 1`] = `
 <Wizard>
-  <div>
-    <Frame
-      fn={[Function]}
-      name="cooldown"
-      next={[Function]}
-      prev={[Function]}
-      text="How long should the cooldown be?"
-      value=""
+  <FlexContainer>
+    <div
+      className="jsx-2081515553 "
     >
-      <div>
-        <SubTitle
-          text="How long should the cooldown be?"
-        >
-          <h2>
-            How long should the cooldown be?
-          </h2>
-        </SubTitle>
-        <Input
-          fn={[Function]}
-          name="cooldown"
-          value=""
-        >
-          <div>
-            <input
+      <Frame
+        fn={[Function]}
+        name="cooldown"
+        next={[Function]}
+        prev={[Function]}
+        text="How long should the cooldown be?"
+        value=""
+      >
+        <FlexContainer>
+          <div
+            className="jsx-2081515553 "
+          >
+            <SubTitle
+              text="How long should the cooldown be?"
+            >
+              <h2>
+                How long should the cooldown be?
+              </h2>
+            </SubTitle>
+            <Input
+              fn={[Function]}
               name="cooldown"
-              onChange={[Function]}
-              type="text"
               value=""
+            >
+              <Fragment>
+                <input
+                  name="cooldown"
+                  onChange={[Function]}
+                  type="text"
+                  value=""
+                />
+              </Fragment>
+            </Input>
+            <Fragment>
+              <Button
+                className="next"
+                fn={[Function]}
+                text="Next"
+              >
+                <button
+                  className="next"
+                  onClick={[Function]}
+                >
+                  Next
+                </button>
+              </Button>
+              <Button
+                className="prev"
+                fn={[Function]}
+                text="Prev"
+              >
+                <button
+                  className="prev"
+                  onClick={[Function]}
+                >
+                  Prev
+                </button>
+              </Button>
+            </Fragment>
+            <JSXStyle
+              css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+              styleId="2081515553"
             />
           </div>
-        </Input>
-        <Fragment>
-          <Button
-            className="next"
-            fn={[Function]}
-            text="Next"
-          >
-            <button
-              className="next"
-              onClick={[Function]}
-            >
-              Next
-            </button>
-          </Button>
-          <Button
-            className="prev"
-            fn={[Function]}
-            text="Prev"
-          >
-            <button
-              className="prev"
-              onClick={[Function]}
-            >
-              Prev
-            </button>
-          </Button>
-        </Fragment>
-      </div>
-    </Frame>
-  </div>
+        </FlexContainer>
+      </Frame>
+      <JSXStyle
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
+      />
+    </div>
+  </FlexContainer>
 </Wizard>
 `;
 
 exports[`Container: <Wizard /> Snapshots should render without exploding on Timer 1`] = `
 <Wizard>
-  <div>
-    <Timer
-      activity="coding"
-      cooldown="3"
-      timer="12"
+  <FlexContainer>
+    <div
+      className="jsx-2081515553 "
     >
-      <div>
-        <Display
-          activity="coding"
-          baseCool="0:03:00"
-          baseTime="0:12:00"
-          condition={null}
-          currCool="0:03:00"
-          currTime="0:12:00"
-        >
-          <div>
-            <SubTitle
-              text="Your activity is: coding"
+      <Timer
+        activity="coding"
+        cooldown="3"
+        timer="12"
+      >
+        <FlexContainer>
+          <div
+            className="jsx-2081515553 "
+          >
+            <Display
+              activity="coding"
+              baseCool="0:03:00"
+              baseTime="0:12:00"
+              condition={null}
+              currCool="0:03:00"
+              currTime="0:12:00"
             >
-              <h2>
-                Your activity is: coding
-              </h2>
-            </SubTitle>
-            <TimerDisplay
-              base="0:12:00"
-              current="0:12:00"
+              <div>
+                <SubTitle
+                  text="Your activity is: coding"
+                >
+                  <h2>
+                    Your activity is: coding
+                  </h2>
+                </SubTitle>
+                <TimerDisplay
+                  base="0:12:00"
+                  current="0:12:00"
+                >
+                  <Fragment>
+                    <SubTitle
+                      text="Your selected time: 0:12:00"
+                    >
+                      <h2>
+                        Your selected time: 0:12:00
+                      </h2>
+                    </SubTitle>
+                    <SubTitle
+                      text="Current Time: 0:12:00"
+                    >
+                      <h2>
+                        Current Time: 0:12:00
+                      </h2>
+                    </SubTitle>
+                  </Fragment>
+                </TimerDisplay>
+              </div>
+            </Display>
+            <TimerControls
+              start={[Function]}
+              stop={[Function]}
             >
               <Fragment>
-                <SubTitle
-                  text="Your selected time: 0:12:00"
+                <Button
+                  className="start"
+                  fn={[Function]}
+                  text="Start"
                 >
-                  <h2>
-                    Your selected time: 0:12:00
-                  </h2>
-                </SubTitle>
-                <SubTitle
-                  text="Current Time: 0:12:00"
+                  <button
+                    className="start"
+                    onClick={[Function]}
+                  >
+                    Start
+                  </button>
+                </Button>
+                <Button
+                  className="stop"
+                  fn={[Function]}
+                  text="Stop"
                 >
-                  <h2>
-                    Current Time: 0:12:00
-                  </h2>
-                </SubTitle>
+                  <button
+                    className="stop"
+                    onClick={[Function]}
+                  >
+                    Stop
+                  </button>
+                </Button>
               </Fragment>
-            </TimerDisplay>
+            </TimerControls>
+            <JSXStyle
+              css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+              styleId="2081515553"
+            />
           </div>
-        </Display>
-        <TimerControls
-          start={[Function]}
-          stop={[Function]}
-        >
-          <Fragment>
-            <Button
-              className="start"
-              fn={[Function]}
-              text="Start"
-            >
-              <button
-                className="start"
-                onClick={[Function]}
-              >
-                Start
-              </button>
-            </Button>
-            <Button
-              className="stop"
-              fn={[Function]}
-              text="Stop"
-            >
-              <button
-                className="stop"
-                onClick={[Function]}
-              >
-                Stop
-              </button>
-            </Button>
-          </Fragment>
-        </TimerControls>
-      </div>
-    </Timer>
-  </div>
+        </FlexContainer>
+      </Timer>
+      <JSXStyle
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
+      />
+    </div>
+  </FlexContainer>
 </Wizard>
 `;

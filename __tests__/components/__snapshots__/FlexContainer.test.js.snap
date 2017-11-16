@@ -1,10 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: <FlexContainer /> should mount without exploding 1`] = `
-<Test>
-  <FlexContainer>
+exports[`Component: <FlexContainer /> Snapshots should mount without exploding using ".layout" styles 1`] = `
+<Test
+  className="layout"
+>
+  <FlexContainer
+    className="layout"
+  >
     <div
-      className="jsx-1111547334"
+      className="jsx-2081515553 layout"
     >
       <div>
         1
@@ -16,8 +20,60 @@ exports[`Component: <FlexContainer /> should mount without exploding 1`] = `
         3
       </div>
       <JSXStyle
-        css="div.jsx-1111547334{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin:auto;max-width:50em;min-height:100vh;}"
-        styleId="1111547334"
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
+      />
+    </div>
+  </FlexContainer>
+</Test>
+`;
+
+exports[`Component: <FlexContainer /> Snapshots should mount without exploding using ".main" styles 1`] = `
+<Test
+  className="main"
+>
+  <FlexContainer
+    className="main"
+  >
+    <div
+      className="jsx-2081515553 main"
+    >
+      <div>
+        1
+      </div>
+      <div>
+        2
+      </div>
+      <div>
+        3
+      </div>
+      <JSXStyle
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
+      />
+    </div>
+  </FlexContainer>
+</Test>
+`;
+
+exports[`Component: <FlexContainer /> Snapshots should mount without exploding using div styles 1`] = `
+<Test>
+  <FlexContainer>
+    <div
+      className="jsx-2081515553 "
+    >
+      <div>
+        1
+      </div>
+      <div>
+        2
+      </div>
+      <div>
+        3
+      </div>
+      <JSXStyle
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
       />
     </div>
   </FlexContainer>

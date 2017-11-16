@@ -8,41 +8,49 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
   text="What activity are you working on?"
   value=""
 >
-  <div>
-    <SubTitle
-      text="What activity are you working on?"
+  <FlexContainer>
+    <div
+      className="jsx-2081515553 "
     >
-      <h2>
-        What activity are you working on?
-      </h2>
-    </SubTitle>
-    <Input
-      fn={[Function]}
-      name="activity"
-      value=""
-    >
-      <div>
-        <input
-          name="activity"
-          onChange={[Function]}
-          type="text"
-          value=""
-        />
-      </div>
-    </Input>
-    <Button
-      className="next"
-      fn={[Function]}
-      text="Next"
-    >
-      <button
-        className="next"
-        onClick={[Function]}
+      <SubTitle
+        text="What activity are you working on?"
       >
-        Next
-      </button>
-    </Button>
-  </div>
+        <h2>
+          What activity are you working on?
+        </h2>
+      </SubTitle>
+      <Input
+        fn={[Function]}
+        name="activity"
+        value=""
+      >
+        <Fragment>
+          <input
+            name="activity"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </Fragment>
+      </Input>
+      <Button
+        className="next"
+        fn={[Function]}
+        text="Next"
+      >
+        <button
+          className="next"
+          onClick={[Function]}
+        >
+          Next
+        </button>
+      </Button>
+      <JSXStyle
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
+      />
+    </div>
+  </FlexContainer>
 </Frame>
 `;
 
@@ -55,55 +63,63 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
   text="How long should the timer be?"
   value=""
 >
-  <div>
-    <SubTitle
-      text="How long should the timer be?"
+  <FlexContainer>
+    <div
+      className="jsx-2081515553 "
     >
-      <h2>
-        How long should the timer be?
-      </h2>
-    </SubTitle>
-    <Input
-      fn={[Function]}
-      name="timer"
-      value=""
-    >
-      <div>
-        <input
-          name="timer"
-          onChange={[Function]}
-          type="text"
-          value=""
-        />
-      </div>
-    </Input>
-    <Fragment>
-      <Button
-        className="next"
-        fn={[Function]}
-        text="Next"
+      <SubTitle
+        text="How long should the timer be?"
       >
-        <button
+        <h2>
+          How long should the timer be?
+        </h2>
+      </SubTitle>
+      <Input
+        fn={[Function]}
+        name="timer"
+        value=""
+      >
+        <Fragment>
+          <input
+            name="timer"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </Fragment>
+      </Input>
+      <Fragment>
+        <Button
           className="next"
-          onClick={[Function]}
+          fn={[Function]}
+          text="Next"
         >
-          Next
-        </button>
-      </Button>
-      <Button
-        className="prev"
-        fn={[Function]}
-        text="Prev"
-      >
-        <button
+          <button
+            className="next"
+            onClick={[Function]}
+          >
+            Next
+          </button>
+        </Button>
+        <Button
           className="prev"
-          onClick={[Function]}
+          fn={[Function]}
+          text="Prev"
         >
-          Prev
-        </button>
-      </Button>
-    </Fragment>
-  </div>
+          <button
+            className="prev"
+            onClick={[Function]}
+          >
+            Prev
+          </button>
+        </Button>
+      </Fragment>
+      <JSXStyle
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
+      />
+    </div>
+  </FlexContainer>
 </Frame>
 `;
 
@@ -116,54 +132,62 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
   text="How long should the cooldown be?"
   value=""
 >
-  <div>
-    <SubTitle
-      text="How long should the cooldown be?"
+  <FlexContainer>
+    <div
+      className="jsx-2081515553 "
     >
-      <h2>
-        How long should the cooldown be?
-      </h2>
-    </SubTitle>
-    <Input
-      fn={[Function]}
-      name="cooldown"
-      value=""
-    >
-      <div>
-        <input
-          name="cooldown"
-          onChange={[Function]}
-          type="text"
-          value=""
-        />
-      </div>
-    </Input>
-    <Fragment>
-      <Button
-        className="next"
-        fn={[Function]}
-        text="Next"
+      <SubTitle
+        text="How long should the cooldown be?"
       >
-        <button
+        <h2>
+          How long should the cooldown be?
+        </h2>
+      </SubTitle>
+      <Input
+        fn={[Function]}
+        name="cooldown"
+        value=""
+      >
+        <Fragment>
+          <input
+            name="cooldown"
+            onChange={[Function]}
+            type="text"
+            value=""
+          />
+        </Fragment>
+      </Input>
+      <Fragment>
+        <Button
           className="next"
-          onClick={[Function]}
+          fn={[Function]}
+          text="Next"
         >
-          Next
-        </button>
-      </Button>
-      <Button
-        className="prev"
-        fn={[Function]}
-        text="Prev"
-      >
-        <button
+          <button
+            className="next"
+            onClick={[Function]}
+          >
+            Next
+          </button>
+        </Button>
+        <Button
           className="prev"
-          onClick={[Function]}
+          fn={[Function]}
+          text="Prev"
         >
-          Prev
-        </button>
-      </Button>
-    </Fragment>
-  </div>
+          <button
+            className="prev"
+            onClick={[Function]}
+          >
+            Prev
+          </button>
+        </Button>
+      </Fragment>
+      <JSXStyle
+        css="div.jsx-2081515553{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-2081515553{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-2081515553{background-color:lightblue;height:65vh;padding:2em 3em;}"
+        styleId="2081515553"
+      />
+    </div>
+  </FlexContainer>
 </Frame>
 `;

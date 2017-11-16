@@ -1,11 +1,11 @@
-/* eslint-disable no-nested-ternary */
 import Button from './Button'
-import { Fragment } from '../../lib'
+import FlexContainer from './FlexContainer'
+import Fragment from './Fragment'
 import Input from './Input'
 import SubTitle from './SubTitle'
 
 const Frame = ({ fn, name, next, prev, text, value }) => (
-  <div>
+  <FlexContainer>
     <SubTitle text={text} />
     <Input name={name} fn={fn} value={value} />
     {next && !prev ? (
@@ -16,6 +16,6 @@ const Frame = ({ fn, name, next, prev, text, value }) => (
         <Button className="prev" fn={prev} text="Prev" />
       </Fragment>
     )}
-  </div>
+  </FlexContainer>
 )
 export default Frame

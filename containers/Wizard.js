@@ -1,6 +1,6 @@
 import { Component } from 'react'
 
-import { Frame } from '../components'
+import { FlexContainer, Frame } from '../components'
 import Timer from './Timer'
 
 class Wizard extends Component {
@@ -71,8 +71,11 @@ class Wizard extends Component {
   )
   render() {
     const { currentFrame } = this.state
-    const view = currentFrame !== 4 ? this.renderFrame() : this.renderTimer()
-    return <div>{view}</div>
+    return (
+      <FlexContainer>
+        {currentFrame !== 4 ? this.renderFrame() : this.renderTimer()}
+      </FlexContainer>
+    )
   }
 }
 

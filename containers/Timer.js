@@ -2,7 +2,7 @@ import { Component } from 'react'
 import moment from 'moment'
 import PropTypes from 'prop-types'
 
-import { Display, TimerControls } from '../components'
+import { Display, FlexContainer, TimerControls } from '../components'
 import { format } from '../lib'
 
 /**
@@ -111,7 +111,7 @@ class Timer extends Component {
   }
   render() {
     return (
-      <div>
+      <FlexContainer>
         <Display
           activity={this.props.activity}
           baseCool={format(this.state.baseCooldown)}
@@ -121,7 +121,7 @@ class Timer extends Component {
           currTime={format(this.state.currentTime)}
         />
         <TimerControls start={this.start} stop={this.stop} />
-      </div>
+      </FlexContainer>
     )
   }
 }

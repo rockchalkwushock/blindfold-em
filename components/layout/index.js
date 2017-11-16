@@ -1,15 +1,14 @@
 import Footer from './Footer'
 import Header from './Header'
-import Main from './Main'
 import Meta from './Meta'
 
 import { FlexContainer } from '../commons'
 
 const Layout = ({ children }) => (
-  <FlexContainer>
+  <FlexContainer className="layout">
     <Meta />
     <Header />
-    <Main>{children}</Main>
+    <FlexContainer className="main">{children}</FlexContainer>
     <Footer />
   </FlexContainer>
 )
