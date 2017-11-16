@@ -1,29 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: <Display /> should render without exploding as <CoolDownDisplay />  1`] = `
-<div>
-  <h2>
-    Your activity is: coding
-  </h2>
-  <h2>
-    Your selected cooldown: 0:03:00
-  </h2>
-  <h2>
-    Current Cooldown: 0:03:00
-  </h2>
-</div>
+exports[`Component: <Display /> should mount without exploding as <CoolDownDisplay />  1`] = `
+<Display
+  activity="coding"
+  baseCool="0:03:00"
+  baseTime="0:12:00"
+  condition={2}
+  currCool="0:03:00"
+  currTime="0:12:00"
+>
+  <div>
+    <SubTitle
+      text="Your activity is: coding"
+    >
+      <h2>
+        Your activity is: coding
+      </h2>
+    </SubTitle>
+    <CoolDownDisplay
+      base="0:03:00"
+      current="0:03:00"
+    >
+      <Fragment>
+        <SubTitle
+          text="Your selected cooldown: 0:03:00"
+        >
+          <h2>
+            Your selected cooldown: 0:03:00
+          </h2>
+        </SubTitle>
+        <SubTitle
+          text="Current Cooldown: 0:03:00"
+        >
+          <h2>
+            Current Cooldown: 0:03:00
+          </h2>
+        </SubTitle>
+      </Fragment>
+    </CoolDownDisplay>
+  </div>
+</Display>
 `;
 
-exports[`Component: <Display /> should render without exploding as <TimerDisplay />  1`] = `
-<div>
-  <h2>
-    Your activity is: coding
-  </h2>
-  <h2>
-    Your selected time: 0:12:00
-  </h2>
-  <h2>
-    Current Time: 0:12:00
-  </h2>
-</div>
+exports[`Component: <Display /> should mount without exploding as <TimerDisplay />  1`] = `
+<Display
+  activity="coding"
+  baseCool="0:03:00"
+  baseTime="0:12:00"
+  condition={null}
+  currCool="0:03:00"
+  currTime="0:12:00"
+>
+  <div>
+    <SubTitle
+      text="Your activity is: coding"
+    >
+      <h2>
+        Your activity is: coding
+      </h2>
+    </SubTitle>
+    <TimerDisplay
+      base="0:12:00"
+      current="0:12:00"
+    >
+      <Fragment>
+        <SubTitle
+          text="Your selected time: 0:12:00"
+        >
+          <h2>
+            Your selected time: 0:12:00
+          </h2>
+        </SubTitle>
+        <SubTitle
+          text="Current Time: 0:12:00"
+        >
+          <h2>
+            Current Time: 0:12:00
+          </h2>
+        </SubTitle>
+      </Fragment>
+    </TimerDisplay>
+  </div>
+</Display>
 `;

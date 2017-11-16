@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'enzyme'
+import { mount } from 'enzyme'
 
 import FlexContainer from '../../components/commons/FlexContainer'
 
@@ -12,8 +12,8 @@ const Test = () => (
 )
 
 describe('Component: <FlexContainer />', () => {
-  test('should render without exploding', () => {
-    const tree = render(<Test />)
+  test('should mount without exploding', () => {
+    const tree = mount(<Test />)
     expect(tree).toMatchSnapshot()
   })
 })

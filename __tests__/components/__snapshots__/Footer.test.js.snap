@@ -1,17 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: <Footer /> should render without exploding 1`] = `
-<footer
-  class="jsx-1106431596"
->
-  <div>
-    1
-  </div>
-  <div>
-    2
-  </div>
-  <div>
-    3
-  </div>
-</footer>
+exports[`Component: <Footer /> should mount without exploding 1`] = `
+<Test>
+  <Footer>
+    <footer
+      className="jsx-1106431596"
+    >
+      <div>
+        1
+      </div>
+      <div>
+        2
+      </div>
+      <div>
+        3
+      </div>
+      <JSXStyle
+        css="footer.jsx-1106431596{background-color:lightcoral;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:15vh;padding:1em;}"
+        styleId="1106431596"
+      />
+    </footer>
+  </Footer>
+</Test>
 `;

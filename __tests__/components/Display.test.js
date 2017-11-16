@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'enzyme'
+import { mount } from 'enzyme'
 
 import Display from '../../components/commons/Display'
 
@@ -13,12 +13,12 @@ const props = {
 }
 
 describe('Component: <Display />', () => {
-  test('should render without exploding as <TimerDisplay /> ', () => {
-    const tree = render(<Display {...props} />)
+  test('should mount without exploding as <TimerDisplay /> ', () => {
+    const tree = mount(<Display {...props} />)
     expect(tree).toMatchSnapshot()
   })
-  test('should render without exploding as <CoolDownDisplay /> ', () => {
-    const tree = render(<Display {...props} condition={2} />)
+  test('should mount without exploding as <CoolDownDisplay /> ', () => {
+    const tree = mount(<Display {...props} condition={2} />)
     expect(tree).toMatchSnapshot()
   })
 })

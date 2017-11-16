@@ -1,16 +1,169 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: <Frame /> should render without exploding 1`] = `
-<div>
-  <h2>
-    What activity are you working on?
-  </h2>
+exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 1 1`] = `
+<Frame
+  fn={[Function]}
+  name="activity"
+  next={[Function]}
+  text="What activity are you working on?"
+  value=""
+>
   <div>
-    <input
+    <SubTitle
+      text="What activity are you working on?"
+    >
+      <h2>
+        What activity are you working on?
+      </h2>
+    </SubTitle>
+    <Input
+      fn={[Function]}
       name="activity"
-      type="text"
       value=""
-    />
+    >
+      <div>
+        <input
+          name="activity"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </Input>
+    <Button
+      className="next"
+      fn={[Function]}
+      text="Next"
+    >
+      <button
+        className="next"
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </Button>
   </div>
-</div>
+</Frame>
+`;
+
+exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 2 1`] = `
+<Frame
+  fn={[Function]}
+  name="timer"
+  next={[Function]}
+  prev={[Function]}
+  text="How long should the timer be?"
+  value=""
+>
+  <div>
+    <SubTitle
+      text="How long should the timer be?"
+    >
+      <h2>
+        How long should the timer be?
+      </h2>
+    </SubTitle>
+    <Input
+      fn={[Function]}
+      name="timer"
+      value=""
+    >
+      <div>
+        <input
+          name="timer"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </Input>
+    <Fragment>
+      <Button
+        className="next"
+        fn={[Function]}
+        text="Next"
+      >
+        <button
+          className="next"
+          onClick={[Function]}
+        >
+          Next
+        </button>
+      </Button>
+      <Button
+        className="prev"
+        fn={[Function]}
+        text="Prev"
+      >
+        <button
+          className="prev"
+          onClick={[Function]}
+        >
+          Prev
+        </button>
+      </Button>
+    </Fragment>
+  </div>
+</Frame>
+`;
+
+exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 3 1`] = `
+<Frame
+  fn={[Function]}
+  name="cooldown"
+  next={[Function]}
+  prev={[Function]}
+  text="How long should the cooldown be?"
+  value=""
+>
+  <div>
+    <SubTitle
+      text="How long should the cooldown be?"
+    >
+      <h2>
+        How long should the cooldown be?
+      </h2>
+    </SubTitle>
+    <Input
+      fn={[Function]}
+      name="cooldown"
+      value=""
+    >
+      <div>
+        <input
+          name="cooldown"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </Input>
+    <Fragment>
+      <Button
+        className="next"
+        fn={[Function]}
+        text="Next"
+      >
+        <button
+          className="next"
+          onClick={[Function]}
+        >
+          Next
+        </button>
+      </Button>
+      <Button
+        className="prev"
+        fn={[Function]}
+        text="Prev"
+      >
+        <button
+          className="prev"
+          onClick={[Function]}
+        >
+          Prev
+        </button>
+      </Button>
+    </Fragment>
+  </div>
+</Frame>
 `;

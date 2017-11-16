@@ -1,11 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: <Input /> should render without exploding 1`] = `
-<div>
-  <input
+exports[`Component: <Input /> should mount without exploding 1`] = `
+<Test>
+  <Input
+    fn={[Function]}
     name="activity"
-    type="text"
     value=""
-  />
-</div>
+  >
+    <div>
+      <input
+        name="activity"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+  </Input>
+</Test>
 `;

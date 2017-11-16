@@ -1,30 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: <Layout /> should render without exploding 1`] = `
-<div
-  class="jsx-1111547334"
->
-  <div
-    class="jsx-4254416515"
-  />
-  <header
-    class="jsx-2290366526"
-  />
-  <main
-    class="jsx-3083400802"
-  >
-    <div>
-      1
-    </div>
-    <div>
-      2
-    </div>
-    <div>
-      3
-    </div>
-  </main>
-  <footer
-    class="jsx-1106431596"
-  />
-</div>
+exports[`Component: <Layout /> should mount without exploding 1`] = `
+<Test>
+  <Layout>
+    <FlexContainer>
+      <div
+        className="jsx-1111547334"
+      >
+        <Component>
+          <div
+            className="jsx-4254416515"
+          >
+            <SideEffect(Head)>
+              <Head />
+            </SideEffect(Head)>
+            <JSXStyle
+              css="*{box-sizing:border-box;-webkit-box-sizing:border-box;margin:0;padding:0;}html,body{min-height:100vh;overflow-x:hidden;}body{background-color:#444;color:#fff;font-family:monospace;font-size:1.2em;line-height:1.5em;}"
+              styleId="4254416515"
+            />
+          </div>
+        </Component>
+        <Header>
+          <header
+            className="jsx-2290366526"
+          >
+            <JSXStyle
+              css="header.jsx-2290366526{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:lightcoral;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:20vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:1em;text-align:center;}"
+              styleId="2290366526"
+            />
+          </header>
+        </Header>
+        <Main>
+          <main
+            className="jsx-3083400802"
+          >
+            <div>
+              1
+            </div>
+            <div>
+              2
+            </div>
+            <div>
+              3
+            </div>
+            <JSXStyle
+              css="main.jsx-3083400802{background-color:lightblue;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:65vh;padding:2em 3em;}"
+              styleId="3083400802"
+            />
+          </main>
+        </Main>
+        <Footer>
+          <footer
+            className="jsx-1106431596"
+          >
+            <JSXStyle
+              css="footer.jsx-1106431596{background-color:lightcoral;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:15vh;padding:1em;}"
+              styleId="1106431596"
+            />
+          </footer>
+        </Footer>
+        <JSXStyle
+          css="div.jsx-1111547334{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin:auto;max-width:50em;min-height:100vh;}"
+          styleId="1111547334"
+        />
+      </div>
+    </FlexContainer>
+  </Layout>
+</Test>
 `;

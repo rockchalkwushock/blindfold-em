@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: <SubTitle /> should render without exploding 1`] = `
-<h2>
-  What activity are you working on?
-</h2>
+exports[`Component: <SubTitle /> should mount without exploding 1`] = `
+<Test>
+  <SubTitle
+    text="What activity are you working on?"
+  >
+    <h2>
+      What activity are you working on?
+    </h2>
+  </SubTitle>
+</Test>
 `;

@@ -1,25 +1,47 @@
 import React from 'react'
-import { render } from 'enzyme'
+import { mount } from 'enzyme'
 
 import Frame from '../../components/commons/Frame'
 
-const Test = () => (
-  <Frame
-    name="activity"
-    fn={() => {}}
-    text="What activity are you working on?"
-    value=""
-  />
-)
-
 describe('Component: <Frame />', () => {
-  test('should render matching text for <h2/>', () => {
-    const tree = render(<Test />)
-    expect(tree.text()).toEqual('What activity are you working on?')
-  })
-
-  test('should render without exploding', () => {
-    const tree = render(<Test />)
-    expect(tree).toMatchSnapshot()
+  describe('Snapshots', () => {
+    test('should mount without exploding as Frame 1', () => {
+      const tree = mount(
+        <Frame
+          fn={() => {}}
+          name="activity"
+          next={() => {}}
+          text="What activity are you working on?"
+          value=""
+        />
+      )
+      expect(tree).toMatchSnapshot()
+    })
+    test('should mount without exploding as Frame 2', () => {
+      const tree = mount(
+        <Frame
+          fn={() => {}}
+          name="timer"
+          next={() => {}}
+          prev={() => {}}
+          text="How long should the timer be?"
+          value=""
+        />
+      )
+      expect(tree).toMatchSnapshot()
+    })
+    test('should mount without exploding as Frame 3', () => {
+      const tree = mount(
+        <Frame
+          fn={() => {}}
+          name="cooldown"
+          next={() => {}}
+          prev={() => {}}
+          text="How long should the cooldown be?"
+          value=""
+        />
+      )
+      expect(tree).toMatchSnapshot()
+    })
   })
 })

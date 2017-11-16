@@ -2,7 +2,7 @@ import { Component } from 'react'
 import moment from 'moment'
 import PropTypes from 'prop-types'
 
-import { Button, Display } from '../components'
+import { Display, TimerControls } from '../components'
 import { format } from '../lib'
 
 /**
@@ -10,8 +10,6 @@ import { format } from '../lib'
  *
  * 1. Button logic needs to be fixed.
  * 2. Need to handle ending logic of cooldown timer.
- * 3. Need to update all tests
- *  - this will suck since I renamed state values.
  */
 
 export const t = {
@@ -122,15 +120,7 @@ class Timer extends Component {
           currCool={format(this.state.currentCooldown)}
           currTime={format(this.state.currentTime)}
         />
-        <Button
-          className="start"
-          condition={
-            this.state.cooldownState === 1 || this.state.timerState === 1
-          }
-          fn={this.start}
-          text="Start"
-        />
-        <Button className="stop" condition={false} fn={this.stop} text="Stop" />
+        <TimerControls start={this.start} stop={this.stop} />
       </div>
     )
   }

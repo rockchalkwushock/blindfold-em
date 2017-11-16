@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <TimerControls /> Snapshots should mount without exploding as TimerControls 1`] = `
+<TimerControls
+  start={[Function]}
+  stop={[Function]}
+>
+  <Fragment>
+    <Button
+      className="start"
+      fn={[Function]}
+      text="Start"
+    >
+      <button
+        className="start"
+        onClick={[Function]}
+      >
+        Start
+      </button>
+    </Button>
+    <Button
+      className="stop"
+      fn={[Function]}
+      text="Stop"
+    >
+      <button
+        className="stop"
+        onClick={[Function]}
+      >
+        Stop
+      </button>
+    </Button>
+  </Fragment>
+</TimerControls>
+`;

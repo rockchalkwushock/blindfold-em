@@ -6,6 +6,7 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
     <Frame
       fn={[Function]}
       name="activity"
+      next={[Function]}
       text="What activity are you working on?"
       value=""
     >
@@ -31,36 +32,20 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
             />
           </div>
         </Input>
+        <Button
+          className="next"
+          fn={[Function]}
+          text="Next"
+        >
+          <button
+            className="next"
+            onClick={[Function]}
+          >
+            Next
+          </button>
+        </Button>
       </div>
     </Frame>
-    <Button
-      className="next"
-      condition={false}
-      fn={[Function]}
-      text="Next"
-    >
-      <button
-        className="next"
-        disabled={false}
-        onClick={[Function]}
-      >
-        Next
-      </button>
-    </Button>
-    <Button
-      className="prev"
-      condition={true}
-      fn={[Function]}
-      text="Prev"
-    >
-      <button
-        className="prev"
-        disabled={true}
-        onClick={[Function]}
-      >
-        Prev
-      </button>
-    </Button>
   </div>
 </Wizard>
 `;
@@ -71,6 +56,8 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
     <Frame
       fn={[Function]}
       name="timer"
+      next={[Function]}
+      prev={[Function]}
       text="How long should the timer be?"
       value=""
     >
@@ -96,36 +83,34 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
             />
           </div>
         </Input>
+        <Fragment>
+          <Button
+            className="next"
+            fn={[Function]}
+            text="Next"
+          >
+            <button
+              className="next"
+              onClick={[Function]}
+            >
+              Next
+            </button>
+          </Button>
+          <Button
+            className="prev"
+            fn={[Function]}
+            text="Prev"
+          >
+            <button
+              className="prev"
+              onClick={[Function]}
+            >
+              Prev
+            </button>
+          </Button>
+        </Fragment>
       </div>
     </Frame>
-    <Button
-      className="next"
-      condition={false}
-      fn={[Function]}
-      text="Next"
-    >
-      <button
-        className="next"
-        disabled={false}
-        onClick={[Function]}
-      >
-        Next
-      </button>
-    </Button>
-    <Button
-      className="prev"
-      condition={false}
-      fn={[Function]}
-      text="Prev"
-    >
-      <button
-        className="prev"
-        disabled={false}
-        onClick={[Function]}
-      >
-        Prev
-      </button>
-    </Button>
   </div>
 </Wizard>
 `;
@@ -136,6 +121,8 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
     <Frame
       fn={[Function]}
       name="cooldown"
+      next={[Function]}
+      prev={[Function]}
       text="How long should the cooldown be?"
       value=""
     >
@@ -161,36 +148,34 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Fram
             />
           </div>
         </Input>
+        <Fragment>
+          <Button
+            className="next"
+            fn={[Function]}
+            text="Next"
+          >
+            <button
+              className="next"
+              onClick={[Function]}
+            >
+              Next
+            </button>
+          </Button>
+          <Button
+            className="prev"
+            fn={[Function]}
+            text="Prev"
+          >
+            <button
+              className="prev"
+              onClick={[Function]}
+            >
+              Prev
+            </button>
+          </Button>
+        </Fragment>
       </div>
     </Frame>
-    <Button
-      className="next"
-      condition={false}
-      fn={[Function]}
-      text="Next"
-    >
-      <button
-        className="next"
-        disabled={false}
-        onClick={[Function]}
-      >
-        Next
-      </button>
-    </Button>
-    <Button
-      className="prev"
-      condition={false}
-      fn={[Function]}
-      text="Prev"
-    >
-      <button
-        className="prev"
-        disabled={false}
-        onClick={[Function]}
-      >
-        Prev
-      </button>
-    </Button>
   </div>
 </Wizard>
 `;
@@ -243,64 +228,39 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Time
             </TimerDisplay>
           </div>
         </Display>
-        <Button
-          className="start"
-          condition={false}
-          fn={[Function]}
-          text="Start"
+        <TimerControls
+          start={[Function]}
+          stop={[Function]}
         >
-          <button
-            className="start"
-            disabled={false}
-            onClick={[Function]}
-          >
-            Start
-          </button>
-        </Button>
-        <Button
-          className="stop"
-          condition={false}
-          fn={[Function]}
-          text="Stop"
-        >
-          <button
-            className="stop"
-            disabled={false}
-            onClick={[Function]}
-          >
-            Stop
-          </button>
-        </Button>
+          <Fragment>
+            <Button
+              className="start"
+              fn={[Function]}
+              text="Start"
+            >
+              <button
+                className="start"
+                onClick={[Function]}
+              >
+                Start
+              </button>
+            </Button>
+            <Button
+              className="stop"
+              fn={[Function]}
+              text="Stop"
+            >
+              <button
+                className="stop"
+                onClick={[Function]}
+              >
+                Stop
+              </button>
+            </Button>
+          </Fragment>
+        </TimerControls>
       </div>
     </Timer>
-    <Button
-      className="next"
-      condition={true}
-      fn={[Function]}
-      text="Next"
-    >
-      <button
-        className="next"
-        disabled={true}
-        onClick={[Function]}
-      >
-        Next
-      </button>
-    </Button>
-    <Button
-      className="prev"
-      condition={false}
-      fn={[Function]}
-      text="Prev"
-    >
-      <button
-        className="prev"
-        disabled={false}
-        onClick={[Function]}
-      >
-        Prev
-      </button>
-    </Button>
   </div>
 </Wizard>
 `;

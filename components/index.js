@@ -1,4 +1,4 @@
 import Layout from './layout'
-import { Button, Display, Frame, Timer } from './commons'
+import { Button, Display, Frame, TimerControls } from './commons'
 
-export { Button, Display, Frame, Layout, Timer }
+export { Button, Display, Frame, Layout, TimerControls }

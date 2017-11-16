@@ -1,15 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: <Button /> Next: should mount without exploding in disabled state 1`] = `
+exports[`Component: <Button /> Next: should mount without exploding 1`] = `
 <Button
   className="next"
-  condition={true}
   fn={[Function]}
   text="Next"
 >
   <button
     className="next"
-    disabled={true}
     onClick={[Function]}
   >
     Next
@@ -17,33 +15,14 @@ exports[`Component: <Button /> Next: should mount without exploding in disabled 
 </Button>
 `;
 
-exports[`Component: <Button /> Next: should mount without exploding in enabled state 1`] = `
-<Button
-  className="next"
-  condition={false}
-  fn={[Function]}
-  text="Next"
->
-  <button
-    className="next"
-    disabled={false}
-    onClick={[Function]}
-  >
-    Next
-  </button>
-</Button>
-`;
-
-exports[`Component: <Button /> Prev: should mount without exploding  in disabled state 1`] = `
+exports[`Component: <Button /> Prev: should mount without exploding 1`] = `
 <Button
   className="prev"
-  condition={true}
   fn={[Function]}
   text="Prev"
 >
   <button
     className="prev"
-    disabled={true}
     onClick={[Function]}
   >
     Prev
@@ -51,33 +30,14 @@ exports[`Component: <Button /> Prev: should mount without exploding  in disabled
 </Button>
 `;
 
-exports[`Component: <Button /> Prev: should mount without exploding  in enabled state 1`] = `
-<Button
-  className="prev"
-  condition={false}
-  fn={[Function]}
-  text="Prev"
->
-  <button
-    className="prev"
-    disabled={false}
-    onClick={[Function]}
-  >
-    Prev
-  </button>
-</Button>
-`;
-
-exports[`Component: <Button /> Start: should mount without exploding  in disabled state 1`] = `
+exports[`Component: <Button /> Start: should mount without exploding 1`] = `
 <Button
   className="start"
-  condition={true}
   fn={[Function]}
   text="Start"
 >
   <button
     className="start"
-    disabled={true}
     onClick={[Function]}
   >
     Start
@@ -85,50 +45,14 @@ exports[`Component: <Button /> Start: should mount without exploding  in disable
 </Button>
 `;
 
-exports[`Component: <Button /> Start: should mount without exploding  in enabled state 1`] = `
-<Button
-  className="start"
-  condition={false}
-  fn={[Function]}
-  text="Start"
->
-  <button
-    className="start"
-    disabled={false}
-    onClick={[Function]}
-  >
-    Start
-  </button>
-</Button>
-`;
-
-exports[`Component: <Button /> Stop: should mount without exploding  in disabled state 1`] = `
+exports[`Component: <Button /> Stop: should mount without exploding 1`] = `
 <Button
   className="stop"
-  condition={true}
   fn={[Function]}
   text="Stop"
 >
   <button
     className="stop"
-    disabled={true}
-    onClick={[Function]}
-  >
-    Stop
-  </button>
-</Button>
-`;
-
-exports[`Component: <Button /> Stop: should mount without exploding  in enabled state 1`] = `
-<Button
-  className="stop"
-  condition={false}
-  fn={[Function]}
-  text="Stop"
->
-  <button
-    className="stop"
-    disabled={false}
     onClick={[Function]}
   >
     Stop

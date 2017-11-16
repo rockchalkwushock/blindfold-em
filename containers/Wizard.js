@@ -1,6 +1,6 @@
 import { Component } from 'react'
 
-import { Button, Frame } from '../components'
+import { Frame } from '../components'
 import Timer from './Timer'
 
 class Wizard extends Component {
@@ -33,6 +33,7 @@ class Wizard extends Component {
         <Frame
           name="activity"
           fn={this.handleOnChange}
+          next={this._next}
           text="What activity are you working on?"
           value={activity}
         />
@@ -42,6 +43,8 @@ class Wizard extends Component {
         <Frame
           name="timer"
           fn={this.handleOnChange}
+          next={this._next}
+          prev={this._prev}
           text="How long should the timer be?"
           value={timer}
         />
@@ -51,6 +54,8 @@ class Wizard extends Component {
         <Frame
           name="cooldown"
           fn={this.handleOnChange}
+          next={this._next}
+          prev={this._prev}
           text="How long should the cooldown be?"
           value={cooldown}
         />
@@ -67,23 +72,7 @@ class Wizard extends Component {
   render() {
     const { currentFrame } = this.state
     const view = currentFrame !== 4 ? this.renderFrame() : this.renderTimer()
-    return (
-      <div>
-        {view}
-        <Button
-          className="next"
-          condition={currentFrame === 4}
-          fn={this._next}
-          text="Next"
-        />
-        <Button
-          className="prev"
-          condition={currentFrame === 1}
-          fn={this._prev}
-          text="Prev"
-        />
-      </div>
-    )
+    return <div>{view}</div>
   }
 }
 
