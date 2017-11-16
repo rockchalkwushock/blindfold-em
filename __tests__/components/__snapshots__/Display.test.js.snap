@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Display /> should render without exploding as <CoolDownDisplay />  1`] = `
+<div>
+  <h2>
+    Your activity is: coding
+  </h2>
+  <h2>
+    Your selected cooldown: 0:03:00
+  </h2>
+  <h2>
+    Current Cooldown: 0:03:00
+  </h2>
+</div>
+`;
+
+exports[`Component: <Display /> should render without exploding as <TimerDisplay />  1`] = `
+<div>
+  <h2>
+    Your activity is: coding
+  </h2>
+  <h2>
+    Your selected time: 0:12:00
+  </h2>
+  <h2>
+    Current Time: 0:12:00
+  </h2>
+</div>
+`;

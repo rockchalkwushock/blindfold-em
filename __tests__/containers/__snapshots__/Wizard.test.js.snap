@@ -204,21 +204,45 @@ exports[`Container: <Wizard /> Snapshots should render without exploding on Time
       timer="12"
     >
       <div>
-        <h1>
-          coding
-        </h1>
-        <h2>
-          Selected Timer: 12:0
-        </h2>
-        <h2>
-          Current Time: 12:0
-        </h2>
-        <h2>
-          Selected Cooldown: 3:0
-        </h2>
-        <h2>
-          Current Cooldown: 3:0
-        </h2>
+        <Display
+          activity="coding"
+          baseCool="0:03:00"
+          baseTime="0:12:00"
+          condition={null}
+          currCool="0:03:00"
+          currTime="0:12:00"
+        >
+          <div>
+            <SubTitle
+              text="Your activity is: coding"
+            >
+              <h2>
+                Your activity is: coding
+              </h2>
+            </SubTitle>
+            <TimerDisplay
+              base="0:12:00"
+              current="0:12:00"
+            >
+              <Fragment>
+                <SubTitle
+                  text="Your selected time: 0:12:00"
+                >
+                  <h2>
+                    Your selected time: 0:12:00
+                  </h2>
+                </SubTitle>
+                <SubTitle
+                  text="Current Time: 0:12:00"
+                >
+                  <h2>
+                    Current Time: 0:12:00
+                  </h2>
+                </SubTitle>
+              </Fragment>
+            </TimerDisplay>
+          </div>
+        </Display>
         <Button
           className="start"
           condition={false}
