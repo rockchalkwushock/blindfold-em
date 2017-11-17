@@ -1,4 +1,4 @@
 import Layout from './layout'
-import { Button, Display, FlexContainer, Frame, TimerControls } from './commons'
+import { Completed, FlexContainer, FrameLogic, Timer } from './commons'
 
-export { Button, Display, FlexContainer, Frame, Layout, TimerControls }
+export { Completed, FlexContainer, FrameLogic, Layout, Timer }

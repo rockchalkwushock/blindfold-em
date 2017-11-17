@@ -20,6 +20,10 @@ const Button = ({ className, fn, text }) => (
         padding: 0.25em;
         width: 80%;
       }
+      .reset {
+        padding: 0.5em;
+        width: 25%;
+      }
     `}</style>
   </button>
 )

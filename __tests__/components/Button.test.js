@@ -18,6 +18,15 @@ describe('Component: <Button />', () => {
     })
   })
 
+  describe('Reset:', () => {
+    test('should mount without exploding', () => {
+      const tree = mount(
+        <Button className="reset" fn={() => {}} text="Reset" />
+      )
+      expect(tree).toMatchSnapshot()
+    })
+  })
+
   describe('Start:', () => {
     test('should mount without exploding', () => {
       const tree = mount(

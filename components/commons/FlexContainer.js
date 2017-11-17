@@ -14,6 +14,7 @@ const FlexContainer = ({ children, className }) => (
         flex-direction: row;
         width: 80%;
       }
+      .completed,
       .frame,
       .timer {
         align-items: center;

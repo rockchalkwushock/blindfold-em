@@ -1,6 +1,7 @@
-import Display from './Display'
+import Completed from './Completed'
 import FlexContainer from './FlexContainer'
-import Frame from './Frame'
-import TimerControls from './TimerControls'
+import FrameLogic from './FrameLogic'
+import SubTitle from './SubTitle'
+import Timer from './Timer'
 
-export { Display, FlexContainer, Frame, TimerControls }
+export { Completed, FlexContainer, FrameLogic, SubTitle, Timer }

@@ -17,12 +17,32 @@ describe('Component: <FlexContainer />', () => {
       const tree = mount(<Test />)
       expect(tree).toMatchSnapshot()
     })
+    test('should mount without exploding using ".buttons" styles', () => {
+      const tree = mount(<Test className="buttons" />)
+      expect(tree).toMatchSnapshot()
+    })
+    test('should mount without exploding using ".completed" styles', () => {
+      const tree = mount(<Test className="completed" />)
+      expect(tree).toMatchSnapshot()
+    })
+    test('should mount without exploding using ".frame" styles', () => {
+      const tree = mount(<Test className="frame" />)
+      expect(tree).toMatchSnapshot()
+    })
     test('should mount without exploding using ".layout" styles', () => {
       const tree = mount(<Test className="layout" />)
       expect(tree).toMatchSnapshot()
     })
     test('should mount without exploding using ".main" styles', () => {
       const tree = mount(<Test className="main" />)
+      expect(tree).toMatchSnapshot()
+    })
+    test('should mount without exploding using ".timer" styles', () => {
+      const tree = mount(<Test className="timer" />)
+      expect(tree).toMatchSnapshot()
+    })
+    test('should mount without exploding using ".wizard" styles', () => {
+      const tree = mount(<Test className="wizard" />)
       expect(tree).toMatchSnapshot()
     })
   })

@@ -1,3 +1,3 @@
-import Wizard from './Wizard'
+import WizardTimer from './WizardTimer'
 
-export { Wizard }
+export { WizardTimer }

@@ -12,7 +12,7 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
     className="frame"
   >
     <div
-      className="jsx-797669933 frame"
+      className="jsx-1165816044 frame"
     >
       <SubTitle
         text="What activity are you working on?"
@@ -46,19 +46,19 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
         text="Next"
       >
         <button
-          className="jsx-3864743809 next"
+          className="jsx-3230544367 next"
           onClick={[Function]}
         >
           Next
           <JSXStyle
-            css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
-            styleId="3864743809"
+            css="button.jsx-3230544367{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}.reset.jsx-3230544367{padding:0.5em;width:25%;}"
+            styleId="3230544367"
           />
         </button>
       </Button>
       <JSXStyle
-        css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
-        styleId="797669933"
+        css="div.jsx-1165816044{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-1165816044{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.completed.jsx-1165816044,.frame.jsx-1165816044,.timer.jsx-1165816044{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-1165816044{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-1165816044{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-1165816044{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+        styleId="1165816044"
       />
     </div>
   </FlexContainer>
@@ -78,7 +78,7 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
     className="frame"
   >
     <div
-      className="jsx-797669933 frame"
+      className="jsx-1165816044 frame"
     >
       <SubTitle
         text="How long should the timer be?"
@@ -110,7 +110,7 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
         className="buttons"
       >
         <div
-          className="jsx-797669933 buttons"
+          className="jsx-1165816044 buttons"
         >
           <Button
             className="prev"
@@ -118,13 +118,13 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
             text="Prev"
           >
             <button
-              className="jsx-3864743809 prev"
+              className="jsx-3230544367 prev"
               onClick={[Function]}
             >
               Prev
               <JSXStyle
-                css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
-                styleId="3864743809"
+                css="button.jsx-3230544367{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}.reset.jsx-3230544367{padding:0.5em;width:25%;}"
+                styleId="3230544367"
               />
             </button>
           </Button>
@@ -134,25 +134,25 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
             text="Next"
           >
             <button
-              className="jsx-3864743809 next"
+              className="jsx-3230544367 next"
               onClick={[Function]}
             >
               Next
               <JSXStyle
-                css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
-                styleId="3864743809"
+                css="button.jsx-3230544367{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}.reset.jsx-3230544367{padding:0.5em;width:25%;}"
+                styleId="3230544367"
               />
             </button>
           </Button>
           <JSXStyle
-            css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
-            styleId="797669933"
+            css="div.jsx-1165816044{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-1165816044{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.completed.jsx-1165816044,.frame.jsx-1165816044,.timer.jsx-1165816044{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-1165816044{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-1165816044{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-1165816044{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+            styleId="1165816044"
           />
         </div>
       </FlexContainer>
       <JSXStyle
-        css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
-        styleId="797669933"
+        css="div.jsx-1165816044{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-1165816044{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.completed.jsx-1165816044,.frame.jsx-1165816044,.timer.jsx-1165816044{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-1165816044{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-1165816044{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-1165816044{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+        styleId="1165816044"
       />
     </div>
   </FlexContainer>
@@ -172,7 +172,7 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
     className="frame"
   >
     <div
-      className="jsx-797669933 frame"
+      className="jsx-1165816044 frame"
     >
       <SubTitle
         text="How long should the cooldown be?"
@@ -204,7 +204,7 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
         className="buttons"
       >
         <div
-          className="jsx-797669933 buttons"
+          className="jsx-1165816044 buttons"
         >
           <Button
             className="prev"
@@ -212,13 +212,13 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
             text="Prev"
           >
             <button
-              className="jsx-3864743809 prev"
+              className="jsx-3230544367 prev"
               onClick={[Function]}
             >
               Prev
               <JSXStyle
-                css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
-                styleId="3864743809"
+                css="button.jsx-3230544367{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}.reset.jsx-3230544367{padding:0.5em;width:25%;}"
+                styleId="3230544367"
               />
             </button>
           </Button>
@@ -228,25 +228,25 @@ exports[`Component: <Frame /> Snapshots should mount without exploding as Frame 
             text="Next"
           >
             <button
-              className="jsx-3864743809 next"
+              className="jsx-3230544367 next"
               onClick={[Function]}
             >
               Next
               <JSXStyle
-                css="button.jsx-3864743809{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}"
-                styleId="3864743809"
+                css="button.jsx-3230544367{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}.reset.jsx-3230544367{padding:0.5em;width:25%;}"
+                styleId="3230544367"
               />
             </button>
           </Button>
           <JSXStyle
-            css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
-            styleId="797669933"
+            css="div.jsx-1165816044{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-1165816044{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.completed.jsx-1165816044,.frame.jsx-1165816044,.timer.jsx-1165816044{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-1165816044{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-1165816044{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-1165816044{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+            styleId="1165816044"
           />
         </div>
       </FlexContainer>
       <JSXStyle
-        css="div.jsx-797669933{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-797669933{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.frame.jsx-797669933,.timer.jsx-797669933{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-797669933{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-797669933{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-797669933{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
-        styleId="797669933"
+        css="div.jsx-1165816044{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.buttons.jsx-1165816044{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;width:80%;}.completed.jsx-1165816044,.frame.jsx-1165816044,.timer.jsx-1165816044{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;border-radius:25%;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:2em;}.layout.jsx-1165816044{margin:auto;max-width:50em;min-height:100vh;}.main.jsx-1165816044{background-color:#734D84;height:65vh;padding:2em 3em;}.wizard.jsx-1165816044{-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+        styleId="1165816044"
       />
     </div>
   </FlexContainer>

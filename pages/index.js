@@ -1,8 +1,8 @@
 import { Layout } from '../components'
-import { Wizard } from '../containers'
+import { WizardTimer } from '../containers'
 
 export default () => (
   <Layout>
-    <Wizard />
+    <WizardTimer />
   </Layout>
 )
