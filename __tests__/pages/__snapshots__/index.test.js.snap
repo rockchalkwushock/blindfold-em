@@ -93,15 +93,15 @@ exports[`Index Page should mount without exploding 1`] = `
                           >
                             <Fragment>
                               <input
-                                className="jsx-1856926543"
+                                className="jsx-3319414369"
                                 name="activity"
                                 onChange={[Function]}
                                 type="text"
                                 value=""
                               />
                               <JSXStyle
-                                css="input.jsx-1856926543{background-color:transparent;border:none;border-bottom:2px solid #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.25em;margin-top:2em;outline:none;text-align:center;width:80%;}"
-                                styleId="1856926543"
+                                css="input.jsx-3319414369{background-color:transparent;border:none;border-bottom:2px solid #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.25em;margin-top:1em;outline:none;text-align:center;width:80%;}"
+                                styleId="3319414369"
                               />
                             </Fragment>
                           </Input>
@@ -111,13 +111,13 @@ exports[`Index Page should mount without exploding 1`] = `
                             text="Next"
                           >
                             <button
-                              className="jsx-3230544367 next"
+                              className="jsx-2690472618 next"
                               onClick={[Function]}
                             >
                               Next
                               <JSXStyle
-                                css="button.jsx-3230544367{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:2em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}.reset.jsx-3230544367{padding:0.5em;width:25%;}"
-                                styleId="3230544367"
+                                css="button.jsx-2690472618{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:0.5em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}.reset.jsx-2690472618{padding:0.5em;width:25%;}"
+                                styleId="2690472618"
                               />
                             </button>
                           </Button>

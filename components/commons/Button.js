@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { styles } from '../../lib'
 
 const Button = ({ className, fn, text }) => (
-  <button className={className} onClick={() => fn()}>
+  <button className={className} onClick={fn}>
     {text}
     <style jsx>{`
       button {
