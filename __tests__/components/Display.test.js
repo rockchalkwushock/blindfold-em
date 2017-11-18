@@ -13,12 +13,41 @@ const props = {
 }
 
 describe('Component: <Display />', () => {
-  test('should mount without exploding as <TimerDisplay /> ', () => {
-    const tree = mount(<Display {...props} />)
-    expect(tree).toMatchSnapshot()
+  let wrapper
+  describe('<TimerDisplay />', () => {
+    beforeEach(() => {
+      wrapper = mount(<Display {...props} />)
+    })
+    test('1. should mount', () => {
+      expect(wrapper.find('TimerDisplay')).toBeDefined()
+    })
+
+    test('2. should update time in view on props change', () => {
+      wrapper.setProps({
+        currTime: '0:11:59'
+      })
+      expect(wrapper.find('TimerDisplay').props()).toHaveProperty(
+        'current',
+        '0:11:59'
+      )
+    })
   })
-  test('should mount without exploding as <CoolDownDisplay /> ', () => {
-    const tree = mount(<Display {...props} condition={2} />)
-    expect(tree).toMatchSnapshot()
+  describe('<CoolDownDisplay />', () => {
+    beforeEach(() => {
+      wrapper = mount(<Display {...props} condition={2} />)
+    })
+    test('1. should mount', () => {
+      expect(wrapper.find('CoolDownDisplay')).toBeDefined()
+    })
+
+    test('2. should update time in view on props change', () => {
+      wrapper.setProps({
+        currCool: '0:02:59'
+      })
+      expect(wrapper.find('CoolDownDisplay').props()).toHaveProperty(
+        'current',
+        '0:02:59'
+      )
+    })
   })
 })

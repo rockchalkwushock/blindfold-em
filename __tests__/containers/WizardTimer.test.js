@@ -2,7 +2,8 @@ import React from 'react'
 import { mount } from 'enzyme'
 import moment from 'moment'
 
-import WizardTimer, { t } from '../../containers/WizardTimer'
+import WizardTimer from '../../containers/WizardTimer'
+import { timerState as t } from '../../lib'
 
 jest.useFakeTimers()
 
@@ -13,6 +14,11 @@ const initialState = {
     current: null,
     id: null,
     status: t.STOPPED
+  },
+  errors: {
+    activity: '',
+    cooldown: '',
+    timer: ''
   },
   form: {
     activity: '',
@@ -28,11 +34,6 @@ const initialState = {
   }
 }
 
-const updateState = (state, newState) => ({
-  ...state,
-  ...newState
-})
-
 describe('Container: <WizardTimer />', () => {
   let wrapper
   let input
@@ -43,377 +44,391 @@ describe('Container: <WizardTimer />', () => {
     next = wrapper.find('button.next')
   })
 
-  test('1. should find initial state', () => {
-    expect(wrapper.state()).toEqual(initialState)
-  })
-  test('2. should find updated state onChange event for `activity`', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+  describe('Form State Management', () => {
+    test('1. should find initial state', () => {
+      expect(wrapper.state()).toEqual(initialState)
     })
-    expect(wrapper.state()).toEqual(
-      updateState(wrapper.state(), {
-        form: { ...wrapper.state('form'), activity: 'coding' }
+    test('2. should find updated state onChange event for `activity`', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
       })
-    )
-  })
-  test('3. should find updated state onClick event to move to Frame 2', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      expect(wrapper.state('form')).toHaveProperty('activity', 'coding')
     })
-    next.simulate('click')
-    expect(wrapper.state()).toEqual(
-      updateState(wrapper.state(), {
-        form: {
-          ...wrapper.state('form'),
-          activity: 'coding',
-          currentFrame: 2
-        }
+    test('3. should find updated state onClick event to move to Frame 2', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
       })
-    )
-  })
-  test('4. should find updated state onChange event for `timer`', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      next.simulate('click')
+      expect(wrapper.state('form')).toHaveProperty('currentFrame', 2)
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    expect(wrapper.state()).toEqual(
-      updateState(wrapper.state(), {
-        form: {
-          ...wrapper.state('form'),
-          activity: 'coding',
-          currentFrame: 2,
-          timer: '12'
-        },
-        timer: {
-          ...wrapper.state('timer'),
-          base: moment.duration(parseInt('12', 10), 'minutes'),
-          current: moment.duration(parseInt('12', 10), 'minutes')
-        }
+    test('4. should find updated state onChange event for `timer`', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
       })
-    )
-  })
-  test('5. should find updated state onClick event to move to Frame 3', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      expect(wrapper.state('form')).toHaveProperty('timer', '12')
+      expect(wrapper.state('timer')).toHaveProperty(
+        'base',
+        moment.duration(parseInt('12', 10), 'minutes')
+      )
+      expect(wrapper.state('timer')).toHaveProperty(
+        'current',
+        moment.duration(parseInt('12', 10), 'minutes')
+      )
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    expect(wrapper.state()).toEqual(
-      updateState(wrapper.state(), {
-        form: {
-          ...wrapper.state('form'),
-          activity: 'coding',
-          currentFrame: 3,
-          timer: '12'
-        },
-        timer: {
-          ...wrapper.state('timer'),
-          base: moment.duration(parseInt('12', 10), 'minutes'),
-          current: moment.duration(parseInt('12', 10), 'minutes')
-        }
+    test('5. should find updated state onClick event to move to Frame 3', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
       })
-    )
-  })
-  test('6. should find updated state onChange event for `cooldown`', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      expect(wrapper.state('form')).toHaveProperty('currentFrame', 3)
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'cooldown', value: '3' } })
-    expect(wrapper.state()).toEqual(
-      updateState(wrapper.state(), {
-        cooldown: {
-          ...wrapper.state('cooldown'),
-          base: moment.duration(parseInt('3', 10), 'minutes'),
-          current: moment.duration(parseInt('3', 10), 'minutes')
-        },
-        form: {
-          ...wrapper.state('form'),
-          activity: 'coding',
-          cooldown: '3',
-          currentFrame: 3,
-          timer: '12'
-        },
-        timer: {
-          ...wrapper.state('timer'),
-          base: moment.duration(parseInt('12', 10), 'minutes'),
-          current: moment.duration(parseInt('12', 10), 'minutes')
-        }
+    test('6. should find updated state onChange event for `cooldown`', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
       })
-    )
-  })
-  test('7. should find updated state onClick event to move back to Frame 2', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'cooldown', value: '3' } })
+      expect(wrapper.state('form')).toHaveProperty('cooldown', '3')
+      expect(wrapper.state('cooldown')).toHaveProperty(
+        'base',
+        moment.duration(parseInt('3', 10), 'minutes')
+      )
+      expect(wrapper.state('cooldown')).toHaveProperty(
+        'current',
+        moment.duration(parseInt('3', 10), 'minutes')
+      )
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    wrapper.find('button.prev').simulate('click')
-    expect(wrapper.state()).toEqual(
-      updateState(wrapper.state(), {
-        form: {
-          ...wrapper.state('form'),
-          activity: 'coding',
-          currentFrame: 2,
-          timer: '12'
-        },
-        timer: {
-          ...wrapper.state('timer'),
-          base: moment.duration(parseInt('12', 10), 'minutes'),
-          current: moment.duration(parseInt('12', 10), 'minutes')
-        }
+    test('7. should find updated state onClick event to move to Frame 4', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
       })
-    )
-  })
-  test('8. should find updated state onClick event to move to Frame 4', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'cooldown', value: '3' } })
+      next.simulate('click')
+      expect(wrapper.state('form')).toHaveProperty('currentFrame', 4)
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'cooldown', value: '3' } })
-    next.simulate('click')
-    expect(wrapper.state()).toEqual(
-      updateState(wrapper.state(), {
-        cooldown: {
-          ...wrapper.state('cooldown'),
-          base: moment.duration(parseInt('3', 10), 'minutes'),
-          current: moment.duration(parseInt('3', 10), 'minutes')
-        },
-        form: {
-          ...wrapper.state('form'),
-          activity: 'coding',
-          cooldown: '3',
-          currentFrame: 4,
-          timer: '12'
-        },
-        timer: {
-          ...wrapper.state('timer'),
-          base: moment.duration(parseInt('12', 10), 'minutes'),
-          current: moment.duration(parseInt('12', 10), 'minutes')
-        }
+    test('8. should find error on no input: Frame 1', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: '' }
       })
-    )
-  })
-  test('9. should find updated state onClick event to start Timer', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      next.simulate('click')
+      expect(wrapper.state('form')).toHaveProperty('currentFrame', 1)
+      expect(wrapper.state('errors')).toHaveProperty(
+        'activity',
+        'You must submit an activity.'
+      )
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'cooldown', value: '3' } })
-    next.simulate('click')
-    wrapper.find('button.start').simulate('click')
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.state('timer').id).toEqual(1)
-    expect(wrapper.state('timer').status).toEqual(1)
-    expect(wrapper.find('TimerDisplay').props().current).toEqual('0:11:59')
-  })
-  test('10. should find updated state onClick event to stop Timer', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
-    })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'cooldown', value: '3' } })
-    next.simulate('click')
-    wrapper.find('button.start').simulate('click')
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.state('timer').id).toEqual(2)
-    expect(wrapper.state('timer').status).toEqual(1)
-    expect(wrapper.find('TimerDisplay').props().current).toEqual('0:11:59')
-    wrapper.find('button.stop').simulate('click')
-    expect(wrapper.state('timer').id).toEqual(null)
-    expect(wrapper.state('timer').status).toEqual(0)
-    expect(wrapper.find('TimerDisplay').props().current).toEqual('0:12:00')
-  })
-  test('11. should find updated state on Timer completion leading to Cooldown start', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
-    })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'cooldown', value: '3' } })
-    next.simulate('click')
-    wrapper.find('button.start').simulate('click')
-    expect(wrapper.state('timer').id).toEqual(3)
-    expect(wrapper.state('timer').status).toEqual(1)
-    wrapper.setState(
-      updateState(wrapper.state(), {
-        timer: {
-          ...wrapper.state('timer'),
-          current: moment.duration(parseInt('0:00:01', 10), 'minutes')
-        }
+    test('9. should find error on invalid input: Frame 1', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: '@$$' }
       })
-    )
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.state('timer').id).toEqual(null)
-    expect(wrapper.state('timer').status).toEqual(0)
-    expect(wrapper.state('cooldown').id).toEqual(4)
-    expect(wrapper.state('cooldown').status).toEqual(1)
-    expect(wrapper.find('CoolDownDisplay').props().current).toEqual('0:03:00')
-  })
-  test('12. should find updated state on Cooldown start', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      next.simulate('click')
+      expect(wrapper.state('form')).toHaveProperty('currentFrame', 1)
+      expect(wrapper.state('form')).toHaveProperty('activity', '@$$')
+      expect(wrapper.state('errors')).toHaveProperty(
+        'activity',
+        "@$$ is not a valid input. Please stick too: lower & upper case characters, numbers, and (.!,')."
+      )
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'cooldown', value: '3' } })
-    next.simulate('click')
-    wrapper.find('button.start').simulate('click')
-    expect(wrapper.state('timer').id).toEqual(5)
-    expect(wrapper.state('timer').status).toEqual(1)
-    wrapper.setState(
-      updateState(wrapper.state(), {
+    test('10. should find error on no input: Frame 2', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', {
+        target: { name: 'timer', value: '' }
+      })
+      next.simulate('click')
+      expect(wrapper.state('form')).toHaveProperty('currentFrame', 2)
+      expect(wrapper.state('errors')).toHaveProperty(
+        'timer',
+        'You must submit a timer for the activity.'
+      )
+    })
+    test('11. should find error on invalid input: Frame 2', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', {
+        target: { name: 'timer', value: 'abc' }
+      })
+      next.simulate('click')
+      expect(wrapper.state('form')).toHaveProperty('currentFrame', 2)
+      expect(wrapper.state('form')).toHaveProperty('timer', 'abc')
+      expect(wrapper.state('errors')).toHaveProperty(
+        'timer',
+        'abc is not a valid input. Please only submit number values.'
+      )
+    })
+    test('12. should find error on no input: Frame 3', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', {
+        target: { name: 'timer', value: '12' }
+      })
+      next.simulate('click')
+      input.simulate('change', {
+        target: { name: 'coding', value: '' }
+      })
+      next.simulate('click')
+      expect(wrapper.state('form')).toHaveProperty('currentFrame', 3)
+      expect(wrapper.state('errors')).toHaveProperty(
+        'cooldown',
+        'You must submit a cooldown for the activity.'
+      )
+    })
+    test('13. should find error on invalid input: Frame 3', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', {
+        target: { name: 'timer', value: '12' }
+      })
+      next.simulate('click')
+      input.simulate('change', {
+        target: { name: 'cooldown', value: 'abc' }
+      })
+      next.simulate('click')
+      expect(wrapper.state('form')).toHaveProperty('currentFrame', 3)
+      expect(wrapper.state('form')).toHaveProperty('cooldown', 'abc')
+      expect(wrapper.state('errors')).toHaveProperty(
+        'cooldown',
+        'abc is not a valid input. Please only submit number values.'
+      )
+    })
+  })
+
+  describe('Timer State Management', () => {
+    test('1. should find updated state onClick event to start Timer', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'cooldown', value: '3' } })
+      next.simulate('click')
+      wrapper.find('button.start').simulate('click')
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.state('timer').id).toEqual(1)
+      expect(wrapper.state('timer').status).toEqual(1)
+      expect(wrapper.find('TimerDisplay').props()).toHaveProperty(
+        'current',
+        '0:11:59'
+      )
+    })
+    test('2. should find updated state onClick event to stop Timer', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'cooldown', value: '3' } })
+      next.simulate('click')
+      wrapper.find('button.start').simulate('click')
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.state('timer').id).toEqual(2)
+      expect(wrapper.state('timer').status).toEqual(1)
+      expect(wrapper.find('TimerDisplay').props()).toHaveProperty(
+        'current',
+        '0:11:59'
+      )
+      wrapper.find('button.stop').simulate('click')
+      expect(wrapper.state('timer').id).toEqual(null)
+      expect(wrapper.state('timer').status).toEqual(0)
+      expect(wrapper.find('TimerDisplay').props()).toHaveProperty(
+        'current',
+        '0:12:00'
+      )
+    })
+    test('3. should find updated state on Timer completion leading to Cooldown start', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'cooldown', value: '3' } })
+      next.simulate('click')
+      wrapper.find('button.start').simulate('click')
+      expect(wrapper.state('timer').id).toEqual(3)
+      expect(wrapper.state('timer').status).toEqual(1)
+      wrapper.setState({
         timer: {
           ...wrapper.state('timer'),
           current: moment.duration(parseInt('0:00:01', 10), 'minutes')
         }
       })
-    )
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.state('timer').id).toEqual(null)
-    expect(wrapper.state('timer').status).toEqual(0)
-    expect(wrapper.state('cooldown').id).toEqual(6)
-    expect(wrapper.state('cooldown').status).toEqual(1)
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.find('CoolDownDisplay').props().current).toEqual('0:02:59')
-  })
-  test('13. should find updated state onClick event to stop Cooldown', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.state('timer').id).toEqual(null)
+      expect(wrapper.state('timer').status).toEqual(0)
+      expect(wrapper.state('cooldown').id).toEqual(4)
+      expect(wrapper.state('cooldown').status).toEqual(1)
+      expect(wrapper.find('CoolDownDisplay').props()).toHaveProperty(
+        'current',
+        '0:03:00'
+      )
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'cooldown', value: '3' } })
-    next.simulate('click')
-    wrapper.find('button.start').simulate('click')
-    expect(wrapper.state('timer').id).toEqual(7)
-    expect(wrapper.state('timer').status).toEqual(1)
-    wrapper.setState(
-      updateState(wrapper.state(), {
+    test('4. should find updated state on Cooldown start', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'cooldown', value: '3' } })
+      next.simulate('click')
+      wrapper.find('button.start').simulate('click')
+      expect(wrapper.state('timer').id).toEqual(5)
+      expect(wrapper.state('timer').status).toEqual(1)
+      wrapper.setState({
         timer: {
           ...wrapper.state('timer'),
           current: moment.duration(parseInt('0:00:01', 10), 'minutes')
         }
       })
-    )
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.state('timer').id).toEqual(null)
-    expect(wrapper.state('timer').status).toEqual(0)
-    expect(wrapper.state('cooldown').id).toEqual(8)
-    expect(wrapper.state('cooldown').status).toEqual(1)
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.find('CoolDownDisplay').props().current).toEqual('0:02:59')
-    wrapper.find('button.stop').simulate('click')
-    expect(wrapper.state('cooldown').id).toEqual(null)
-    expect(wrapper.state('cooldown').status).toEqual(0)
-    expect(wrapper.find('TimerDisplay').props().current).toEqual('0:12:00')
-  })
-  test('14. should find updated state on Cooldown completion leading to Completed View', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.state('timer').id).toEqual(null)
+      expect(wrapper.state('timer').status).toEqual(0)
+      expect(wrapper.state('cooldown').id).toEqual(6)
+      expect(wrapper.state('cooldown').status).toEqual(1)
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.find('CoolDownDisplay').props()).toHaveProperty(
+        'current',
+        '0:02:59'
+      )
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'cooldown', value: '3' } })
-    next.simulate('click')
-    wrapper.find('button.start').simulate('click')
-    expect(wrapper.state('timer').id).toEqual(9)
-    expect(wrapper.state('timer').status).toEqual(1)
-    wrapper.setState(
-      updateState(wrapper.state(), {
+    test('5. should find updated state onClick event to stop Cooldown', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'cooldown', value: '3' } })
+      next.simulate('click')
+      wrapper.find('button.start').simulate('click')
+      expect(wrapper.state('timer').id).toEqual(7)
+      expect(wrapper.state('timer').status).toEqual(1)
+      wrapper.setState({
         timer: {
           ...wrapper.state('timer'),
           current: moment.duration(parseInt('0:00:01', 10), 'minutes')
         }
       })
-    )
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.state('timer').id).toEqual(null)
-    expect(wrapper.state('timer').status).toEqual(0)
-    expect(wrapper.state('cooldown').id).toEqual(10)
-    expect(wrapper.state('cooldown').status).toEqual(1)
-    wrapper.setState(
-      updateState(wrapper.state(), {
-        cooldown: {
-          ...wrapper.state('cooldown'),
-          current: moment.duration(parseInt('0:00:01', 10), 'minutes')
-        }
-      })
-    )
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.state('completed')).toEqual(true)
-    expect(wrapper.state('cooldown').id).toEqual(null)
-    expect(wrapper.state('cooldown').status).toEqual(0)
-  })
-  test('15. should find updated state onClick event to reset application', () => {
-    input.simulate('change', {
-      target: { name: 'activity', value: 'coding' }
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.state('timer').id).toEqual(null)
+      expect(wrapper.state('timer').status).toEqual(0)
+      expect(wrapper.state('cooldown').id).toEqual(8)
+      expect(wrapper.state('cooldown').status).toEqual(1)
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.find('CoolDownDisplay').props()).toHaveProperty(
+        'current',
+        '0:02:59'
+      )
+      wrapper.find('button.stop').simulate('click')
+      expect(wrapper.state('cooldown').id).toEqual(null)
+      expect(wrapper.state('cooldown').status).toEqual(0)
+      expect(wrapper.find('TimerDisplay').props().current).toEqual('0:12:00')
     })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'timer', value: '12' } })
-    next.simulate('click')
-    input.simulate('change', { target: { name: 'cooldown', value: '3' } })
-    next.simulate('click')
-    wrapper.find('button.start').simulate('click')
-    expect(wrapper.state('timer').id).toEqual(11)
-    expect(wrapper.state('timer').status).toEqual(1)
-    wrapper.setState(
-      updateState(wrapper.state(), {
+    test('6. should find updated state on Cooldown completion leading to Completed View', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'cooldown', value: '3' } })
+      next.simulate('click')
+      wrapper.find('button.start').simulate('click')
+      expect(wrapper.state('timer').id).toEqual(9)
+      expect(wrapper.state('timer').status).toEqual(1)
+      wrapper.setState({
         timer: {
           ...wrapper.state('timer'),
           current: moment.duration(parseInt('0:00:01', 10), 'minutes')
         }
       })
-    )
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.state('timer').id).toEqual(null)
-    expect(wrapper.state('timer').status).toEqual(0)
-    expect(wrapper.state('cooldown').id).toEqual(12)
-    expect(wrapper.state('cooldown').status).toEqual(1)
-    wrapper.setState(
-      updateState(wrapper.state(), {
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.state('timer').id).toEqual(null)
+      expect(wrapper.state('timer').status).toEqual(0)
+      expect(wrapper.state('cooldown').id).toEqual(10)
+      expect(wrapper.state('cooldown').status).toEqual(1)
+      wrapper.setState({
         cooldown: {
           ...wrapper.state('cooldown'),
           current: moment.duration(parseInt('0:00:01', 10), 'minutes')
         }
       })
-    )
-    jest.runOnlyPendingTimers()
-    wrapper.update()
-    expect(wrapper.state('completed')).toEqual(true)
-    expect(wrapper.state('cooldown').id).toEqual(null)
-    expect(wrapper.state('cooldown').status).toEqual(0)
-    wrapper.find('button.reset').simulate('click')
-    expect(wrapper.state('form')).toEqual({
-      activity: '',
-      cooldown: '',
-      currentFrame: 1,
-      timer: ''
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.state('completed')).toEqual(true)
+      expect(wrapper.state('cooldown').id).toEqual(null)
+      expect(wrapper.state('cooldown').status).toEqual(0)
+    })
+    test('7. should find updated state onClick event to reset application', () => {
+      input.simulate('change', {
+        target: { name: 'activity', value: 'coding' }
+      })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'timer', value: '12' } })
+      next.simulate('click')
+      input.simulate('change', { target: { name: 'cooldown', value: '3' } })
+      next.simulate('click')
+      wrapper.find('button.start').simulate('click')
+      expect(wrapper.state('timer').id).toEqual(11)
+      expect(wrapper.state('timer').status).toEqual(1)
+      wrapper.setState({
+        timer: {
+          ...wrapper.state('timer'),
+          current: moment.duration(parseInt('0:00:01', 10), 'minutes')
+        }
+      })
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.state('timer').id).toEqual(null)
+      expect(wrapper.state('timer').status).toEqual(0)
+      expect(wrapper.state('cooldown').id).toEqual(12)
+      expect(wrapper.state('cooldown').status).toEqual(1)
+      wrapper.setState({
+        cooldown: {
+          ...wrapper.state('cooldown'),
+          current: moment.duration(parseInt('0:00:01', 10), 'minutes')
+        }
+      })
+      jest.runOnlyPendingTimers()
+      wrapper.update()
+      expect(wrapper.state('completed')).toEqual(true)
+      expect(wrapper.state('cooldown').id).toEqual(null)
+      expect(wrapper.state('cooldown').status).toEqual(0)
+      wrapper.find('button.reset').simulate('click')
+      expect(wrapper.state('form')).toEqual({
+        activity: '',
+        cooldown: '',
+        currentFrame: 1,
+        timer: ''
+      })
     })
   })
 })

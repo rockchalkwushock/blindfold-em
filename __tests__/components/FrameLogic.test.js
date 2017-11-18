@@ -2,6 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 
 import FrameLogic from '../../components/commons/FrameLogic'
+import { mockTestFn } from '../../lib'
 
 const form = {
   activity: '',
@@ -10,20 +11,31 @@ const form = {
   timer: ''
 }
 
-const fn = () => {}
+const errors = {
+  activity: '',
+  cooldown: '',
+  timer: ''
+}
 
 describe('Component: <FrameLogic />', () => {
   let wrapper
   let input
   beforeEach(() => {
     wrapper = mount(
-      <FrameLogic form={form} next={fn} onChange={fn} prev={fn} />
+      <FrameLogic
+        errors={errors}
+        form={form}
+        next={mockTestFn}
+        onChange={mockTestFn}
+        prev={mockTestFn}
+      />
     )
     input = wrapper.find('input')
   })
 
   test('1. Frame 1: should mount', () => {
     expect(wrapper.props().form.currentFrame).toEqual(1)
+    expect(wrapper.props().errors).toMatchObject(errors)
     expect(wrapper.find('Frame').props().text).toEqual(
       'What activity are you working on?'
     )
@@ -39,6 +51,7 @@ describe('Component: <FrameLogic />', () => {
       }
     })
     expect(wrapper.props().form.activity).toEqual('coding')
+    expect(wrapper.props().errors).toMatchObject(errors)
     expect(wrapper.find('Frame').props().value).toEqual('coding')
   })
   test('3. Frame 2: should mount', () => {
@@ -49,6 +62,7 @@ describe('Component: <FrameLogic />', () => {
       }
     })
     expect(wrapper.props().form.currentFrame).toEqual(2)
+    expect(wrapper.props().errors).toMatchObject(errors)
     expect(wrapper.find('Frame').props().text).toEqual(
       'How long should the timer be?'
     )
@@ -65,6 +79,7 @@ describe('Component: <FrameLogic />', () => {
       target: { name: 'timer', value: '12' }
     })
     expect(wrapper.find('Frame').props().value).toEqual('12')
+    expect(wrapper.props().errors).toMatchObject(errors)
     expect(wrapper.props().form.timer).toEqual('12')
   })
   test('5. Frame 3: should mount', () => {
@@ -75,6 +90,7 @@ describe('Component: <FrameLogic />', () => {
       }
     })
     expect(wrapper.props().form.currentFrame).toEqual(3)
+    expect(wrapper.props().errors).toMatchObject(errors)
     expect(wrapper.find('Frame').props().text).toEqual(
       'How long should the cooldown be?'
     )
@@ -91,6 +107,7 @@ describe('Component: <FrameLogic />', () => {
       target: { name: 'cooldown', value: '3' }
     })
     expect(wrapper.find('Frame').props().value).toEqual('3')
+    expect(wrapper.props().errors).toMatchObject(errors)
     expect(wrapper.props().form.cooldown).toEqual('3')
   })
 })

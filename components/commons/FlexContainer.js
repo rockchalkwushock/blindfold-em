@@ -10,10 +10,6 @@ const FlexContainer = ({ children, className }) => (
         display: flex;
         flex-direction: column;
       }
-      .buttons {
-        flex-direction: row;
-        width: 80%;
-      }
       .completed,
       .frame,
       .timer {

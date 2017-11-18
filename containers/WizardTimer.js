@@ -3,11 +3,7 @@ import { Component } from 'react'
 import moment from 'moment'
 
 import { Completed, FlexContainer, FrameLogic, Timer } from '../components'
-
-export const t = {
-  STOPPED: 0,
-  START: 1
-}
+import { validate, timerState as t } from '../lib'
 
 class WizardTimer extends Component {
   state = {
@@ -17,6 +13,11 @@ class WizardTimer extends Component {
       current: null,
       id: null,
       status: t.STOPPED
+    },
+    errors: {
+      activity: '',
+      cooldown: '',
+      timer: ''
     },
     form: {
       activity: '',
@@ -32,22 +33,15 @@ class WizardTimer extends Component {
     }
   }
   _next = () => {
-    let frame = this.state.form.currentFrame
-    this.setState({
-      form: {
-        ...this.state.form,
-        currentFrame: ++frame
-      }
-    })
-  }
-  _prev = () => {
-    let frame = this.state.form.currentFrame
-    this.setState({
-      form: {
-        ...this.state.form,
-        currentFrame: --frame
-      }
-    })
+    if (this.validateFrame()) {
+      let frame = this.state.form.currentFrame
+      this.setState({
+        form: {
+          ...this.state.form,
+          currentFrame: ++frame
+        }
+      })
+    }
   }
   handleOnChange = e => {
     const val = e.target.value
@@ -202,15 +196,30 @@ class WizardTimer extends Component {
       })
     }
   }
+  validateFrame = () => {
+    const errors = validate(this.state)
+    const isValid = !Object.keys(errors).some(key => errors[key])
+    if (!isValid) {
+      this.setState({
+        errors: {
+          activity: errors.activity ? errors.activity : '',
+          cooldown: errors.cooldown ? errors.cooldown : '',
+          timer: errors.timer ? errors.timer : ''
+        }
+      })
+      return isValid
+    }
+    return isValid
+  }
   renderCompleted = () => (
     <Completed activity={this.state.form.activity} fn={this.reset} />
   )
   renderFrames = () => (
     <FrameLogic
+      errors={this.state.errors}
       form={this.state.form}
       next={this._next}
       onChange={this.handleOnChange}
-      prev={this._prev}
     />
   )
   renderTimer = () => (

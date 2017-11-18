@@ -5,26 +5,20 @@ import FlexContainer from './FlexContainer'
 import Input from './Input'
 import SubTitle from './SubTitle'
 
-const Frame = ({ fn, name, next, prev, text, value }) => (
+const Frame = ({ error, fn, name, next, text, value }) => (
   <FlexContainer className="frame">
     <SubTitle text={text} />
     <Input name={name} fn={fn} value={value} />
-    {next && !prev ? (
-      <Button className="next" fn={next} text="Next" />
-    ) : (
-      <FlexContainer className="buttons">
-        <Button className="prev" fn={prev} text="Prev" />
-        <Button className="next" fn={next} text="Next" />
-      </FlexContainer>
-    )}
+    {error ? <span>{error}</span> : null}
+    <Button className="next" fn={next} text="Next" />
   </FlexContainer>
 )
 
 Frame.propTypes = {
+  error: PropTypes.string,
   fn: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   next: PropTypes.func,
-  prev: PropTypes.func,
   text: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired
 }

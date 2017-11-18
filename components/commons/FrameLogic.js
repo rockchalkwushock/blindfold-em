@@ -2,12 +2,13 @@ import PropTypes from 'prop-types'
 
 import Frame from './Frame'
 
-const FrameLogic = ({ form, next, onChange, prev }) => {
+const FrameLogic = ({ errors, form, next, onChange }) => {
   const { activity, cooldown, currentFrame, timer } = form
   if (currentFrame === 1) {
     return (
       <Frame
         name="activity"
+        error={errors.activity}
         fn={onChange}
         next={next}
         text="What activity are you working on?"
@@ -18,9 +19,9 @@ const FrameLogic = ({ form, next, onChange, prev }) => {
     return (
       <Frame
         name="timer"
+        error={errors.timer}
         fn={onChange}
         next={next}
-        prev={prev}
         text="How long should the timer be?"
         value={timer}
       />
@@ -29,9 +30,9 @@ const FrameLogic = ({ form, next, onChange, prev }) => {
     return (
       <Frame
         name="cooldown"
+        error={errors.cooldown}
         fn={onChange}
         next={next}
-        prev={prev}
         text="How long should the cooldown be?"
         value={cooldown}
       />
@@ -40,10 +41,10 @@ const FrameLogic = ({ form, next, onChange, prev }) => {
 }
 
 FrameLogic.propTypes = {
+  errors: PropTypes.object,
   form: PropTypes.object.isRequired,
   next: PropTypes.func.isRequired,
-  onChange: PropTypes.func.isRequired,
-  prev: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired
 }
 
 export default FrameLogic
