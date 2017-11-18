@@ -14,7 +14,7 @@ const Input = ({ name, fn, value }) => (
         color: ${styles.colors.text};
         font-family: ${styles.fonts.kalam};
         font-size: 1.25em;
-        margin-top: 2em;
+        margin-top: 1em;
         outline: none;
         text-align: center;
         width: 80%;
