@@ -7,7 +7,14 @@ import { mockTestFn } from '../../lib'
 describe('Component: <Input />', () => {
   let wrapper
   beforeEach(() => {
-    wrapper = mount(<Input name="activity" fn={mockTestFn} value="" />)
+    wrapper = mount(
+      <Input
+        fn={mockTestFn}
+        msg="60 - units are in minutes"
+        name="activity"
+        value=""
+      />
+    )
   })
 
   test('1. Should show initial prop values', () => {

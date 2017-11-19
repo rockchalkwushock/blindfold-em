@@ -11,6 +11,7 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
         error={errors.activity}
         fn={onChange}
         next={next}
+        msg="Avoiding work"
         text="What activity are you working on?"
         value={activity}
       />
@@ -22,6 +23,7 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
         error={errors.timer}
         fn={onChange}
         next={next}
+        msg="60 - units are in minutes"
         text="How long should the timer be?"
         value={timer}
       />
@@ -33,6 +35,7 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
         error={errors.cooldown}
         fn={onChange}
         next={next}
+        msg="10 - units are in minutes"
         text="How long should the cooldown be?"
         value={cooldown}
       />

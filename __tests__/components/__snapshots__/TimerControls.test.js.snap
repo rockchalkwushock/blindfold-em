@@ -12,13 +12,13 @@ exports[`Component: <TimerControls /> Snapshots should mount without exploding a
       text="Start"
     >
       <button
-        className="jsx-2690472618 start"
+        className="jsx-383770121 start"
         onClick={[Function]}
       >
         Start
         <JSXStyle
-          css="button.jsx-2690472618{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:0.5em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}.reset.jsx-2690472618{padding:0.5em;width:25%;}"
-          styleId="2690472618"
+          css="button.jsx-383770121{background-color:#734D84;border:none;box-shadow:2px 2px 2px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:5px;-moz-letter-spacing:5px;-ms-letter-spacing:5px;letter-spacing:5px;margin:0.5em 0.25em 0 0.25em;outline:none;padding:0.25em;width:50%;}"
+          styleId="383770121"
         />
       </button>
     </Button>
@@ -28,13 +28,13 @@ exports[`Component: <TimerControls /> Snapshots should mount without exploding a
       text="Stop"
     >
       <button
-        className="jsx-2690472618 stop"
+        className="jsx-383770121 stop"
         onClick={[Function]}
       >
         Stop
         <JSXStyle
-          css="button.jsx-2690472618{background-color:#734D84;border:none;border-radius:15px;box-shadow:4px 4px 4px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.25em;-moz-letter-spacing:0.25em;-ms-letter-spacing:0.25em;letter-spacing:0.25em;margin:0.5em 0.25em 0 0.25em;outline:none;padding:0.25em;width:80%;}.reset.jsx-2690472618{padding:0.5em;width:25%;}"
-          styleId="2690472618"
+          css="button.jsx-383770121{background-color:#734D84;border:none;box-shadow:2px 2px 2px #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:5px;-moz-letter-spacing:5px;-ms-letter-spacing:5px;letter-spacing:5px;margin:0.5em 0.25em 0 0.25em;outline:none;padding:0.25em;width:50%;}"
+          styleId="383770121"
         />
       </button>
     </Button>

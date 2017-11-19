@@ -46,8 +46,13 @@ export default () => (
         background-color: ${styles.colors.highLight};
         color: ${styles.colors.text};
         font-family: ${styles.fonts.kalam};
-        font-size: 1.3em;
+        font-size: 1em;
         line-height: 1.5em;
+      }
+      @media (min-width: 600px) {
+        body {
+          font-size: 1.3em;
+        }
       }
     `}</style>
   </div>

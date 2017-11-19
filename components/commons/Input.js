@@ -3,9 +3,15 @@ import PropTypes from 'prop-types'
 import Fragment from './Fragment'
 import { styles } from '../../lib'
 
-const Input = ({ name, fn, value }) => (
+const Input = ({ msg, name, fn, value }) => (
   <Fragment>
-    <input name={name} onChange={e => fn(e)} type="text" value={value} />
+    <input
+      name={name}
+      onChange={fn}
+      placeholder={msg}
+      type="text"
+      value={value}
+    />
     <style jsx>{`
       input {
         background-color: transparent;
@@ -25,6 +31,7 @@ const Input = ({ name, fn, value }) => (
 
 Input.propTypes = {
   name: PropTypes.string.isRequired,
+  msg: PropTypes.string.isRequired,
   fn: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired
 }

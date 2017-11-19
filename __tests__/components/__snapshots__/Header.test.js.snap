@@ -4,7 +4,7 @@ exports[`Component: <Header /> should mount without exploding 1`] = `
 <Test>
   <Header>
     <header
-      className="jsx-4048439111"
+      className="jsx-3420915757"
     >
       <div>
         1
@@ -16,8 +16,8 @@ exports[`Component: <Header /> should mount without exploding 1`] = `
         3
       </div>
       <JSXStyle
-        css="header.jsx-4048439111{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-family:\\"Permanent Marker\\", cursive;font-size:2em;height:20vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-letter-spacing:0.7em;-moz-letter-spacing:0.7em;-ms-letter-spacing:0.7em;letter-spacing:0.7em;padding:1em;text-align:center;}"
-        styleId="4048439111"
+        css="header.jsx-3420915757{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-family:\\"Permanent Marker\\", cursive;height:20vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-letter-spacing:0.3em;-moz-letter-spacing:0.3em;-ms-letter-spacing:0.3em;letter-spacing:0.3em;padding:1em;text-align:center;}@media (min-width:425px){header.jsx-3420915757{font-size:1.25em;}}@media (min-width:768px){header.jsx-3420915757{font-size:1.75em;-webkit-letter-spacing:0.5em;-moz-letter-spacing:0.5em;-ms-letter-spacing:0.5em;letter-spacing:0.5em;}}"
+        styleId="3420915757"
       />
     </header>
   </Header>

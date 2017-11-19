@@ -14,6 +14,7 @@ describe('Component: <Frame />', () => {
           fn={mockTestFn}
           name="activity"
           next={mockTestFn}
+          msg="Avoiding work"
           text="What activity are you working on?"
           value=""
         />
@@ -61,6 +62,7 @@ describe('Component: <Frame />', () => {
           fn={mockTestFn}
           name="timer"
           next={mockTestFn}
+          msg="60 - units are in minutes"
           text="How long should the timer be?"
           value=""
         />
@@ -107,6 +109,7 @@ describe('Component: <Frame />', () => {
           fn={mockTestFn}
           name="cooldown"
           next={mockTestFn}
+          msg="60 - units are in minutes"
           text="How long should the cooldown be?"
           value=""
         />
