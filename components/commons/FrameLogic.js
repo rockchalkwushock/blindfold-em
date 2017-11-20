@@ -7,11 +7,11 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
   if (currentFrame === 1) {
     return (
       <Frame
-        name="activity"
         error={errors.activity}
         fn={onChange}
-        next={next}
         msg="Avoiding work"
+        name="activity"
+        next={next}
         text="What activity are you working on?"
         value={activity}
       />
@@ -19,11 +19,11 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
   } else if (currentFrame === 2) {
     return (
       <Frame
-        name="timer"
         error={errors.timer}
         fn={onChange}
-        next={next}
         msg="60 - units are in minutes"
+        name="timer"
+        next={next}
         text="How long should the timer be?"
         value={timer}
       />
@@ -31,11 +31,11 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
   } else if (currentFrame === 3) {
     return (
       <Frame
-        name="cooldown"
         error={errors.cooldown}
         fn={onChange}
-        next={next}
         msg="10 - units are in minutes"
+        name="cooldown"
+        next={next}
         text="How long should the cooldown be?"
         value={cooldown}
       />

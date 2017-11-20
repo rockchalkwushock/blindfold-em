@@ -17,6 +17,7 @@
     "test": "nps test"
   },
   "dependencies": {
+    "animejs": "^2.2.0",
     "moment": "^2.19.2",
     "next": "^4.1.4",
     "prop-types": "^15.6.0",

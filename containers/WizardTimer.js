@@ -11,6 +11,7 @@ class WizardTimer extends Component {
     cooldown: {
       base: null,
       current: null,
+      duration: null,
       id: null,
       status: t.STOPPED
     },
@@ -28,6 +29,7 @@ class WizardTimer extends Component {
     timer: {
       base: null,
       current: null,
+      duration: null,
       id: null,
       status: t.STOPPED
     }
@@ -55,7 +57,8 @@ class WizardTimer extends Component {
         timer: {
           ...this.state.timer,
           base: moment.duration(parseInt(val, 10), 'minutes'),
-          current: moment.duration(parseInt(val, 10), 'minutes')
+          current: moment.duration(parseInt(val, 10), 'minutes'),
+          duration: moment.duration(parseInt(val, 10), 'minutes').as('seconds')
         }
       })
     } else if (key === 'cooldown') {
@@ -63,7 +66,8 @@ class WizardTimer extends Component {
         cooldown: {
           ...this.state.cooldown,
           base: moment.duration(parseInt(val, 10), 'minutes'),
-          current: moment.duration(parseInt(val, 10), 'minutes')
+          current: moment.duration(parseInt(val, 10), 'minutes'),
+          duration: moment.duration(parseInt(val, 10), 'minutes').as('seconds')
         },
         form: {
           ...this.state.form,
@@ -103,12 +107,10 @@ class WizardTimer extends Component {
         return
       }
 
-      const current = moment.duration(timer.current)
-      current.subtract(1, 'second')
       this.setState({
         timer: {
           ...this.state.timer,
-          current
+          current: moment.duration(timer.current).subtract(1, 'second')
         }
       })
     }
