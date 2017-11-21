@@ -1,1 +1,8 @@
-export default () => <h1>Hello Blindfold'em</h1>
+import { Layout } from '../components'
+import { WizardTimer } from '../containers'
+
+export default () => (
+  <Layout>
+    <WizardTimer />
+  </Layout>
+)

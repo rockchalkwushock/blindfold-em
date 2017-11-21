@@ -1,7 +1,202 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index Page should render without exploding 1`] = `
-<h1>
-  Hello Blindfold'em
-</h1>
+exports[`Index Page should mount without exploding 1`] = `
+<Component>
+  <Layout>
+    <FlexContainer
+      className="layout"
+    >
+      <div
+        className="jsx-858462303 layout"
+      >
+        <Component>
+          <div
+            className="jsx-3271228047"
+          >
+            <SideEffect(Head)>
+              <Head />
+            </SideEffect(Head)>
+            <JSXStyle
+              css="*{box-sizing:border-box;-webkit-box-sizing:border-box;margin:0;padding:0;}html,body{min-height:100vh;overflow-x:hidden;}body{background-color:#A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1em;line-height:1.5em;}"
+              styleId="3271228047"
+            />
+          </div>
+        </Component>
+        <Header>
+          <header
+            className="jsx-594153440"
+          >
+            <SubTitle
+              text="Blindfold'em"
+            >
+              <h2>
+                Blindfold'em
+              </h2>
+            </SubTitle>
+            <JSXStyle
+              css="header.jsx-594153440{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-family:\\"Permanent Marker\\", cursive;font-size:1.25em;height:15vh;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-letter-spacing:0.3em;-moz-letter-spacing:0.3em;-ms-letter-spacing:0.3em;letter-spacing:0.3em;padding:1em;text-align:center;}@media (min-width:26.563em){header.jsx-594153440{font-size:1.5em;}}@media (min-width:48em){header.jsx-594153440{font-size:1.75em;-webkit-letter-spacing:0.5em;-moz-letter-spacing:0.5em;-ms-letter-spacing:0.5em;letter-spacing:0.5em;}}"
+              styleId="594153440"
+            />
+          </header>
+        </Header>
+        <FlexContainer
+          className="main"
+        >
+          <div
+            className="jsx-858462303 main"
+          >
+            <WizardTimer>
+              <FlexContainer
+                className="wizard"
+              >
+                <div
+                  className="jsx-858462303 wizard"
+                >
+                  <Frames
+                    errors={
+                      Object {
+                        "activity": "",
+                        "cooldown": "",
+                        "timer": "",
+                      }
+                    }
+                    form={
+                      Object {
+                        "activity": "",
+                        "cooldown": "",
+                        "currentFrame": 1,
+                        "timer": "",
+                      }
+                    }
+                    next={[Function]}
+                    onChange={[Function]}
+                  >
+                    <Form>
+                      <form
+                        className="jsx-3116333994"
+                      >
+                        <Frame
+                          error=""
+                          fn={[Function]}
+                          msg="Avoiding work"
+                          name="activity"
+                          next={[Function]}
+                          text="What activity are you working on?"
+                          value=""
+                        >
+                          <FlexContainer
+                            className="frame"
+                          >
+                            <div
+                              className="jsx-858462303 frame"
+                            >
+                              <SubTitle
+                                className="animated fadeInUp"
+                                text="What activity are you working on?"
+                              >
+                                <h2
+                                  className="animated fadeInUp"
+                                >
+                                  What activity are you working on?
+                                </h2>
+                              </SubTitle>
+                              <Input
+                                className="animated fadeInUp"
+                                fn={[Function]}
+                                msg="Avoiding work"
+                                name="activity"
+                                value=""
+                              >
+                                <Fragment>
+                                  <input
+                                    autoComplete="off"
+                                    className="jsx-3962297552 animated fadeInUp"
+                                    name="activity"
+                                    onChange={[Function]}
+                                    placeholder="Avoiding work"
+                                    type="text"
+                                    value=""
+                                  />
+                                  <JSXStyle
+                                    css="input.jsx-3962297552{background-color:transparent;border:none;border-bottom:0.125em solid #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.25em;margin-top:1em;outline:none;text-align:center;width:80%;}"
+                                    styleId="3962297552"
+                                  />
+                                </Fragment>
+                              </Input>
+                              <Button
+                                className="animated fadeInUp next"
+                                fn={[Function]}
+                                text="Next"
+                              >
+                                <button
+                                  className="jsx-2247360679 animated fadeInUp next"
+                                  onClick={[Function]}
+                                >
+                                  Next
+                                  <JSXStyle
+                                    css="button.jsx-2247360679{background-color:#734D84;border:none;-webkit-box-shadow:0.125em 0.125em 0.125em #A974C2;box-shadow:0.125em 0.125em 0.125em #A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1.5em;-webkit-letter-spacing:0.313em;-moz-letter-spacing:0.313em;-ms-letter-spacing:0.313em;letter-spacing:0.313em;margin:0.5em 0.25em 0 0.25em;outline:none;padding:0.25em;width:50%;}"
+                                    styleId="2247360679"
+                                  />
+                                </button>
+                              </Button>
+                              <JSXStyle
+                                css="div.jsx-858462303{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-858462303{margin:auto;max-width:60em;min-height:100vh;}.main.jsx-858462303{background-color:#734D84;height:100vh;padding:0.5em;}.wizard.jsx-858462303{-webkit-box-flex:1;-ms-flex:auto;-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-858462303,.frame.jsx-858462303,.timer.jsx-858462303{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;-webkit-box-shadow:0.25em 0.25em 0.25em #A974C2;box-shadow:0.25em 0.25em 0.25em #A974C2;-webkit-box-flex:1;-ms-flex:auto;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-858462303{padding:1em;}}@media (min-width:48em){.main.jsx-858462303{padding:2em 3em;}}"
+                                styleId="858462303"
+                              />
+                            </div>
+                          </FlexContainer>
+                        </Frame>
+                        <JSXStyle
+                          css="form.jsx-3116333994{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-ms-flex:auto;-webkit-flex:auto;-ms-flex:auto;flex:auto;}"
+                          styleId="3116333994"
+                        />
+                      </form>
+                    </Form>
+                  </Frames>
+                  <JSXStyle
+                    css="div.jsx-858462303{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-858462303{margin:auto;max-width:60em;min-height:100vh;}.main.jsx-858462303{background-color:#734D84;height:100vh;padding:0.5em;}.wizard.jsx-858462303{-webkit-box-flex:1;-ms-flex:auto;-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-858462303,.frame.jsx-858462303,.timer.jsx-858462303{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;-webkit-box-shadow:0.25em 0.25em 0.25em #A974C2;box-shadow:0.25em 0.25em 0.25em #A974C2;-webkit-box-flex:1;-ms-flex:auto;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-858462303{padding:1em;}}@media (min-width:48em){.main.jsx-858462303{padding:2em 3em;}}"
+                    styleId="858462303"
+                  />
+                </div>
+              </FlexContainer>
+            </WizardTimer>
+            <JSXStyle
+              css="div.jsx-858462303{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-858462303{margin:auto;max-width:60em;min-height:100vh;}.main.jsx-858462303{background-color:#734D84;height:100vh;padding:0.5em;}.wizard.jsx-858462303{-webkit-box-flex:1;-ms-flex:auto;-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-858462303,.frame.jsx-858462303,.timer.jsx-858462303{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;-webkit-box-shadow:0.25em 0.25em 0.25em #A974C2;box-shadow:0.25em 0.25em 0.25em #A974C2;-webkit-box-flex:1;-ms-flex:auto;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-858462303{padding:1em;}}@media (min-width:48em){.main.jsx-858462303{padding:2em 3em;}}"
+              styleId="858462303"
+            />
+          </div>
+        </FlexContainer>
+        <Footer>
+          <footer
+            className="jsx-281781248"
+          >
+            <Link
+              text="RCWS Development"
+              url="https://rcws-development.com"
+            >
+              <a
+                className="jsx-2702470336"
+                href="https://rcws-development.com"
+              >
+                RCWS Development
+                <JSXStyle
+                  css="a.jsx-2702470336{color:#B0BF6C;font-family:\\"Kalam\\", cursive;text-decoration:none;}"
+                  styleId="2702470336"
+                />
+              </a>
+            </Link>
+            <JSXStyle
+              css="footer.jsx-281781248{background-color:#3A2A41;display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-size:1.2em;height:10vh;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:1em;}@media (orientation:landscape){footer.jsx-281781248{font-size:1em;}}@media (min-width:48em){footer.jsx-281781248{font-size:1.4em;}}"
+              styleId="281781248"
+            />
+          </footer>
+        </Footer>
+        <JSXStyle
+          css="div.jsx-858462303{display:-webkit-box;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-858462303{margin:auto;max-width:60em;min-height:100vh;}.main.jsx-858462303{background-color:#734D84;height:100vh;padding:0.5em;}.wizard.jsx-858462303{-webkit-box-flex:1;-ms-flex:auto;-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-858462303,.frame.jsx-858462303,.timer.jsx-858462303{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;-webkit-box-shadow:0.25em 0.25em 0.25em #A974C2;box-shadow:0.25em 0.25em 0.25em #A974C2;-webkit-box-flex:1;-ms-flex:auto;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-858462303{padding:1em;}}@media (min-width:48em){.main.jsx-858462303{padding:2em 3em;}}"
+          styleId="858462303"
+        />
+      </div>
+    </FlexContainer>
+  </Layout>
+</Component>
 `;

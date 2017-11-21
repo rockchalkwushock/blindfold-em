@@ -1,16 +1,11 @@
 import React from 'react'
-import { render, shallow } from 'enzyme'
+import { mount } from 'enzyme'
 
 import Index from '../../pages'
 
 describe('Index Page', () => {
-  test('should render: "Hello Blindfold\'em"', () => {
-    const wrapper = shallow(<Index />)
-    expect(wrapper.text()).toEqual("Hello Blindfold'em")
-  })
-
-  test('should render without exploding', () => {
-    const tree = render(<Index />)
+  test('should mount without exploding', () => {
+    const tree = mount(<Index />)
     expect(tree).toMatchSnapshot()
   })
 })
