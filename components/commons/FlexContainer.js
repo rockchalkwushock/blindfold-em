@@ -15,7 +15,12 @@ const FlexContainer = ({ children, className }) => (
     {children}
     <style jsx>{`
       div {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
       }
       .layout {
@@ -29,15 +34,24 @@ const FlexContainer = ({ children, className }) => (
         padding: 0.5em;
       }
       .wizard {
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
         flex: auto;
       }
       .completed,
       .frame,
       .timer {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         background-color: ${styles.colors.lowLight};
+        -webkit-box-shadow: 4px 4px 4px ${styles.colors.highLight};
         box-shadow: 4px 4px 4px ${styles.colors.highLight};
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
         flex: auto;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding: 0 0.5em;
         text-align: center;

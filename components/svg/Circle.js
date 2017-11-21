@@ -33,8 +33,17 @@ const Circle = ({ className, duration }) => (
         stroke: ${styles.colors.text};
       }
       .timerAnimation {
+        -webkit-animation: ${duration}s linear normal forwards timer;
         animation: ${duration}s linear normal forwards timer;
         stroke: ${styles.colors.text};
+      }
+      @-webkit-keyframes timer {
+        from {
+          stroke-dashoffset: 219;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
       }
       @keyframes timer {
         from {
@@ -42,6 +51,14 @@ const Circle = ({ className, duration }) => (
         }
         to {
           stroke-dashoffset: 0;
+        }
+      }
+      @-webkit-keyframes cooldown {
+        from {
+          stroke-dashoffset: 0;
+        }
+        to {
+          stroke-dashoffset: 219;
         }
       }
       @keyframes cooldown {
@@ -59,12 +76,28 @@ const Circle = ({ className, duration }) => (
         .overlay {
           stroke-dasharray: 314;
         }
+        @-webkit-keyframes timer {
+          from {
+            stroke-dashoffset: 314;
+          }
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
         @keyframes timer {
           from {
             stroke-dashoffset: 314;
           }
           to {
             stroke-dashoffset: 0;
+          }
+        }
+        @-webkit-keyframes cooldown {
+          from {
+            stroke-dashoffset: 0;
+          }
+          to {
+            stroke-dashoffset: 314;
           }
         }
         @keyframes cooldown {

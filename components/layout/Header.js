@@ -12,13 +12,22 @@ const Header = ({ children }) => (
     {children}
     <style jsx>{`
       header {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         background-color: ${styles.colors.lowLight};
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         font-family: ${styles.fonts.permMarker};
         font-size: 1.25em;
         height: 15vh;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         letter-spacing: 0.3em;
         padding: 1em;

@@ -13,10 +13,17 @@ const Footer = ({ children }) => (
     <style jsx>{`
       footer {
         background-color: ${styles.colors.lowLight};
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         font-size: 1.2em;
         height: 10vh;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding: 1em;
       }

@@ -18,6 +18,7 @@ const Button = ({ className, fn, text }) => (
       button {
         background-color: ${styles.colors.main};
         border: none;
+        -webkit-box-shadow: 2px 2px 2px ${styles.colors.highLight};
         box-shadow: 2px 2px 2px ${styles.colors.highLight};
         color: ${styles.colors.text};
         font-family: ${styles.fonts.kalam};
