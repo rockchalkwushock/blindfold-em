@@ -34,7 +34,8 @@ class WizardTimer extends Component {
       status: t.STOPPED
     }
   }
-  _next = () => {
+  _next = e => {
+    e.preventDefault()
     if (this.validateFrame()) {
       let frame = this.state.form.currentFrame
       this.setState({

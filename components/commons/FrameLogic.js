@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types'
 
+import Form from './Form'
 import Frame from './Frame'
 
 const FrameLogic = ({ errors, form, next, onChange }) => {
+  let frame
   const { activity, cooldown, currentFrame, timer } = form
   if (currentFrame === 1) {
-    return (
+    frame = (
       <Frame
         error={errors.activity}
         fn={onChange}
@@ -17,7 +19,7 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
       />
     )
   } else if (currentFrame === 2) {
-    return (
+    frame = (
       <Frame
         error={errors.timer}
         fn={onChange}
@@ -29,7 +31,7 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
       />
     )
   } else if (currentFrame === 3) {
-    return (
+    frame = (
       <Frame
         error={errors.cooldown}
         fn={onChange}
@@ -41,6 +43,7 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
       />
     )
   }
+  return <Form>{frame}</Form>
 }
 
 FrameLogic.propTypes = {
