@@ -1,7 +1,14 @@
 import PropTypes from 'prop-types'
 
-import { styles } from '../../../lib'
+import { styles } from '../../lib'
 
+/**
+ * @function Stop
+ * @description renders <rect /> element with stop() functionality.
+ *
+ * @prop {Function} fn
+ * @returns React Element
+ */
 const Stop = ({ fn }) => (
   <rect
     fill={styles.colors.highLight}

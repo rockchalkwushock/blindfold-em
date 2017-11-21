@@ -4,10 +4,18 @@ import Button from './Button'
 import FlexContainer from './FlexContainer'
 import SubTitle from './SubTitle'
 
+/**
+ * @function Completed
+ * @description renders view for completed state of timer.
+ *
+ * @prop {String} activity
+ * @prop {Function} fn
+ * @returns React Element
+ */
 const Completed = ({ activity, fn }) => (
   <FlexContainer className="completed">
     <SubTitle text={`Congratulations on completing: ${activity}!`} />
-    <Button className="reset" fn={fn} text="Reset" />
+    <Button fn={fn} text="Reset" />
   </FlexContainer>
 )
 

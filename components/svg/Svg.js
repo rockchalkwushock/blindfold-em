@@ -1,5 +1,12 @@
-import { styles } from '../../../lib'
+import { styles } from '../../lib'
 
+/**
+ * @function Svg
+ * @description renders <svg /> element.
+ *
+ * @prop {Array} children
+ * @returns React Element
+ */
 const Svg = ({ children }) => (
   <svg
     baseProfile="full"

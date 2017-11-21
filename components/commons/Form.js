@@ -1,3 +1,10 @@
+/**
+ * @function Form
+ * @description renders styled <form />
+ *
+ * @prop {Array} children
+ * @returns React Element
+ */
 const Form = ({ children }) => (
   <form>
     {children}

@@ -1,7 +1,14 @@
 import PropTypes from 'prop-types'
 
-import { styles } from '../../../lib'
+import { styles } from '../../lib'
 
+/**
+ * @function Text
+ * @description renders <text /> element with formatted time.
+ *
+ * @prop {String} time
+ * @returns React Element
+ */
 const Text = ({ time }) => (
   <text x="25" y="65">
     {time}

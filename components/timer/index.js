@@ -1,11 +1,22 @@
 /* eslint-disable no-nested-ternary */
 import PropTypes from 'prop-types'
 
-import FlexContainer from './FlexContainer'
-import TimerDisplay from './svg'
+import TimerDisplay from './TimerDisplay'
+import { FlexContainer } from '../commons'
+
 import { format } from '../../lib'
 
 /* FIXME: `state` is terrible find a better way */
+
+/**
+ * @function Timer
+ * @description renders the application timer
+ * @prop {Object} cooldown
+ * @prop {Function} start
+ * @prop {Function} stop
+ * @prop {Object} timer
+ * @returns React Element
+ */
 const Timer = ({ cooldown, start, stop, timer }) => (
   <FlexContainer className="timer">
     <TimerDisplay

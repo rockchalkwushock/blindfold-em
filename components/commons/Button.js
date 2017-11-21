@@ -2,8 +2,16 @@ import PropTypes from 'prop-types'
 
 import { styles } from '../../lib'
 
-const Button = ({ className, fn, text }) => (
-  <button className={className} onClick={fn}>
+/**
+ * @function Button
+ * @description renders <button /> with onClick functionality
+ *
+ * @prop {Function} fn
+ * @prop {String} text
+ * @returns React Element
+ */
+const Button = ({ fn, text }) => (
+  <button onClick={fn}>
     {text}
     <style jsx>{`
       button {
@@ -24,7 +32,6 @@ const Button = ({ className, fn, text }) => (
 )
 
 Button.propTypes = {
-  className: PropTypes.string,
   fn: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired
 }

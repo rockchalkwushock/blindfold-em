@@ -1,5 +1,12 @@
 import { styles } from '../../lib'
 
+/**
+ * @function Footer
+ * @description renders styled <footer />
+ *
+ * @prop {Array} children
+ * @returns React Element
+ */
 const Footer = ({ children }) => (
   <footer>
     {children}
@@ -8,8 +15,15 @@ const Footer = ({ children }) => (
         background-color: ${styles.colors.lowLight};
         display: flex;
         flex-direction: column;
-        height: 15vh;
+        font-size: 1.2em;
+        height: 10vh;
+        justify-content: center;
         padding: 1em;
+      }
+      @media (orientation: landscape) {
+        footer {
+          font-size: 1em;
+        }
       }
     `}</style>
   </footer>

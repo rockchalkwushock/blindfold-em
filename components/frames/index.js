@@ -1,9 +1,19 @@
 import PropTypes from 'prop-types'
 
-import Form from './Form'
 import Frame from './Frame'
+import { Form } from '../commons'
 
-const FrameLogic = ({ errors, form, next, onChange }) => {
+/**
+ * @function Frames
+ * @description renders <form /> conditional to state of Wizard.
+ *
+ * @prop {Object} errors
+ * @prop {Object} forms
+ * @prop {Function} next
+ * @prop {Function} onChange
+ * @returns React Element
+ */
+const Frames = ({ errors, form, next, onChange }) => {
   let frame
   const { activity, cooldown, currentFrame, timer } = form
   if (currentFrame === 1) {
@@ -46,11 +56,11 @@ const FrameLogic = ({ errors, form, next, onChange }) => {
   return <Form>{frame}</Form>
 }
 
-FrameLogic.propTypes = {
+Frames.propTypes = {
   errors: PropTypes.object,
   form: PropTypes.object.isRequired,
   next: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired
 }
 
-export default FrameLogic
+export default Frames

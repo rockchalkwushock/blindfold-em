@@ -7,29 +7,35 @@ exports[`Index Page should mount without exploding 1`] = `
       className="layout"
     >
       <div
-        className="jsx-1664832883 layout"
+        className="jsx-4270136953 layout"
       >
         <Component>
           <div
-            className="jsx-2859325892"
+            className="jsx-3271228047"
           >
             <SideEffect(Head)>
               <Head />
             </SideEffect(Head)>
             <JSXStyle
               css="*{box-sizing:border-box;-webkit-box-sizing:border-box;margin:0;padding:0;}html,body{min-height:100vh;overflow-x:hidden;}body{background-color:#A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1em;line-height:1.5em;}"
-              styleId="2859325892"
+              styleId="3271228047"
             />
           </div>
         </Component>
         <Header>
           <header
-            className="jsx-3420915757"
+            className="jsx-3709992583"
           >
-            Blindfold'em
+            <SubTitle
+              text="Blindfold'em"
+            >
+              <h2>
+                Blindfold'em
+              </h2>
+            </SubTitle>
             <JSXStyle
-              css="header.jsx-3420915757{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-family:\\"Permanent Marker\\", cursive;height:20vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-letter-spacing:0.3em;-moz-letter-spacing:0.3em;-ms-letter-spacing:0.3em;letter-spacing:0.3em;padding:1em;text-align:center;}@media (min-width:425px){header.jsx-3420915757{font-size:1.25em;}}@media (min-width:768px){header.jsx-3420915757{font-size:1.75em;-webkit-letter-spacing:0.5em;-moz-letter-spacing:0.5em;-ms-letter-spacing:0.5em;letter-spacing:0.5em;}}"
-              styleId="3420915757"
+              css="header.jsx-3709992583{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-family:\\"Permanent Marker\\", cursive;font-size:1.25em;height:15vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-letter-spacing:0.3em;-moz-letter-spacing:0.3em;-ms-letter-spacing:0.3em;letter-spacing:0.3em;padding:1em;text-align:center;}@media (min-width:425px){header.jsx-3709992583{font-size:1.5em;}}@media (min-width:768px){header.jsx-3709992583{font-size:1.75em;-webkit-letter-spacing:0.5em;-moz-letter-spacing:0.5em;-ms-letter-spacing:0.5em;letter-spacing:0.5em;}}"
+              styleId="3709992583"
             />
           </header>
         </Header>
@@ -37,16 +43,16 @@ exports[`Index Page should mount without exploding 1`] = `
           className="main"
         >
           <div
-            className="jsx-1664832883 main"
+            className="jsx-4270136953 main"
           >
             <WizardTimer>
               <FlexContainer
                 className="wizard"
               >
                 <div
-                  className="jsx-1664832883 wizard"
+                  className="jsx-4270136953 wizard"
                 >
-                  <FrameLogic
+                  <Frames
                     errors={
                       Object {
                         "activity": "",
@@ -82,7 +88,7 @@ exports[`Index Page should mount without exploding 1`] = `
                             className="frame"
                           >
                             <div
-                              className="jsx-1664832883 frame"
+                              className="jsx-4270136953 frame"
                             >
                               <SubTitle
                                 text="What activity are you working on?"
@@ -99,6 +105,7 @@ exports[`Index Page should mount without exploding 1`] = `
                               >
                                 <Fragment>
                                   <input
+                                    autoComplete="off"
                                     className="jsx-3319414369"
                                     name="activity"
                                     onChange={[Function]}
@@ -118,7 +125,7 @@ exports[`Index Page should mount without exploding 1`] = `
                                 text="Next"
                               >
                                 <button
-                                  className="jsx-383770121 next"
+                                  className="jsx-383770121"
                                   onClick={[Function]}
                                 >
                                   Next
@@ -129,8 +136,8 @@ exports[`Index Page should mount without exploding 1`] = `
                                 </button>
                               </Button>
                               <JSXStyle
-                                css="div.jsx-1664832883{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-1664832883{margin:auto;max-width:800px;min-height:100vh;}.main.jsx-1664832883{background-color:#734D84;height:65vh;padding:0.5em;}.wizard.jsx-1664832883{-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-1664832883,.frame.jsx-1664832883,.timer.jsx-1664832883{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-1664832883{height:80vh;padding:1em;}}@media (min-width:768px){.main.jsx-1664832883{padding:2em 3em;}}"
-                                styleId="1664832883"
+                                css="div.jsx-4270136953{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-4270136953{margin:auto;max-width:800px;min-height:100vh;}.main.jsx-4270136953{background-color:#734D84;height:100vh;padding:0.5em;}.wizard.jsx-4270136953{-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-4270136953,.frame.jsx-4270136953,.timer.jsx-4270136953{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-4270136953{padding:1em;}}@media (min-width:768px){.main.jsx-4270136953{padding:2em 3em;}}"
+                                styleId="4270136953"
                               />
                             </div>
                           </FlexContainer>
@@ -141,33 +148,48 @@ exports[`Index Page should mount without exploding 1`] = `
                         />
                       </form>
                     </Form>
-                  </FrameLogic>
+                  </Frames>
                   <JSXStyle
-                    css="div.jsx-1664832883{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-1664832883{margin:auto;max-width:800px;min-height:100vh;}.main.jsx-1664832883{background-color:#734D84;height:65vh;padding:0.5em;}.wizard.jsx-1664832883{-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-1664832883,.frame.jsx-1664832883,.timer.jsx-1664832883{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-1664832883{height:80vh;padding:1em;}}@media (min-width:768px){.main.jsx-1664832883{padding:2em 3em;}}"
-                    styleId="1664832883"
+                    css="div.jsx-4270136953{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-4270136953{margin:auto;max-width:800px;min-height:100vh;}.main.jsx-4270136953{background-color:#734D84;height:100vh;padding:0.5em;}.wizard.jsx-4270136953{-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-4270136953,.frame.jsx-4270136953,.timer.jsx-4270136953{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-4270136953{padding:1em;}}@media (min-width:768px){.main.jsx-4270136953{padding:2em 3em;}}"
+                    styleId="4270136953"
                   />
                 </div>
               </FlexContainer>
             </WizardTimer>
             <JSXStyle
-              css="div.jsx-1664832883{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-1664832883{margin:auto;max-width:800px;min-height:100vh;}.main.jsx-1664832883{background-color:#734D84;height:65vh;padding:0.5em;}.wizard.jsx-1664832883{-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-1664832883,.frame.jsx-1664832883,.timer.jsx-1664832883{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-1664832883{height:80vh;padding:1em;}}@media (min-width:768px){.main.jsx-1664832883{padding:2em 3em;}}"
-              styleId="1664832883"
+              css="div.jsx-4270136953{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-4270136953{margin:auto;max-width:800px;min-height:100vh;}.main.jsx-4270136953{background-color:#734D84;height:100vh;padding:0.5em;}.wizard.jsx-4270136953{-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-4270136953,.frame.jsx-4270136953,.timer.jsx-4270136953{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-4270136953{padding:1em;}}@media (min-width:768px){.main.jsx-4270136953{padding:2em 3em;}}"
+              styleId="4270136953"
             />
           </div>
         </FlexContainer>
         <Footer>
           <footer
-            className="jsx-1161495840"
+            className="jsx-763048999"
           >
+            <Link
+              text="RCWS Development"
+              url="https://rcws-development.com"
+            >
+              <a
+                className="jsx-2702470336"
+                href="https://rcws-development.com"
+              >
+                RCWS Development
+                <JSXStyle
+                  css="a.jsx-2702470336{color:#B0BF6C;font-family:\\"Kalam\\", cursive;text-decoration:none;}"
+                  styleId="2702470336"
+                />
+              </a>
+            </Link>
             <JSXStyle
-              css="footer.jsx-1161495840{background-color:#3A2A41;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:15vh;padding:1em;}"
-              styleId="1161495840"
+              css="footer.jsx-763048999{background-color:#3A2A41;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-size:1.2em;height:10vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:1em;}@media (orientation:landscape){footer.jsx-763048999{font-size:1em;}}"
+              styleId="763048999"
             />
           </footer>
         </Footer>
         <JSXStyle
-          css="div.jsx-1664832883{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-1664832883{margin:auto;max-width:800px;min-height:100vh;}.main.jsx-1664832883{background-color:#734D84;height:65vh;padding:0.5em;}.wizard.jsx-1664832883{-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-1664832883,.frame.jsx-1664832883,.timer.jsx-1664832883{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-1664832883{height:80vh;padding:1em;}}@media (min-width:768px){.main.jsx-1664832883{padding:2em 3em;}}"
-          styleId="1664832883"
+          css="div.jsx-4270136953{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.layout.jsx-4270136953{margin:auto;max-width:800px;min-height:100vh;}.main.jsx-4270136953{background-color:#734D84;height:100vh;padding:0.5em;}.wizard.jsx-4270136953{-webkit-flex:auto;-ms-flex:auto;flex:auto;}.completed.jsx-4270136953,.frame.jsx-4270136953,.timer.jsx-4270136953{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#3A2A41;box-shadow:4px 4px 4px #A974C2;-webkit-flex:auto;-ms-flex:auto;flex:auto;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 0.5em;text-align:center;}@media (orientation:landscape){.main.jsx-4270136953{padding:1em;}}@media (min-width:768px){.main.jsx-4270136953{padding:2em 3em;}}"
+          styleId="4270136953"
         />
       </div>
     </FlexContainer>

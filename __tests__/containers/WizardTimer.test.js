@@ -43,7 +43,7 @@ describe('Container: <WizardTimer />', () => {
   beforeEach(() => {
     wrapper = mount(<WizardTimer />)
     input = wrapper.find('input')
-    next = wrapper.find('button.next')
+    next = wrapper.find('button')
   })
 
   describe('Form State Management', () => {
@@ -406,7 +406,7 @@ describe('Container: <WizardTimer />', () => {
       expect(wrapper.state('completed')).toEqual(true)
       expect(wrapper.state('cooldown').id).toEqual(null)
       expect(wrapper.state('cooldown').status).toEqual(0)
-      wrapper.find('button.reset').simulate('click')
+      wrapper.find('Button').simulate('click')
       expect(wrapper.state('form')).toEqual({
         activity: '',
         cooldown: '',

@@ -2,6 +2,12 @@ import Head from 'next/head'
 
 import { styles } from '../../lib'
 
+/**
+ * @description
+ * <Meta /> component holds all global styling,
+ * external stylesheet links, meta data for
+ * the application.
+ */
 export default () => (
   <div>
     <Head>
@@ -49,11 +55,6 @@ export default () => (
         font-size: 1em;
         line-height: 1.5em;
       }
-      /*@media (min-width: 600px) {
-        body {
-          font-size: 1.3em;
-        }
-      }*/
     `}</style>
   </div>
 )

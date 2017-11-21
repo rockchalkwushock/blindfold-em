@@ -1,18 +1,17 @@
 import PropTypes from 'prop-types'
 
-import { styles } from '../../../lib'
+import { styles } from '../../lib'
 
 /**
- * REVIEW
- * QUESTION
+ * @function Circle
+ * @description renders <circle /> that is conditionally animated.
  *
- * Can I not put `transform` in my CSS?
- * When I do Chrome no likey.
+ * @prop {String} className
+ * @prop {Number} duration
+ * @returns React Element
  */
-
-const Circle = ({ className, children, duration }) => (
+const Circle = ({ className, duration }) => (
   <circle className={className} transform="rotate(-90, 50, 60)">
-    {children}
     <style jsx>{`
       circle {
         cx: 50;

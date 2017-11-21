@@ -3,9 +3,20 @@ import PropTypes from 'prop-types'
 import Fragment from './Fragment'
 import { styles } from '../../lib'
 
+/**
+ * @function Input
+ * @description renders styled <input />
+ *
+ * @prop {String} msg
+ * @prop {String} name
+ * @prop {Function} fn
+ * @prop {String} value
+ * @returns React Element
+ */
 const Input = ({ msg, name, fn, value }) => (
   <Fragment>
     <input
+      autoComplete="off"
       name={name}
       onChange={fn}
       placeholder={msg}
