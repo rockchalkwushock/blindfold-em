@@ -2,6 +2,13 @@ import PropTypes from 'prop-types'
 
 import { styles } from '../../lib'
 
+/**
+ * @function Span
+ * @description renders styled & animated <span />
+ *
+ * @prop {String} msg
+ * @returns React Element
+ */
 const Span = ({ msg }) => (
   <span>
     {msg}

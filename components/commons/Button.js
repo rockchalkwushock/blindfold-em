@@ -2,6 +2,15 @@ import PropTypes from 'prop-types'
 
 import { styles } from '../../lib'
 
+/**
+ * @function Button
+ * @description renders <button /> with onClick functionality
+ *
+ * @prop {String} className
+ * @prop {Function} fn
+ * @prop {String} text
+ * @returns React Element
+ */
 const Button = ({ className, fn, text }) => (
   <button className={className} onClick={fn}>
     {text}

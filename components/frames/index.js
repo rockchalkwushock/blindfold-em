@@ -1,53 +1,66 @@
 import PropTypes from 'prop-types'
 
 import Frame from './Frame'
+import { Form } from '../commons'
 
-const FrameLogic = ({ errors, form, next, onChange }) => {
+/**
+ * @function Frames
+ * @description renders <form /> conditional to state of Wizard.
+ *
+ * @prop {Object} errors
+ * @prop {Object} forms
+ * @prop {Function} next
+ * @prop {Function} onChange
+ * @returns React Element
+ */
+const Frames = ({ errors, form, next, onChange }) => {
+  let frame
   const { activity, cooldown, currentFrame, timer } = form
   if (currentFrame === 1) {
-    return (
+    frame = (
       <Frame
-        name="activity"
         error={errors.activity}
         fn={onChange}
-        next={next}
         msg="Avoiding work"
+        name="activity"
+        next={next}
         text="What activity are you working on?"
         value={activity}
       />
     )
   } else if (currentFrame === 2) {
-    return (
+    frame = (
       <Frame
-        name="timer"
         error={errors.timer}
         fn={onChange}
-        next={next}
         msg="60 - units are in minutes"
+        name="timer"
+        next={next}
         text="How long should the timer be?"
         value={timer}
       />
     )
   } else if (currentFrame === 3) {
-    return (
+    frame = (
       <Frame
-        name="cooldown"
         error={errors.cooldown}
         fn={onChange}
-        next={next}
         msg="10 - units are in minutes"
+        name="cooldown"
+        next={next}
         text="How long should the cooldown be?"
         value={cooldown}
       />
     )
   }
+  return <Form>{frame}</Form>
 }
 
-FrameLogic.propTypes = {
+Frames.propTypes = {
   errors: PropTypes.object,
   form: PropTypes.object.isRequired,
   next: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired
 }
 
-export default FrameLogic
+export default Frames

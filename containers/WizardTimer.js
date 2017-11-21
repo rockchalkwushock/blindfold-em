@@ -2,15 +2,37 @@
 import { Component } from 'react'
 import moment from 'moment'
 
-import { Completed, FlexContainer, FrameLogic, Timer } from '../components'
+import { Completed, FlexContainer, Frames, Timer } from '../components'
 import { validate, timerState as t } from '../lib'
 
+/**
+ * @class WizardTimer
+ * @description State container for management of Wizard Form & Timer.
+ *
+ * @extends React.Component
+ *
+ * @method _next
+ * @method handleOnChange
+ * @method reduceTime
+ * @method reset
+ * @method start
+ * @method stop
+ * @method validateFrame
+ * @method renderCompleted
+ * @method renderFrames
+ * @method renderTimer
+ * @method render
+ *
+ * @returns React Element
+ *
+ */
 class WizardTimer extends Component {
   state = {
     completed: false,
     cooldown: {
       base: null,
       current: null,
+      duration: null,
       id: null,
       status: t.STOPPED
     },
@@ -28,11 +50,18 @@ class WizardTimer extends Component {
     timer: {
       base: null,
       current: null,
+      duration: null,
       id: null,
       status: t.STOPPED
     }
   }
-  _next = () => {
+  /**
+   * @method _next
+   * @description responsible for the advancement of the form.
+   * @setState currentFrame
+   */
+  _next = e => {
+    e.preventDefault()
     if (this.validateFrame()) {
       let frame = this.state.form.currentFrame
       this.setState({
@@ -43,6 +72,14 @@ class WizardTimer extends Component {
       })
     }
   }
+  /**
+   * @method handleOnChange
+   * @description responsible for getting user input and storing in state.
+   * @setState
+   *    cooldown{base|current|duration}
+   *    form{activity|cooldown|timer}
+   *    timer{base|current|duration}
+   */
   handleOnChange = e => {
     const val = e.target.value
     const key = e.target.name
@@ -55,7 +92,8 @@ class WizardTimer extends Component {
         timer: {
           ...this.state.timer,
           base: moment.duration(parseInt(val, 10), 'minutes'),
-          current: moment.duration(parseInt(val, 10), 'minutes')
+          current: moment.duration(parseInt(val, 10), 'minutes'),
+          duration: moment.duration(parseInt(val, 10), 'minutes').as('seconds')
         }
       })
     } else if (key === 'cooldown') {
@@ -63,7 +101,8 @@ class WizardTimer extends Component {
         cooldown: {
           ...this.state.cooldown,
           base: moment.duration(parseInt(val, 10), 'minutes'),
-          current: moment.duration(parseInt(val, 10), 'minutes')
+          current: moment.duration(parseInt(val, 10), 'minutes'),
+          duration: moment.duration(parseInt(val, 10), 'minutes').as('seconds')
         },
         form: {
           ...this.state.form,
@@ -78,6 +117,14 @@ class WizardTimer extends Component {
       }
     })
   }
+  /**
+   * @method reduceTime
+   * @description responsible for reducing timer & updating state.
+   * @setState
+   *    completed
+   *    cooldown{current|id|status}
+   *    timer{current|id|status}
+   */
   reduceTime = () => {
     const { cooldown, timer } = this.state
     if (timer.id) {
@@ -103,12 +150,10 @@ class WizardTimer extends Component {
         return
       }
 
-      const current = moment.duration(timer.current)
-      current.subtract(1, 'second')
       this.setState({
         timer: {
           ...this.state.timer,
-          current
+          current: moment.duration(timer.current).subtract(1, 'second')
         }
       })
     }
@@ -130,16 +175,19 @@ class WizardTimer extends Component {
         return
       }
 
-      const current = moment.duration(cooldown.current)
-      current.subtract(1, 'second')
       this.setState({
         cooldown: {
           ...this.state.cooldown,
-          current
+          current: moment.duration(cooldown.current).subtract(1, 'second')
         }
       })
     }
   }
+  /**
+   * @method reset
+   * @description responsible for resetting state of WizardTimer.
+   * @setState initialState values
+   */
   reset = () => {
     this.setState({
       completed: false,
@@ -162,6 +210,11 @@ class WizardTimer extends Component {
       }
     })
   }
+  /**
+   * @method start
+   * @description responsible for starting timer
+   * @setState timer{id|status}
+   */
   start = () => {
     this.setState({
       timer: {
@@ -171,6 +224,14 @@ class WizardTimer extends Component {
       }
     })
   }
+  /**
+   * @method stop
+   * @description responsible for stopping the timer/cooldown
+   * & returning to starting state of timer.
+   * @setState
+   *    cooldown{current|id|status}
+   *    timer{current|id|status}
+   */
   stop = () => {
     const { cooldown, timer } = this.state
     if (timer.id) {
@@ -196,6 +257,11 @@ class WizardTimer extends Component {
       })
     }
   }
+  /**
+   * @method validateFrame
+   * @description responsible for running validation on user input
+   * @setState errors{activity|cooldown|timer}
+   */
   validateFrame = () => {
     const errors = validate(this.state)
     const isValid = !Object.keys(errors).some(key => errors[key])
@@ -211,17 +277,29 @@ class WizardTimer extends Component {
     }
     return isValid
   }
+  /**
+   * @method renderCompleted
+   * @description responsible for rendering completed view.
+   */
   renderCompleted = () => (
     <Completed activity={this.state.form.activity} fn={this.reset} />
   )
+  /**
+   * @method renderFrames
+   * @description responsible for rendering form view(s).
+   */
   renderFrames = () => (
-    <FrameLogic
+    <Frames
       errors={this.state.errors}
       form={this.state.form}
       next={this._next}
       onChange={this.handleOnChange}
     />
   )
+  /**
+   * @method renderTimer
+   * @description responsible for rendering timer view.
+   */
   renderTimer = () => (
     <Timer {...this.state} start={this.start} stop={this.stop} />
   )

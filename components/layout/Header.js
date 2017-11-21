@@ -1,5 +1,12 @@
 import { styles } from '../../lib'
 
+/**
+ * @function Header
+ * @description renders styled <header />
+ *
+ * @prop {Array} children
+ * @returns React Element
+ */
 const Header = ({ children }) => (
   <header>
     {children}
@@ -10,7 +17,8 @@ const Header = ({ children }) => (
         display: flex;
         flex-direction: column;
         font-family: ${styles.fonts.permMarker};
-        height: 20vh;
+        font-size: 1.25em;
+        height: 15vh;
         justify-content: center;
         letter-spacing: 0.3em;
         padding: 1em;
@@ -18,7 +26,7 @@ const Header = ({ children }) => (
       }
       @media (min-width: 425px) {
         header {
-          font-size: 1.25em;
+          font-size: 1.5em;
         }
       }
       @media (min-width: 768px) {

@@ -2,6 +2,14 @@ import PropTypes from 'prop-types'
 
 import { styles } from '../../lib'
 
+/**
+ * @function FlexContainer
+ * @description renders a flex-div with conditional styles based on className
+ *
+ * @prop {Array} children
+ * @prop {String} className
+ * @returns React Element
+ */
 const FlexContainer = ({ children, className }) => (
   <div className={className}>
     {children}
@@ -17,7 +25,7 @@ const FlexContainer = ({ children, className }) => (
       }
       .main {
         background-color: ${styles.colors.main};
-        height: 65vh;
+        height: 100vh;
         padding: 0.5em;
       }
       .wizard {
@@ -36,7 +44,6 @@ const FlexContainer = ({ children, className }) => (
       }
       @media (orientation: landscape) {
         .main {
-          height: 80vh;
           padding: 1em;
         }
       }

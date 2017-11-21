@@ -1,4 +1,6 @@
+import { Completed, FlexContainer } from './commons'
+import Frames from './frames'
 import Layout from './layout'
-import { Completed, FlexContainer, FrameLogic, Timer } from './commons'
+import Timer from './timer'
 
-export { Completed, FlexContainer, FrameLogic, Layout, Timer }
+export { Completed, FlexContainer, Frames, Layout, Timer }
