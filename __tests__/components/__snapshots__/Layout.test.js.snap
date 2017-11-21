@@ -11,14 +11,14 @@ exports[`Component: <Layout /> should mount without exploding 1`] = `
       >
         <Component>
           <div
-            className="jsx-1871262794"
+            className="jsx-2859325892"
           >
             <SideEffect(Head)>
               <Head />
             </SideEffect(Head)>
             <JSXStyle
-              css="*{box-sizing:border-box;-webkit-box-sizing:border-box;margin:0;padding:0;}html,body{min-height:100vh;overflow-x:hidden;}body{background-color:#A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1em;line-height:1.5em;}@media (min-width:600px){body{font-size:1.3em;}}"
-              styleId="1871262794"
+              css="*{box-sizing:border-box;-webkit-box-sizing:border-box;margin:0;padding:0;}html,body{min-height:100vh;overflow-x:hidden;}body{background-color:#A974C2;color:#B0BF6C;font-family:\\"Kalam\\", cursive;font-size:1em;line-height:1.5em;}"
+              styleId="2859325892"
             />
           </div>
         </Component>

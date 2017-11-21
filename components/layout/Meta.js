@@ -49,11 +49,11 @@ export default () => (
         font-size: 1em;
         line-height: 1.5em;
       }
-      @media (min-width: 600px) {
+      /*@media (min-width: 600px) {
         body {
           font-size: 1.3em;
         }
-      }
+      }*/
     `}</style>
   </div>
 )
