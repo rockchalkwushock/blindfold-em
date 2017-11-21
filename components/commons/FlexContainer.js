@@ -25,7 +25,7 @@ const FlexContainer = ({ children, className }) => (
       }
       .layout {
         margin: auto;
-        max-width: 800px;
+        max-width: 60em;
         min-height: 100vh;
       }
       .main {
@@ -45,8 +45,8 @@ const FlexContainer = ({ children, className }) => (
         -ms-flex-align: center;
         align-items: center;
         background-color: ${styles.colors.lowLight};
-        -webkit-box-shadow: 4px 4px 4px ${styles.colors.highLight};
-        box-shadow: 4px 4px 4px ${styles.colors.highLight};
+        -webkit-box-shadow: 0.25em 0.25em 0.25em ${styles.colors.highLight};
+        box-shadow: 0.25em 0.25em 0.25em ${styles.colors.highLight};
         -webkit-box-flex: 1;
         -ms-flex: auto;
         flex: auto;
@@ -61,7 +61,7 @@ const FlexContainer = ({ children, className }) => (
           padding: 1em;
         }
       }
-      @media (min-width: 768px) {
+      @media (min-width: 48em) {
         .main {
           padding: 2em 3em;
         }

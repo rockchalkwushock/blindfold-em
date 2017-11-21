@@ -32,7 +32,7 @@ const Footer = ({ children }) => (
           font-size: 1em;
         }
       }
-      @media (min-width: 768px) {
+      @media (min-width: 48em) {
         footer {
           font-size: 1.4em;
         }

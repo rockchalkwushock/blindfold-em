@@ -33,12 +33,12 @@ const Header = ({ children }) => (
         padding: 1em;
         text-align: center;
       }
-      @media (min-width: 425px) {
+      @media (min-width: 26.563em) {
         header {
           font-size: 1.5em;
         }
       }
-      @media (min-width: 768px) {
+      @media (min-width: 48em) {
         header {
           font-size: 1.75em;
           letter-spacing: 0.5em;

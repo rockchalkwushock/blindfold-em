@@ -18,12 +18,12 @@ const Button = ({ className, fn, text }) => (
       button {
         background-color: ${styles.colors.main};
         border: none;
-        -webkit-box-shadow: 2px 2px 2px ${styles.colors.highLight};
-        box-shadow: 2px 2px 2px ${styles.colors.highLight};
+        -webkit-box-shadow: 0.125em 0.125em 0.125em ${styles.colors.highLight};
+        box-shadow: 0.125em 0.125em 0.125em ${styles.colors.highLight};
         color: ${styles.colors.text};
         font-family: ${styles.fonts.kalam};
         font-size: 1.5em;
-        letter-spacing: 5px;
+        letter-spacing: 0.313em;
         margin: 0.5em 0.25em 0 0.25em;
         outline: none;
         padding: 0.25em;

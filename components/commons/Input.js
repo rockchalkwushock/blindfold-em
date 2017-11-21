@@ -29,7 +29,7 @@ const Input = ({ className, msg, name, fn, value }) => (
       input {
         background-color: transparent;
         border: none;
-        border-bottom: 2px solid ${styles.colors.highLight};
+        border-bottom: 0.125em solid ${styles.colors.highLight};
         color: ${styles.colors.text};
         font-family: ${styles.fonts.kalam};
         font-size: 1.25em;

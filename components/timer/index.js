@@ -6,8 +6,6 @@ import { FlexContainer } from '../commons'
 
 import { format } from '../../lib'
 
-/* FIXME: `state` is terrible find a better way */
-
 /**
  * @function Timer
  * @description renders the application timer
