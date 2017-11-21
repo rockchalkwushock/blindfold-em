@@ -91,13 +91,17 @@ exports[`Index Page should mount without exploding 1`] = `
                               className="jsx-4270136953 frame"
                             >
                               <SubTitle
+                                className="animated fadeInUp"
                                 text="What activity are you working on?"
                               >
-                                <h2>
+                                <h2
+                                  className="animated fadeInUp"
+                                >
                                   What activity are you working on?
                                 </h2>
                               </SubTitle>
                               <Input
+                                className="animated fadeInUp"
                                 fn={[Function]}
                                 msg="Avoiding work"
                                 name="activity"
@@ -106,7 +110,7 @@ exports[`Index Page should mount without exploding 1`] = `
                                 <Fragment>
                                   <input
                                     autoComplete="off"
-                                    className="jsx-3319414369"
+                                    className="jsx-3319414369 animated fadeInUp"
                                     name="activity"
                                     onChange={[Function]}
                                     placeholder="Avoiding work"
@@ -120,12 +124,12 @@ exports[`Index Page should mount without exploding 1`] = `
                                 </Fragment>
                               </Input>
                               <Button
-                                className="next"
+                                className="animated fadeInUp next"
                                 fn={[Function]}
                                 text="Next"
                               >
                                 <button
-                                  className="jsx-383770121"
+                                  className="jsx-383770121 animated fadeInUp next"
                                   onClick={[Function]}
                                 >
                                   Next
@@ -164,7 +168,7 @@ exports[`Index Page should mount without exploding 1`] = `
         </FlexContainer>
         <Footer>
           <footer
-            className="jsx-763048999"
+            className="jsx-2677106407"
           >
             <Link
               text="RCWS Development"
@@ -182,8 +186,8 @@ exports[`Index Page should mount without exploding 1`] = `
               </a>
             </Link>
             <JSXStyle
-              css="footer.jsx-763048999{background-color:#3A2A41;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-size:1.2em;height:10vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:1em;}@media (orientation:landscape){footer.jsx-763048999{font-size:1em;}}"
-              styleId="763048999"
+              css="footer.jsx-2677106407{background-color:#3A2A41;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-size:1.2em;height:10vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:1em;}@media (orientation:landscape){footer.jsx-2677106407{font-size:1em;}}@media (min-width:768px){footer.jsx-2677106407{font-size:1.4em;}}"
+              styleId="2677106407"
             />
           </footer>
         </Footer>

@@ -17,10 +17,16 @@ import { Button, FlexContainer, Input, Span, SubTitle } from '../commons'
  */
 const Frame = ({ error, fn, msg, name, next, text, value }) => (
   <FlexContainer className="frame">
-    <SubTitle text={text} />
-    <Input fn={fn} name={name} msg={msg} value={value} />
+    <SubTitle className="animated fadeInUp" text={text} />
+    <Input
+      className="animated fadeInUp"
+      fn={fn}
+      name={name}
+      msg={msg}
+      value={value}
+    />
     {error ? <Span msg={error} /> : null}
-    <Button className="next" fn={next} text="Next" />
+    <Button className="animated fadeInUp next" fn={next} text="Next" />
   </FlexContainer>
 )
 

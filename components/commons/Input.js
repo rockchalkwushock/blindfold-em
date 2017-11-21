@@ -7,16 +7,18 @@ import { styles } from '../../lib'
  * @function Input
  * @description renders styled <input />
  *
+ * @prop {String} className
  * @prop {String} msg
  * @prop {String} name
  * @prop {Function} fn
  * @prop {String} value
  * @returns React Element
  */
-const Input = ({ msg, name, fn, value }) => (
+const Input = ({ className, msg, name, fn, value }) => (
   <Fragment>
     <input
       autoComplete="off"
+      className={className}
       name={name}
       onChange={fn}
       placeholder={msg}
@@ -41,6 +43,7 @@ const Input = ({ msg, name, fn, value }) => (
 )
 
 Input.propTypes = {
+  className: PropTypes.string,
   name: PropTypes.string.isRequired,
   msg: PropTypes.string.isRequired,
   fn: PropTypes.func.isRequired,

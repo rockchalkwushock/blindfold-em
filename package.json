@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "description": "FIXME",
-  "author":
-    "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
+  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
   "repository": "https://github.com/rockchalkwushock/blindfold-em.git",
-  "homepage":
-    "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
+  "homepage": "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
   "bugs": "https://github.com/rockchalkwushock/mashaeltsova-photography/issues",
   "scripts": {
     "build": "next build",
@@ -70,15 +68,25 @@
         "statements": 50
       }
     },
-    "setupFiles": ["./jest.setup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "setupFiles": [
+      "./jest.setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testEnvironment": "jsdom"
   },
   "lint-staged": {
-    "*.js": ["yarn prettier", "git add"]
+    "*.js": [
+      "yarn prettier",
+      "git add"
+    ]
   },
   "now": {
-    "alias": ["blindfold-em-beta", "blindfold-em"],
+    "alias": [
+      "blindfold-em-beta",
+      "blindfold-em"
+    ],
     "env": {
       "NODE_ENV": "production"
     },

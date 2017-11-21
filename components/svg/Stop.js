@@ -6,11 +6,13 @@ import { styles } from '../../lib'
  * @function Stop
  * @description renders <rect /> element with stop() functionality.
  *
+ * @prop {String} className
  * @prop {Function} fn
  * @returns React Element
  */
-const Stop = ({ fn }) => (
+const Stop = ({ className, fn }) => (
   <rect
+    className={className}
     fill={styles.colors.highLight}
     height="10"
     onClick={fn}
@@ -21,6 +23,7 @@ const Stop = ({ fn }) => (
 )
 
 Stop.propTypes = {
+  className: PropTypes.string,
   fn: PropTypes.func.isRequired
 }
 

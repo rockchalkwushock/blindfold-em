@@ -15,7 +15,7 @@ import SubTitle from './SubTitle'
 const Completed = ({ activity, fn }) => (
   <FlexContainer className="completed">
     <SubTitle text={`Congratulations on completing: ${activity}!`} />
-    <Button fn={fn} text="Reset" />
+    <Button className="animated pulse" fn={fn} text="Reset" />
   </FlexContainer>
 )
 

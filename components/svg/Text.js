@@ -10,15 +10,14 @@ import { styles } from '../../lib'
  * @returns React Element
  */
 const Text = ({ time }) => (
-  <text x="25" y="65">
+  <text
+    fill={styles.colors.highLight}
+    fontFamily={styles.fonts.kalam}
+    fontSize="1em"
+    x="25"
+    y="65"
+  >
     {time}
-    <style jsx>{`
-      text {
-        fill: ${styles.colors.highLight};
-        font-family: ${styles.fonts.kalam};
-        font-size: 1em;
-      }
-    `}</style>
   </text>
 )
 

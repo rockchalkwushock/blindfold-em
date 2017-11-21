@@ -25,14 +25,14 @@ const TimerDisplay = ({ duration, start, state, stop, time }) => {
         <Circle className="outer" />
         <Circle className={`overlay ${animationState}`} duration={duration} />
         <Text time={time} />
-        <Stop fn={stop} />
+        <Stop className="animated jello" fn={stop} />
       </Svg>
     )
   }
   return (
     <Svg>
-      <Circle className="outer" />
-      <Play fn={start} />
+      <Circle className="animated jello outer" />
+      <Play className="animated jello" fn={start} />
     </Svg>
   )
 }
