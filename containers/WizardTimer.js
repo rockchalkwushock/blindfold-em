@@ -28,6 +28,7 @@ import { validate, timerState as t } from '../lib'
  */
 class WizardTimer extends Component {
   state = {
+    alarm: null,
     completed: false,
     cooldown: {
       base: null,
@@ -54,6 +55,14 @@ class WizardTimer extends Component {
       id: null,
       status: t.STOPPED
     }
+  }
+  componentDidMount() {
+    // NOTE: Because of default SSR must instantiate this
+    // here because it is `window.Audio`
+    const alarm = new Audio(
+      'https://res.cloudinary.com/rockchalkwushock/video/upload/v1511302374/doorbell.wav'
+    )
+    this.setState(state => ({ ...state, alarm }))
   }
   /**
    * @method _next
@@ -133,6 +142,7 @@ class WizardTimer extends Component {
         timer.current.get('minutes') === 0 &&
         timer.current.get('seconds') === 0
       ) {
+        this.state.alarm.play()
         clearInterval(timer.id)
         this.setState({
           cooldown: {
@@ -163,6 +173,7 @@ class WizardTimer extends Component {
         cooldown.current.get('minutes') === 0 &&
         cooldown.current.get('seconds') === 0
       ) {
+        this.state.alarm.play()
         clearInterval(cooldown.id)
         this.setState({
           completed: true,
