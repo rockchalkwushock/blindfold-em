@@ -30,7 +30,7 @@ const FlexContainer = ({ children, className }) => (
       }
       .main {
         background-color: ${styles.colors.main};
-        height: 100vh;
+        min-height: 100vh;
         padding: 0.5em;
       }
       .wizard {

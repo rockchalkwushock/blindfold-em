@@ -22,6 +22,41 @@ export default () => (
         name="description"
         content="Blindfold'em is a productivity management tool in the form of a Pomodoro-esque web application."
       />
+      {/* SCHEMA.ORG FOR GOOGLE */}
+      <meta itemProp="name" content="Blindfold'em" />
+      <meta
+        itemProp="description"
+        content="Blindfold'em is a productivity management tool in the form of a Pomodoro-esque web application."
+      />
+      <meta
+        itemProp="image"
+        content="https://blindfold-em.now.sh/static/icons/mstile-310x310.png"
+      />
+      {/* TWITTER */}
+      <meta name="twitter:site" content="@RockChalkDev" />
+      <meta name="twitter:creator" content="@RockChalkDev" />
+      <meta name="twitter:image:alt" content="Blindfold'em" />
+      <meta name="twitter:url" content="https://blindfold-em.now.sh" />
+      {/* FACEBOOK, PINTREST, GOOGLE+ */}
+      <meta property="og:title" content="Blindfold'em" />
+      <meta
+        property="og:description"
+        content="Blindfold'em is a productivity management tool in the form of a Pomodoro-esque web application."
+      />
+      <meta
+        property="og:image"
+        content="https://blindfold-em.now.sh/static/icons/mstile-310x310.png"
+      />
+      <meta property="og:image:alt" content="Blindfold'em" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:height" content="1256" />
+      <meta property="og:image:width" content="2400" />
+      <meta property="og:url" content="https://blindfold-em.now.sh" />
+      <meta property="og:site_name" content="Blindfold'em" />
+      <meta property="og:type" content="website" />
+      {/* SPIDERS & BOTS */}
+      <meta name="robots" content="index,follow,archive" />
+      <meta name="googlebot" content="all" />
       {/* EXTERNAL STYLESHEETS */}
       {/* Normalize CDN */}
       <link
@@ -45,38 +80,32 @@ export default () => (
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="https://blindfold-em.now.sh/static/icons/apple-touch-icon.png"
+        href="/static/icons/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="https://blindfold-em.now.sh/static/icons/favicon-32x32.png"
+        href="/static/icons/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="https://blindfold-em.now.sh/static/icons/favicon-16x16.png"
+        href="/static/icons/favicon-16x16.png"
       />
-      <link
-        rel="manifest"
-        href="https://blindfold-em.now.sh/static/icons/manifest.json"
-      />
+      <link rel="manifest" href="/static/icons/manifest.json" />
       <link
         rel="mask-icon"
-        href="https://blindfold-em.now.sh/static/icons/safari-pinned-tab.svg"
+        href="/static/icons/safari-pinned-tab.svg"
         color="#3a2a41"
       />
-      <link
-        rel="shortcut icon"
-        href="https://blindfold-em.now.sh/static/icons/favicon.ico"
-      />
+      <link rel="shortcut icon" href="/static/icons/favicon.ico" />
       <meta name="apple-mobile-web-app-title" content="Blindfold-em" />
       <meta name="application-name" content="Blindfold-em" />
       <meta
         name="msapplication-config"
-        content="https://blindfold-em.now.sh/static/icons/browserconfig.xml"
+        content="/static/icons/browserconfig.xml"
       />
       <meta name="theme-color" content="#3a2a41" />
     </Head>

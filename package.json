@@ -95,6 +95,7 @@
       "./containers",
       "./lib",
       "./pages",
+      "./static",
       "package.json",
       "yarn.lock"
     ],

@@ -30,6 +30,7 @@ const Input = ({ className, msg, name, fn, value }) => (
         background-color: transparent;
         border: none;
         border-bottom: 0.125em solid ${styles.colors.highLight};
+        border-radius: 0; /* https://stackoverflow.com/a/2918716/6520579 */
         color: ${styles.colors.text};
         font-family: ${styles.fonts.kalam};
         font-size: 1.25em;

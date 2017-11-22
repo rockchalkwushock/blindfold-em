@@ -8,9 +8,6 @@ import { timerState as t } from '../../lib'
 jest.useFakeTimers()
 
 const initialState = {
-  alarm: new Audio(
-    'https://res.cloudinary.com/rockchalkwushock/video/upload/v1511302374/doorbell.wav'
-  ),
   completed: false,
   cooldown: {
     base: null,
