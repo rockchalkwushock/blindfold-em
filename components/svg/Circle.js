@@ -11,21 +11,29 @@ import { styles } from '../../lib'
  * @returns React Element
  */
 const Circle = ({ className, duration }) => (
-  <circle className={className} transform="rotate(-90, 50, 60)">
+  <circle
+    className={className}
+    cx="50"
+    cy="60"
+    fill="transparent"
+    r="35"
+    strokeWidth="4"
+    transform="rotate(-90, 50, 60)"
+  >
     <style jsx>{`
-      circle {
-        cx: 50;
-        cy: 60;
-        fill: transparent;
-        r: 35;
-        stroke-width: 4;
-      }
       .outer {
         stroke: ${styles.colors.highLight};
       }
       .overlay {
         stroke: none;
-        stroke-dasharray: 219; /* NOTE: https://stackoverflow.com/a/33922201/6520579 */
+        /*
+          NOTE:
+          @see https://stackoverflow.com/a/33922201/6520579
+          @see https://codepen.io/AmeliaBR/pen/whcjq
+          first arg is length of stroke
+          second arg is length of gap
+        */
+        stroke-dasharray: 0 219;
         stroke-linecap: round;
       }
       .cooldownAnimation {
@@ -39,74 +47,34 @@ const Circle = ({ className, duration }) => (
       }
       @-webkit-keyframes timer {
         from {
-          stroke-dashoffset: 219;
+          stroke-dasharray: 0 219;
         }
         to {
-          stroke-dashoffset: 0;
+          stroke-dasharray: 219 0;
         }
       }
       @keyframes timer {
         from {
-          stroke-dashoffset: 219;
+          stroke-dasharray: 0 219;
         }
         to {
-          stroke-dashoffset: 0;
+          stroke-dasharray: 219 0;
         }
       }
       @-webkit-keyframes cooldown {
         from {
-          stroke-dashoffset: 0;
+          stroke-dasharray: 219 0;
         }
         to {
-          stroke-dashoffset: 219;
+          stroke-dasharray: 0 219;
         }
       }
       @keyframes cooldown {
         from {
-          stroke-dashoffset: 0;
+          stroke-dasharray: 219 0;
         }
         to {
-          stroke-dashoffset: 219;
-        }
-      }
-      @media (orientation: landscape) {
-        circle {
-          r: 50;
-        }
-        .overlay {
-          stroke-dasharray: 314;
-        }
-        @-webkit-keyframes timer {
-          from {
-            stroke-dashoffset: 314;
-          }
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-        @keyframes timer {
-          from {
-            stroke-dashoffset: 314;
-          }
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-        @-webkit-keyframes cooldown {
-          from {
-            stroke-dashoffset: 0;
-          }
-          to {
-            stroke-dashoffset: 314;
-          }
-        }
-        @keyframes cooldown {
-          from {
-            stroke-dashoffset: 0;
-          }
-          to {
-            stroke-dashoffset: 314;
-          }
+          stroke-dasharray: 0 219;
         }
       }
     `}</style>
