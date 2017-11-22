@@ -1,5 +1,7 @@
 # blindfold-em :sunglasses: :alarm_clock: :fire:
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rockchalkwushock/blindfold-em.svg)](https://greenkeeper.io/)
+
 [![CircleCI](https://img.shields.io/circleci/project/github/rockchalkwushock/blindfold-em.svg?style=flat-square)](https://circleci.com/gh/rockchalkwushock/blindfold-em)
 [![Codecov](https://img.shields.io/codecov/c/github/rockchalkwushock/blindfold-em.svg?style=flat-square)](https://codecov.io/gh/rockchalkwushock/blindfold-em)
 
