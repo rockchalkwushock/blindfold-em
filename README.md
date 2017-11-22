@@ -1,7 +1,5 @@
 # blindfold-em :sunglasses: :alarm_clock: :fire:
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/rockchalkwushock/blindfold-em.svg)](https://greenkeeper.io/)
-
 [![CircleCI](https://img.shields.io/circleci/project/github/rockchalkwushock/blindfold-em.svg?style=flat-square)](https://circleci.com/gh/rockchalkwushock/blindfold-em)
 [![Codecov](https://img.shields.io/codecov/c/github/rockchalkwushock/blindfold-em.svg?style=flat-square)](https://codecov.io/gh/rockchalkwushock/blindfold-em)
 
@@ -10,6 +8,7 @@
 
 [![NSP Status](https://nodesecurity.io/orgs/rcws-development/projects/6cd15231-6022-4c22-85c3-18c1ff5452f7/badge)](https://nodesecurity.io/orgs/rcws-development/projects/6cd15231-6022-4c22-85c3-18c1ff5452f7)
 [![Known Vulnerabilities](https://snyk.io/test/github/rockchalkwushock/blindfold-em/badge.svg)](https://snyk.io/test/github/rockchalkwushock/blindfold-em)
+[![Greenkeeper badge](https://badges.greenkeeper.io/rockchalkwushock/blindfold-em.svg)](https://greenkeeper.io/)
 
 [![Commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/rockchalkwushock/how-to-open-source/pulls)
