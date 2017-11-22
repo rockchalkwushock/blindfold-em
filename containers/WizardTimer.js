@@ -60,7 +60,7 @@ class WizardTimer extends Component {
     // NOTE: Because of default SSR must instantiate this
     // here because it is `window.Audio`
     const alarm = new Audio(
-      'https://res.cloudinary.com/rockchalkwushock/video/upload/v1511302374/doorbell.wav'
+      'https://res.cloudinary.com/rockchalkwushock/video/upload/v1511354646/doorbell.mp3'
     )
     this.setState(state => ({ ...state, alarm }))
   }
