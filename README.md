@@ -6,6 +6,10 @@
 [![Next](https://img.shields.io/badge/built%20with-next.js-orange.svg?style=flat-square)](https://github.com/zeit/next.js)
 [![Now](https://img.shields.io/badge/deployed%20with-now--cli-orange.svg?style=flat-square)](https://github.com/zeit/now-cli)
 
+[![NSP Status](https://nodesecurity.io/orgs/rcws-development/projects/6cd15231-6022-4c22-85c3-18c1ff5452f7/badge)](https://nodesecurity.io/orgs/rcws-development/projects/6cd15231-6022-4c22-85c3-18c1ff5452f7)
+[![Known Vulnerabilities](https://snyk.io/test/github/rockchalkwushock/blindfold-em/badge.svg)](https://snyk.io/test/github/rockchalkwushock/blindfold-em)
+[![Greenkeeper badge](https://badges.greenkeeper.io/rockchalkwushock/blindfold-em.svg)](https://greenkeeper.io/)
+
 [![Commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/rockchalkwushock/how-to-open-source/pulls)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
