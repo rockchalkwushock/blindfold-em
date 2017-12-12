@@ -19,7 +19,11 @@ const Layout = ({ children }) => (
     </Header>
     <FlexContainer className="main">{children}</FlexContainer>
     <Footer>
-      <Link text="RCWS Development" url="https://rcws-development.com" />
+      <Link
+        text="Cody Brunner"
+        url="https://codybrunner.rocks"
+        year={new Date().getFullYear()}
+      />
     </Footer>
   </FlexContainer>
 )

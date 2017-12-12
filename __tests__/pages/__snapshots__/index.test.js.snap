@@ -171,14 +171,15 @@ exports[`Index Page should mount without exploding 1`] = `
             className="jsx-281781248"
           >
             <Link
-              text="RCWS Development"
-              url="https://rcws-development.com"
+              text="Cody Brunner"
+              url="https://codybrunner.rocks"
+              year={2017}
             >
               <a
                 className="jsx-2702470336"
-                href="https://rcws-development.com"
+                href="https://codybrunner.rocks"
               >
-                RCWS Development
+                © 2017 Cody Brunner
                 <JSXStyle
                   css="a.jsx-2702470336{color:#B0BF6C;font-family:\\"Kalam\\", cursive;text-decoration:none;}"
                   styleId="2702470336"

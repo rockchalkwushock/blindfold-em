@@ -10,9 +10,9 @@ import { styles } from '../../lib'
  * @prop {String} url
  * @returns React Element
  */
-const Link = ({ text, url }) => (
+const Link = ({ text, url, year }) => (
   <a href={url}>
-    {text}
+    {`© ${year === 2017 ? year : `2017 - ${year}`} ${text}`}
     <style jsx>{`
       a {
         color: ${styles.colors.text};
@@ -25,7 +25,8 @@ const Link = ({ text, url }) => (
 
 Link.propTypes = {
   text: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
+  year: PropTypes.number.isRequired
 }
 
 export default Link
